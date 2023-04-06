@@ -9,10 +9,10 @@
     <div>
         @*Imagenes practicamente random, cambiar;*@
         <p><img src="~/img/logo.png" /> CoopDEJC</p>
-        <a>Register</a>
+        <a href="@Url.Action("Register","Login")">Register</a>
     </div>
     <div>
-        <form action="" method="post">
+        <form action="@Url.Action("Index","Home") method="post">
             <center>
                 <div>
                 <img src="~/img/userlogo.png" />
@@ -29,7 +29,7 @@
                 <div>
                     <input name="rememberme" type="checkbox" />
                     <label for="rememberme">Remember me</label>
-                    <a>Forgot password?</a>
+                    <a href="#">Forgot password?</a>
                 </div>
                 <div>
                     <input type="submit" value="Login" />

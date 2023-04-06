@@ -1,0 +1,55 @@
+﻿@{
+    Layout = null;
+}
+<html>
+<head>
+    <title>CoopDEJC - Register</title>
+</head>
+<body>
+    <div>
+        @*Imagenes practicamente random, cambiar;*@
+        <p><img src="~/img/logo.png" /> CoopDEJC</p>
+        <a href="@Url.Action("Login","Login")">Sign in</a>
+    </div>
+    <div>
+        <form action="Login" method="post">
+            <center>
+                <div>
+                    <img src="~/img/userlogo.png" />
+                    <p>Register</p>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input name="email" type="email" required maxlength="100" />
+                </div>
+                <div>
+                    <label for="fname">First Name</label>
+                    <input name="fname" type="text" required maxlength="100" />
+                    <label for="lname">Last Name</label>
+                    <input name="lname" type="text" required maxlength="100" />
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input name="phone" type="tel" required maxlength="12" minlength="12" />
+                    <label for="location">Location</label>
+                    <input name="location" type="text" required/>
+                </div>
+                <div>
+                    <label for="id">ID</label>
+                    <input name="id" type="text" required maxlength="13" minlength="13" />
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input name="password" type="password" required maxlength="100" />
+                    <label for="cpasword">Confirm Password</label>
+                    <input name="cpassword" type="password" required maxlength="100" />
+                </div>
+                <div>
+                    <input type="submit" value="Register" />
+                </div>
+            </center>
+        </form>
+    </div>
+</body>
+</html>

@@ -29,6 +29,7 @@ namespace CoopDEJC.Controllers
         [HttpPost]
         public IActionResult Login(User _user)
         {
+            //Encriptar _user.clave
             return View();
         }
     }

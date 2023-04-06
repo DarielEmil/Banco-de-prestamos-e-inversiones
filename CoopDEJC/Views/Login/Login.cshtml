@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+}
+<html>
+<head>
+    <title>CoopDEJC - Login</title>
+</head>
+<body>
+    <div>
+        @*Imagenes practicamente random, cambiar;*@
+        <p><img src="~/img/logo.png" /> CoopDEJC</p>
+        <a>Register</a>
+    </div>
+    <div>
+        <form action="" method="post">
+            <center>
+                <div>
+                <img src="~/img/userlogo.png" />
+                <p>Sign In</p>
+                </div>
+                <div>
+                <label for="email">Email</label>
+                <input name="email" type="email" required maxlength="100"/>
+                </div>
+                <div>
+                <label for="password">Password</label>
+                <input name="password" type="password" required maxlength="100"/>
+                </div>
+                <div>
+                    <input name="rememberme" type="checkbox" />
+                    <label for="rememberme">Remember me</label>
+                    <a>Forgot password?</a>
+                </div>
+                <div>
+                    <input type="submit" value="Login" />
+                </div>
+            </center>
+        </form>
+    </div>
+</body>
+</html>

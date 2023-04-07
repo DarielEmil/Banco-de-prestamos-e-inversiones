@@ -6,46 +6,49 @@
     <title>CoopDEJC - Register</title>
 </head>
 <body>
-    <div>
+    <div class="header">
         @*Imagenes practicamente random, cambiar;*@
         <p><img src="~/img/logo.png" /> CoopDEJC</p>
         <a href="@Url.Action("Login","Login")">Sign in</a>
     </div>
-    <div>
+    <div class="container">
         <form action="Login" method="post">
             <center>
-                <div>
+                <div class="title">
                     <img src="~/img/userlogo.png" />
                     <p>Register</p>
                 </div>
-                <div>
+                <div class="textboxes">
                     <label for="email">Email</label>
-                    <input name="email" type="email" required maxlength="100" />
+                    <input name="email" type="email" maxlength="100" required />
                 </div>
-                <div>
+                <div class="textboxes">
                     <label for="fname">First Name</label>
-                    <input name="fname" type="text" required maxlength="100" />
+                    <input name="fname" type="text" maxlength="100" required />
                     <label for="lname">Last Name</label>
-                    <input name="lname" type="text" required maxlength="100" />
+                    <input name="lname" type="text" maxlength="100" required />
                 </div>
-                <div>
+                <div class="textboxes">
                     <label for="phone">Phone Number</label>
-                    <input name="phone" type="tel" required maxlength="12" minlength="12" />
+                    <input name="phone" type="tel" maxlength="12" minlength="12" required />
                     <label for="location">Location</label>
                     <input name="location" type="text" required/>
                 </div>
-                <div>
+                <div class="textboxes">
                     <label for="id">ID</label>
-                    <input name="id" type="text" required maxlength="13" minlength="13" />
+                    <input name="id" type="text" maxlength="13" minlength="13" required />
                 </div>
-
-                <div>
+                <div class= "textboxes">
                     <label for="password">Password</label>
-                    <input name="password" type="password" required maxlength="100" />
+                    <input name="password" type="password" maxlength="100" required />
                     <label for="cpasword">Confirm Password</label>
-                    <input name="cpassword" type="password" required maxlength="100" />
+                    <input name="cpassword" type="password" maxlength="100" required />
                 </div>
-                <div>
+                <div class="textboxes">
+                    <label for="securityq">Security Question</label>
+                    <input name="securityq" type="text" required />
+                </div>
+                <div class="btnsubmit">
                     <input type="submit" value="Register" />
                 </div>
             </center>

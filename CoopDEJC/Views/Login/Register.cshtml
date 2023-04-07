@@ -1,0 +1,58 @@
+﻿@{
+    Layout = null;
+}
+<html>
+<head>
+    <title>CoopDEJC - Register</title>
+</head>
+<body>
+    <div class="header">
+        @*Imagenes practicamente random, cambiar;*@
+        <p><img src="~/img/logo.png" /> CoopDEJC</p>
+        <a href="@Url.Action("Login","Login")">Sign in</a>
+    </div>
+    <div class="container">
+        <form action="Login" method="post">
+            <center>
+                <div class="title">
+                    <img src="~/img/userlogo.png" />
+                    <p>Register</p>
+                </div>
+                <div class="textboxes">
+                    <label for="email">Email</label>
+                    <input name="email" type="email" maxlength="100" required />
+                </div>
+                <div class="textboxes">
+                    <label for="fname">First Name</label>
+                    <input name="fname" type="text" maxlength="100" required />
+                    <label for="lname">Last Name</label>
+                    <input name="lname" type="text" maxlength="100" required />
+                </div>
+                <div class="textboxes">
+                    <label for="phone">Phone Number</label>
+                    <input name="phone" type="tel" maxlength="12" minlength="12" required />
+                    <label for="location">Location</label>
+                    <input name="location" type="text" required/>
+                </div>
+                <div class="textboxes">
+                    <label for="id">ID</label>
+                    <input name="id" type="text" maxlength="13" minlength="13" required />
+                </div>
+                <div class= "textboxes">
+                    <label for="password">Password</label>
+                    <input name="password" type="password" maxlength="100" required />
+                    <label for="cpasword">Confirm Password</label>
+                    <input name="cpassword" type="password" maxlength="100" required />
+                </div>
+                <div class="textboxes">
+                    <label for="securityq">Security Question</label>
+                    <input name="securityq" type="text" required />
+                </div>
+                <div class="btnsubmit">
+                    <input type="submit" value="Register" />
+                </div>
+            </center>
+        </form>
+    </div>
+</body>
+</html>

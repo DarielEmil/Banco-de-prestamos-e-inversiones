@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\CoopDEJC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\css\\LoginCSS.css",
+      "PackagePath": "staticwebassets\\css\\LoginCSS.css"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -19,6 +23,14 @@
     {
       "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\userlogo.png",
       "PackagePath": "staticwebassets\\img\\userlogo.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\waves1.png",
+      "PackagePath": "staticwebassets\\img\\waves1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\waves2.png",
+      "PackagePath": "staticwebassets\\img\\waves2.png"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\js\\site.js",

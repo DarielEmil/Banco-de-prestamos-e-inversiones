@@ -14,6 +14,11 @@ namespace CoopDEJC.Controllers
             return View();
         }
 
+        public IActionResult SignOut()
+        {
+            return RedirectToAction("Login", "Login");
+        }
+
         //[HttpPost]
         //public IActionResult Register(User _user)
         //{

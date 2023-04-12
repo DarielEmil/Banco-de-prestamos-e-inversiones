@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lCbuDoHF2wBZOBRvc2bb5bzeIHSv0W4rRVfzGX3wFMc=",
+  "Hash": "Lhs5XdT8Xrj1od34jgx9XuQaqqTfbj01sfdPcXRcJRQ=",
   "Source": "CoopDEJC",
   "BasePath": "_content/CoopDEJC",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CoopDEJC.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\css\\LoginCSS.css",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "css/LoginCSS.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LoginCSS.css"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\css\\site.css",
@@ -117,6 +134,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\userlogo.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\waves1.png",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "img/waves1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\waves1.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\waves2.png",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "img/waves2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\waves2.png"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\js\\site.js",

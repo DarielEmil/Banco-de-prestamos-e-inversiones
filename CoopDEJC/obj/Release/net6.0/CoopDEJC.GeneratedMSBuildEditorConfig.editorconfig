@@ -9,6 +9,7 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CoopDEJC
 build_property.RootNamespace = CoopDEJC
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
@@ -41,5 +42,39 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/darke/Desktop/Trabajo Jesus/Jesus/CoopDEJC/Views/Shared/_Layout.cshtml]
+=======
+build_property.ProjectDir = C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Shared/_Layout.cshtml]
+>>>>>>> 89cc2bc9e33ab95d56083f5a953d92020dbf2e67
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-u5d5iufo3d

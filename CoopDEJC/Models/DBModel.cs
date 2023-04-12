@@ -10,7 +10,7 @@ namespace CoopDEJC.Models
         public DbSet<CuentaBanco> CuentasBanco { get; set;}
         public DbSet<Prestamo> Prestamos { get;set;}
         public DbSet<Garantia> Garantias { get; set;}
-
+        //s
     }
 
     public class Cliente

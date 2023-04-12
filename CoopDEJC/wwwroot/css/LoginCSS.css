@@ -1,0 +1,152 @@
+﻿body {
+    position: relative;
+    margin: 0;
+    display:grid;
+    grid-template-rows: 10% 60% 30%;
+}
+html * {
+    font-family: 'Space Mono', monospace;
+}
+
+/* HEADER CSS */
+.header {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #112B3C;
+}
+.header a {
+    margin: 0 1rem 0 0;
+    color: #EFEFEF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 600ms ease-out; 
+    animation: test 2s ;
+}
+
+.header p {
+    display: inherit;
+    align-items: center;
+    color: #EFEFEF;
+    font-weight: bold;
+ }
+
+.header p svg{
+    margin: 0 0.4rem 0 0;
+}
+/*HEADER a ANIMATION*/
+.header a:hover {
+    color: #F66B0E; 
+}
+
+/*CONTAINER CSS*/
+.formBox{
+    width:18rem;
+}
+.container {
+    position: relative;
+    display:grid;
+    justify-content:center;
+    align-content:center;
+    width: 100%;
+    height: 100%;
+    background: #112B3C;
+}
+.title h2{
+    color:#E1E1E5;
+    font-weight:bold;
+    margin:1rem 0 3rem 0;
+}
+.textboxes{
+    background:transparent;
+    display:grid;
+    grid-template-rows: 2.5rem 1rem;
+    outline:none;
+    resize:none;
+}
+
+.input_box {
+    background: #EFEFEF;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    padding: 0 0 0 0.2rem;
+}
+.input_box:focus{
+    border:none;
+    outline:none;
+}
+
+.input_box::placeholder{
+    padding:0 0 0 0.1rem;
+}
+.boxOption{
+    display:flex;
+    justify-content:space-around;
+    align-items:center; 
+}
+#btnRemember {
+    position:absolute;
+    transform:scale(0);
+    
+}
+#lblRemember {
+    color: #EFEFEF;
+    cursor:pointer;
+    width:0.8rem;
+    height:0.8rem;
+    border: 2px solid #EFEFEF;
+}
+#btnRemember:checked ~ #lblRemember{
+    display:block;
+    background: #F66B0E;
+}
+.boxOption a {
+    margin: 0 0 0 1rem;
+    color: #F66B0E;
+    text-decoration: none;
+}
+.btnsubmit input{
+    margin: 1rem 0 0 0;
+    border:none;
+    outline:none;
+    background: #205375;
+    cursor:pointer;
+    width:18rem;
+    height:2.5rem;
+    color:#EFEFEF;
+    font-weight:bold;
+    border-radius:0.4rem;
+    transition: 200ms ease-out;
+}
+.btnsubmit input:hover{
+    color:#F66B0E;
+}
+
+/*FOOTER CSS*/
+.footer{
+    position:relative;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    background: #112B3C;
+}
+.footerWaves div{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image: url(../img/wave-haikei.png);
+    background-repeat: no-repeat;
+}
+#waves1, #waves2{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+#waves2{
+    opacity: 0.5;
+}

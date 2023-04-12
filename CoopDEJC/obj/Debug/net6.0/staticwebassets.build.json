@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wB/rVH5ODGykQ8iOZAi64HScG6Xa3A5r3eJuLZ6NA1E=",
+  "Hash": "2gx3Juv0CuhAJw1QOncJPwFCu8Kl3jTIeQ5ChMq16Qs=",
   "Source": "CoopDEJC",
   "BasePath": "_content/CoopDEJC",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\LoginCSS.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\css\\RegisterCSS.css",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "css/RegisterCSS.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\RegisterCSS.css"
     },
     {
       "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\css\\site.css",
@@ -136,12 +153,12 @@
       "OriginalItemSpec": "wwwroot\\img\\userlogo.png"
     },
     {
-      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\wave-haikei.svg",
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\waves1.png",
       "SourceId": "CoopDEJC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
       "BasePath": "_content/CoopDEJC",
-      "RelativePath": "img/wave-haikei.svg",
+      "RelativePath": "img/waves1.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -150,7 +167,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\wave-haikei.svg"
+      "OriginalItemSpec": "wwwroot\\img\\waves1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\waves2.png",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "img/waves2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\waves2.png"
     },
     {
       "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\js\\site.js",

@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jesus D. Rodriguez\\Desktop\\Itla\\.Desarrollo de sofware\\2023-C4\\Programacion\\Final\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\CoopDEJC.csproj": {}
+    "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\CoopDEJC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jesus D. Rodriguez\\Desktop\\Itla\\.Desarrollo de sofware\\2023-C4\\Programacion\\Final\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\CoopDEJC.csproj": {
+    "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\CoopDEJC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jesus D. Rodriguez\\Desktop\\Itla\\.Desarrollo de sofware\\2023-C4\\Programacion\\Final\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\CoopDEJC.csproj",
+        "projectUniqueName": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\CoopDEJC.csproj",
         "projectName": "CoopDEJC",
-        "projectPath": "C:\\Users\\Jesus D. Rodriguez\\Desktop\\Itla\\.Desarrollo de sofware\\2023-C4\\Programacion\\Final\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\CoopDEJC.csproj",
-        "packagesPath": "C:\\Users\\Jesus D. Rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jesus D. Rodriguez\\Desktop\\Itla\\.Desarrollo de sofware\\2023-C4\\Programacion\\Final\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\obj\\",
+        "projectPath": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\CoopDEJC.csproj",
+        "packagesPath": "C:\\Users\\darke\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Jesus D. Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\darke\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,15 +40,15 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.4, )"
-            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.5, )"
             }
           },
           "imports": [
@@ -73,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

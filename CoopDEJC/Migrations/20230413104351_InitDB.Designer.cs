@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CoopDEJC.Migrations
 {
     [DbContext(typeof(CoopContext))]
-    [Migration("20230413050957_InitDB")]
+    [Migration("20230413104351_InitDB")]
     partial class InitDB
     {
         /// <inheritdoc />
@@ -114,7 +114,7 @@ namespace CoopDEJC.Migrations
                     b.Property<DateTime>("FechaRealizado")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("InversionID")
+                    b.Property<int>("InversionID")
                         .HasColumnType("int");
 
                     b.Property<int>("Monto")
@@ -153,7 +153,7 @@ namespace CoopDEJC.Migrations
                     b.Property<int>("Monto")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PrestamoId")
+                    b.Property<int>("PrestamoId")
                         .HasColumnType("int");
 
                     b.Property<string>("Tipo")
@@ -175,11 +175,16 @@ namespace CoopDEJC.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GarntiaID"));
 
+                    b.Property<int>("PrestamoId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Tipo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("GarntiaID");
+
+                    b.HasIndex("PrestamoId");
 
                     b.ToTable("Garantias");
                 });
@@ -202,9 +207,6 @@ namespace CoopDEJC.Migrations
                     b.Property<string>("CuentaNumeroCuenta")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("CuotaID")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("FechaFin")
                         .HasColumnType("datetime2");
@@ -238,14 +240,10 @@ namespace CoopDEJC.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PrestamoId"));
 
-                    b.Property<string>("CedulaCliente")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<string>("ClienteCedula")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("CedulaFiador")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("CuotaPrestamoID")
+                    b.Property<int>("CuotasPagadas")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("FechaFin")
@@ -257,25 +255,20 @@ namespace CoopDEJC.Migrations
                     b.Property<string>("FiadorCedula")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("GarantiaID")
-                        .HasColumnType("int");
-
                     b.Property<int>("Interes")
                         .HasColumnType("int");
 
                     b.Property<int>("Monto")
                         .HasColumnType("int");
 
-                    b.Property<string>("UsuarioCedula")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("ValorGarantias")
+                        .HasColumnType("int");
 
                     b.HasKey("PrestamoId");
 
+                    b.HasIndex("ClienteCedula");
+
                     b.HasIndex("FiadorCedula");
-
-                    b.HasIndex("GarantiaID");
-
-                    b.HasIndex("UsuarioCedula");
 
                     b.ToTable("Prestamos");
                 });
@@ -299,18 +292,37 @@ namespace CoopDEJC.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CoopDEJC.Models.CoopDBModels.Inversion", null)
+                    b.HasOne("CoopDEJC.Models.CoopDBModels.Inversion", "Inversion")
                         .WithMany("Cuotas")
-                        .HasForeignKey("InversionID");
+                        .HasForeignKey("InversionID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("Cuenta");
+
+                    b.Navigation("Inversion");
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.CuotaPrestamo", b =>
                 {
-                    b.HasOne("CoopDEJC.Models.CoopDBModels.Prestamo", null)
+                    b.HasOne("CoopDEJC.Models.CoopDBModels.Prestamo", "Prestamo")
                         .WithMany("Cuotas")
-                        .HasForeignKey("PrestamoId");
+                        .HasForeignKey("PrestamoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Prestamo");
+                });
+
+            modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.Garantia", b =>
+                {
+                    b.HasOne("CoopDEJC.Models.CoopDBModels.Prestamo", "Prestamo")
+                        .WithMany("Garantias")
+                        .HasForeignKey("PrestamoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Prestamo");
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.Inversion", b =>
@@ -332,23 +344,15 @@ namespace CoopDEJC.Migrations
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.Prestamo", b =>
                 {
+                    b.HasOne("CoopDEJC.Models.CoopDBModels.Cliente", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("ClienteCedula");
+
                     b.HasOne("CoopDEJC.Models.CoopDBModels.Cliente", "Fiador")
                         .WithMany()
                         .HasForeignKey("FiadorCedula");
 
-                    b.HasOne("CoopDEJC.Models.CoopDBModels.Garantia", "Garantia")
-                        .WithMany()
-                        .HasForeignKey("GarantiaID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CoopDEJC.Models.CoopDBModels.Cliente", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("UsuarioCedula");
-
                     b.Navigation("Fiador");
-
-                    b.Navigation("Garantia");
 
                     b.Navigation("Usuario");
                 });
@@ -366,6 +370,8 @@ namespace CoopDEJC.Migrations
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.Prestamo", b =>
                 {
                     b.Navigation("Cuotas");
+
+                    b.Navigation("Garantias");
                 });
 #pragma warning restore 612, 618
         }

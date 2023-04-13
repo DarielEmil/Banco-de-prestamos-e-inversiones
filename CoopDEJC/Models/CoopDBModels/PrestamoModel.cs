@@ -15,25 +15,18 @@ namespace CoopDEJC.Models.CoopDBModels
         public int Interes { get; set; }
 
         //Union con la tabla clientes para el usuario
-        [ForeignKey("CedulaCliente")]
-        public string CedulaCliente { get; set; } = string.Empty;
+        [ForeignKey("ClienteCedula")]
         public Cliente Usuario { get; set; } = new Cliente();
 
         //Union con la tabla clientes para el fiador
-        [ForeignKey("CedulaFiador")]
-        public string? CedulaFiador { get; set; } = string.Empty;
-        public Cliente Fiador { get; set; } = new Cliente();
+        [ForeignKey("FiadorCedula")]
+        public Cliente? Fiador { get; set; } = new Cliente();
 
-        //Union con la tabla Garantias
-        [ForeignKey("GarantiaID")]
-        public int GarantiaID { get; set; }
-        public Garantia Garantia { get; set; } = new Garantia();
+        public int ValorGarantias{ get; set; }
+        public List<Garantia> Garantias { get; set; } = new List<Garantia>();
 
-        //Union con la tabla CuotasPrestamos
-        [ForeignKey("CuotaPrestamoID")]
-        public int CuotaPrestamoID { get; set; }
+        public int CuotasPagadas { get; set; } = 0;
         public List<CuotaPrestamo> Cuotas { get; set; } = new List<CuotaPrestamo>();
-
     }
 
     public class Garantia
@@ -43,6 +36,9 @@ namespace CoopDEJC.Models.CoopDBModels
         public int GarntiaID { get; set; }
         public string Tipo { get; set; } = string.Empty;
 
+        //Union con la tabla Garantias
+        [ForeignKey("PrestamoId")]
+        public Prestamo Prestamo { get; set; } = new Prestamo();
     }
     public class CuotaPrestamo
     {
@@ -54,5 +50,11 @@ namespace CoopDEJC.Models.CoopDBModels
         public DateTime FechaRealizado { get; set; } = DateTime.Now;
         public string Tipo { get; set; } = string.Empty;
         public Guid Codigo { get; set; } = new Guid();
+
+        //Union con la tabla Prestamos
+        [ForeignKey("PrestamoId")]
+        public int PrestamoId { get; set; }
+        public Prestamo Prestamo { get; set;} = new Prestamo();
+
     }
 }

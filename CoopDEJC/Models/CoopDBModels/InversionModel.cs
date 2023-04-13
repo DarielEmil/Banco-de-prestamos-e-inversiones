@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace CoopDEJC.Models.CoopDBModels
 {
@@ -19,15 +20,12 @@ namespace CoopDEJC.Models.CoopDBModels
         public string CedulaCliente { get; set; } = string.Empty;
         public Cliente Usuario { get; set; } = new Cliente();
 
-        //Union con la tabla Cuotas
-        [ForeignKey("CuotaId")]
-        public int CuotaID { get; set; }
-        public List<CuotaInversion> Cuotas { get; set; } = new List<CuotaInversion>();
-        
         //Union con la tabla cuentas
         [ForeignKey("CuentaID")]
         public int CuentaID { get; set; }
         public CuentaBanco Cuenta { get; set; } = new CuentaBanco();
+
+        public List<CuotaInversion> Cuotas { get; set; } = new List<CuotaInversion>();
     }
 
     public class CuotaInversion
@@ -42,10 +40,16 @@ namespace CoopDEJC.Models.CoopDBModels
         public string Tipo { get; set; } = string.Empty;
         public Guid Codigo { get; set; } = new Guid();
 
+        //Union con la tabla Inversiones
+        [ForeignKey("InversionID")]
+        public int InversionID { get; set; }
+        public Inversion Inversion { get; set; } = new Inversion();
+
         //Union con la tabla cuentas
         [ForeignKey("CuentaID")]
         public int CuentaID { get; set; }
         public CuentaBanco Cuenta {get; set;} = new CuentaBanco();
 
     }
+
 }

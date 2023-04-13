@@ -8,8 +8,9 @@ namespace CoopDEJC.Models.CoopDBModels
     public class CoopContext : DbContext
     {
         public CoopContext(DbContextOptions<CoopContext> options)
-        :base(options){
-        
+        : base(options)
+        {
+
         }
 
         //Tablas
@@ -21,10 +22,12 @@ namespace CoopDEJC.Models.CoopDBModels
         public DbSet<Inversion> Inversiones { get; set; }
         public DbSet<CuotaInversion> CuotasInversiones { get; set; }
 
-        //Creacion de la Base de Datos
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer(Configuration.GetConnectionString("CoopContext"));
-        //}
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Inversion>()
+                .HasMany(c => c.Cuotas)
+                .WithOne(e => e.Inversion)
+                .OnDelete(DeleteBehavior.Restrict);
+        }
     }
 }

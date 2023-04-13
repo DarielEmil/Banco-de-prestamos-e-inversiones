@@ -31,19 +31,6 @@ namespace CoopDEJC.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Garantias",
-                columns: table => new
-                {
-                    GarntiaID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Garantias", x => x.GarntiaID);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "CuentasBanco",
                 columns: table => new
                 {
@@ -73,32 +60,24 @@ namespace CoopDEJC.Migrations
                     FechaInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaFin = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Interes = table.Column<int>(type: "int", nullable: false),
-                    CedulaCliente = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UsuarioCedula = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    CedulaFiador = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ClienteCedula = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     FiadorCedula = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    GarantiaID = table.Column<int>(type: "int", nullable: false),
-                    CuotaPrestamoID = table.Column<int>(type: "int", nullable: false)
+                    ValorGarantias = table.Column<int>(type: "int", nullable: false),
+                    CuotasPagadas = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Prestamos", x => x.PrestamoId);
                     table.ForeignKey(
+                        name: "FK_Prestamos_Clientes_ClienteCedula",
+                        column: x => x.ClienteCedula,
+                        principalTable: "Clientes",
+                        principalColumn: "Cedula");
+                    table.ForeignKey(
                         name: "FK_Prestamos_Clientes_FiadorCedula",
                         column: x => x.FiadorCedula,
                         principalTable: "Clientes",
                         principalColumn: "Cedula");
-                    table.ForeignKey(
-                        name: "FK_Prestamos_Clientes_UsuarioCedula",
-                        column: x => x.UsuarioCedula,
-                        principalTable: "Clientes",
-                        principalColumn: "Cedula");
-                    table.ForeignKey(
-                        name: "FK_Prestamos_Garantias_GarantiaID",
-                        column: x => x.GarantiaID,
-                        principalTable: "Garantias",
-                        principalColumn: "GarntiaID",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -113,7 +92,6 @@ namespace CoopDEJC.Migrations
                     Interes = table.Column<int>(type: "int", nullable: false),
                     CedulaCliente = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UsuarioCedula = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    CuotaID = table.Column<int>(type: "int", nullable: false),
                     CuentaID = table.Column<int>(type: "int", nullable: false),
                     CuentaNumeroCuenta = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
@@ -144,7 +122,7 @@ namespace CoopDEJC.Migrations
                     FechaRealizado = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Codigo = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    PrestamoId = table.Column<int>(type: "int", nullable: true)
+                    PrestamoId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -153,7 +131,28 @@ namespace CoopDEJC.Migrations
                         name: "FK_CuotasPrestamos_Prestamos_PrestamoId",
                         column: x => x.PrestamoId,
                         principalTable: "Prestamos",
-                        principalColumn: "PrestamoId");
+                        principalColumn: "PrestamoId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Garantias",
+                columns: table => new
+                {
+                    GarntiaID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PrestamoId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Garantias", x => x.GarntiaID);
+                    table.ForeignKey(
+                        name: "FK_Garantias_Prestamos_PrestamoId",
+                        column: x => x.PrestamoId,
+                        principalTable: "Prestamos",
+                        principalColumn: "PrestamoId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -167,9 +166,9 @@ namespace CoopDEJC.Migrations
                     FechaRealizado = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Codigo = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    InversionID = table.Column<int>(type: "int", nullable: false),
                     CuentaID = table.Column<int>(type: "int", nullable: false),
-                    CuentaNumeroCuenta = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    InversionID = table.Column<int>(type: "int", nullable: true)
+                    CuentaNumeroCuenta = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -184,7 +183,8 @@ namespace CoopDEJC.Migrations
                         name: "FK_CuotasInversiones_Inversiones_InversionID",
                         column: x => x.InversionID,
                         principalTable: "Inversiones",
-                        principalColumn: "InversionID");
+                        principalColumn: "InversionID",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
@@ -208,6 +208,11 @@ namespace CoopDEJC.Migrations
                 column: "PrestamoId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Garantias_PrestamoId",
+                table: "Garantias",
+                column: "PrestamoId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Inversiones_CuentaNumeroCuenta",
                 table: "Inversiones",
                 column: "CuentaNumeroCuenta");
@@ -218,19 +223,14 @@ namespace CoopDEJC.Migrations
                 column: "UsuarioCedula");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Prestamos_ClienteCedula",
+                table: "Prestamos",
+                column: "ClienteCedula");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Prestamos_FiadorCedula",
                 table: "Prestamos",
                 column: "FiadorCedula");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Prestamos_GarantiaID",
-                table: "Prestamos",
-                column: "GarantiaID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Prestamos_UsuarioCedula",
-                table: "Prestamos",
-                column: "UsuarioCedula");
         }
 
         /// <inheritdoc />
@@ -243,6 +243,9 @@ namespace CoopDEJC.Migrations
                 name: "CuotasPrestamos");
 
             migrationBuilder.DropTable(
+                name: "Garantias");
+
+            migrationBuilder.DropTable(
                 name: "Inversiones");
 
             migrationBuilder.DropTable(
@@ -250,9 +253,6 @@ namespace CoopDEJC.Migrations
 
             migrationBuilder.DropTable(
                 name: "CuentasBanco");
-
-            migrationBuilder.DropTable(
-                name: "Garantias");
 
             migrationBuilder.DropTable(
                 name: "Clientes");

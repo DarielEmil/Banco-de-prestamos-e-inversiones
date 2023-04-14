@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "My Profile";
+}
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="header">
+            <a href=@Url.Action("SignOut","Login")>Sign Out</a>
+        </div>
+        <div class="container">
+            <div class="title">
+                <h2>My Profile</h2>
+            </div>
+            <form>
+                <div class="textboxes">
+                    <label for="name">Name</label>
+                    <input name="name" type="text" maxlength="100" required />
+
+                    <label for="lname">Last Name</label>
+                    <input name="lname" type="text" maxlength="100" required />
+
+                    <label for="email">Email</label>
+                    <input name="email" type="email" maxlength="100" required />
+                </div>
+                <div class="textboxes">
+                    <label for="id">ID Card</label>
+                    <input name="id" type="text" maxlength="13" minlength="13" required />
+
+                    <label for="location">Location</label>
+                    <input name="location" type="text" required />
+
+                    <label for="phone">Phone Number</label>
+                    <input name="phone" type="tel" maxlength="12" minlength="12" required />
+                </div>
+                <div class="textboxes">
+                    <label for="password">Password</label>
+                    <input name="password" type="password" maxlength="100" required />
+
+                    <label for="securityq">Security Question</label>
+                    <input name="securityq" type="text" required />
+                </div>
+                <div class="btnsubmit">
+                    <input type="submit" value="Save changes" />
+                    <button id="btnmacc">Manage Account</button>
+                </div>
+
+            </form>
+        </div>
+    </body>
+</html>

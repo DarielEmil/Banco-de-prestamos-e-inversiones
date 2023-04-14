@@ -13,10 +13,10 @@
     </div>
     <div class="container">
         <form action="Login" method="post">
-            <center>
+            <center class="formBox">
                 <div class="title">
                     <img src="~/img/userlogo.png" />
-                    <p>Register</p>
+                    <h2>Register</h2>
                 </div>
                 <div class="textboxes">
                     <label for="email">Email</label>
@@ -47,6 +47,10 @@
                 <div class="textboxes">
                     <label for="securityq">Security Question</label>
                     <input name="securityq" type="text" required />
+                </div>
+                <div class="textboxes">
+                    <label for="bankac">Bank Account</label>
+                    <input name="bankac" type="text" minlength="20" maxlength="20" required />
                 </div>
                 <div class="btnsubmit">
                     <input type="submit" value="Register" />

@@ -55,7 +55,3 @@ C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\obj\Debug\net6.0\refint\
 C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\obj\Debug\net6.0\CoopDEJC.pdb
 C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\obj\Debug\net6.0\CoopDEJC.genruntimeconfig.cache
 C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\obj\Debug\net6.0\ref\CoopDEJC.dll
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\Syncfusion.EJ2.dll
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\Syncfusion.Licensing.dll
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\CoopDEJC.csproj.CopyComplete

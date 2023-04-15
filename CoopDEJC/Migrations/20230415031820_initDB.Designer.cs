@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CoopDEJC.Migrations
 {
     [DbContext(typeof(CoopContext))]
-    [Migration("20230413104351_InitDB")]
-    partial class InitDB
+    [Migration("20230415031820_initDB")]
+    partial class initDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

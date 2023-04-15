@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\CoopDEJC.csproj": {}
+    "C:\\Users\\Ryuk\\OneDrive\\Desktop\\Banco de prestamos\\Banco-de-prestamos-e-inversiones\\Jesus\\CoopDEJC\\CoopDEJC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\CoopDEJC.csproj": {
+    "C:\\Users\\Ryuk\\OneDrive\\Desktop\\Banco de prestamos\\Banco-de-prestamos-e-inversiones\\Jesus\\CoopDEJC\\CoopDEJC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\CoopDEJC.csproj",
+        "projectUniqueName": "C:\\Users\\Ryuk\\OneDrive\\Desktop\\Banco de prestamos\\Banco-de-prestamos-e-inversiones\\Jesus\\CoopDEJC\\CoopDEJC.csproj",
         "projectName": "CoopDEJC",
-        "projectPath": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\CoopDEJC.csproj",
-        "packagesPath": "C:\\Users\\darke\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\obj\\",
+        "projectPath": "C:\\Users\\Ryuk\\OneDrive\\Desktop\\Banco de prestamos\\Banco-de-prestamos-e-inversiones\\Jesus\\CoopDEJC\\CoopDEJC.csproj",
+        "packagesPath": "C:\\Users\\Ryuk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ryuk\\OneDrive\\Desktop\\Banco de prestamos\\Banco-de-prestamos-e-inversiones\\Jesus\\CoopDEJC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\darke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ryuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

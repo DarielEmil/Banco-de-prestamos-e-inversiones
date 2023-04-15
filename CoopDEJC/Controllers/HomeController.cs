@@ -1,4 +1,6 @@
-﻿using CoopDEJC.Models;
+﻿using CoopDEJC.Login;
+using CoopDEJC.Models;
+using CoopDEJC.Models.CoopDBModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -28,5 +30,7 @@ namespace CoopDEJC.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+       
     }
 }

@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Manage Account";
+}
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="maccount" id="idmaccount">
+            <center class="formBox">
+                <div class="container">
+                    <div class="title">
+                        <h2>Accounts</h2>
+                    </div>
+                    <div class="naccount">
+                    <button id="btnnacc" onclick=location.href ="@Url.Action("NewAccount","Home")">New Account</button>
+                </div>
+                    <div class="acclist">
+                        <!--Esto va con un foreach, supongo xd-->
+                        <ul>
+                            <li>
+                                <span>XXX-XXXX-XXX</span>
+                                <p>Investments</p>
+                            </li>
+                            <li>
+                                <span>XXX-XXXX-XXX</span>
+                                <p>Loans</p>
+                            </li>
+                            <li>
+                                <span>XXX-XXXX-XXX</span>
+                                <p>Investments</p>
+                            </li>
+                            <li>
+                                <span>XXX-XXXX-XXX</span>
+                                <p>Investments</p>
+                            </li>
+                            <li>
+                                <span>XXX-XXXX-XXX</span>
+                                <p>Loans</p>
+                            </li>
+                            <li>
+                                <span>XXX-XXXX-XXX</span>
+                                <p>Investments</p>
+                            </li>
+                            <li>
+                                <span>XXX-XXXX-XXX</span>
+                                <p>Investments</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer">
+
+                </div>
+            </center>
+        </div>
+    </body>
+
+</html>

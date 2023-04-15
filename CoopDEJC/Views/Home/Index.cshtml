@@ -7,7 +7,39 @@
     </head>
 
     <body>
-        <div class="header">
+        <!--Ventana Emergente-->
+    <div class="faccount" id="idfaccount">
+        <center class="formBox">
+            <div class="container">
+                <div class="title">
+                    <h2>Your first account</h2>
+                </div>
+                <form>
+                    <div class="textboxes">
+                        <input type="text" minlength="10" maxlength="10" placeholder = "Account Number" required />
+                        <input type="text" maxlenght = "100" placeholder = "Bank Name" required />
+                    </div>
+                    <div class="textboxes">
+                        <input type="text" maxlength="100" placeholder = "Location" required />
+
+                        <!--Agregar un color gris a la primera opción, para que quede a juego con los demás placeholders-->
+                        <select id="typeacc" required>
+                            <option value="" disabled selected>Type</option>
+                            <option value="1">Cuenta Corriente</option>
+                            <option value="2">Cuenta con Chequera</option>
+                            <option value="3">Cuenta de Ahorro</option>
+                            <option value="4">Cuenta de Nómina</option>
+                            <option value="5">Cuenta en Dólares</option>
+                        </select>
+                    </div>
+                    <div class="btnsubmit">
+                        <input type="submit" value="Create Account" />
+                    </div>
+                </form>
+            </div>
+        </center>
+    </div>
+@*        <div class="header">
             <a href=@Url.Action("SignOut","Login")>Sign Out</a>
         </div>
 
@@ -45,7 +77,7 @@
             </div>
  
             <div class="calendar">
-                @*Aquí va el calendario*@
+                <!--Aquí va el calendario-->
             </div>
             <div class="invlist">
                 <h3>Investment List</h3>
@@ -76,6 +108,6 @@
         </div>
         <div class="footer">
 
-        </div>
+        </div>*@
     </body>
 </html>

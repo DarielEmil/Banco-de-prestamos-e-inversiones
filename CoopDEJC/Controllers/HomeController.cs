@@ -16,6 +16,14 @@ namespace CoopDEJC.Controllers
         {
             return View();
         }
+        public IActionResult ManageAccount()
+        {
+            return View();
+        }
+        public IActionResult NewAccount()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

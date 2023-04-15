@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+//Conexion a la Base de datos
 builder.Services.AddDbContext<CoopContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CoopConnection"))
 );

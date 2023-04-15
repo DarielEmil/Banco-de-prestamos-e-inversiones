@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Configuration;
+using CoopDEJC.Models;
 
 namespace CoopDEJC.Models.CoopDBModels
 {
@@ -29,5 +30,9 @@ namespace CoopDEJC.Models.CoopDBModels
                 .WithOne(e => e.Inversion)
                 .OnDelete(DeleteBehavior.Restrict);
         }
+
+        public DbSet<CoopDEJC.Models.Cliente>? Cliente { get; set; }
+
+
     }
 }

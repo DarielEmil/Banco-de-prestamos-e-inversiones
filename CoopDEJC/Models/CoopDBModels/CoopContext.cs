@@ -33,8 +33,7 @@ namespace CoopDEJC.Models.CoopDBModels
                 .OnDelete(DeleteBehavior.Restrict);
         }
 
-        public DbSet<CoopDEJC.Models.Cliente>? Cliente { get; set; }
-
+ 
 
     }
 }

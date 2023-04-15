@@ -1,0 +1,47 @@
+﻿@model IEnumerable<CoopDEJC.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Prueba";
+}
+
+<h1>Prueba</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cedula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Correo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clave)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cedula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Correo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Clave)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Cedula">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Cedula">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Cedula">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,19 +1,42 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CoopDEJC.Models;
 using CoopDEJC.Models.CoopDBModels;
+<<<<<<< HEAD
 using CoopDEJC.Login;
 
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Diagnostics.Eventing.Reader;
+=======
+using Microsoft.EntityFrameworkCore;
+>>>>>>> e9897c7c7ad4057b8d197e3207e2b94f51a7e187
 
 namespace CoopDEJC.Controllers
 {
     public class LoginController : Controller
     {
+        private readonly CoopContext _context;
+
+        public LoginController(CoopContext context)
+        {
+            _context = context;
+        }
         public IActionResult Login()
         {
             return View();
+        }
+
+        public IActionResult Prueba (string email, string password)
+        {
+            var cliente = from d in _context.Clientes
+                          where d.Correo==email && d.Clave==password
+                            select new Models.Cliente
+                            {
+                            Cedula= d.Cedula,
+                            Correo= d.Correo,
+                            Clave= d.Clave
+                            };
+             return View(cliente);
         }
 
         public IActionResult Register()
@@ -21,6 +44,7 @@ namespace CoopDEJC.Controllers
             return View();
         }
 
+<<<<<<< HEAD
         //Autenticador
         [HttpPost]
         public IActionResult Login1(string email, string password)
@@ -60,6 +84,9 @@ namespace CoopDEJC.Controllers
 
             return View();
         }
+=======
+
+>>>>>>> e9897c7c7ad4057b8d197e3207e2b94f51a7e187
 
 
         //[HttpPost]

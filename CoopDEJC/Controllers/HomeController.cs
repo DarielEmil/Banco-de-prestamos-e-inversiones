@@ -17,7 +17,10 @@ namespace CoopDEJC.Controllers
         {
             return View();
         }
-
+        public IActionResult MyProfile()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

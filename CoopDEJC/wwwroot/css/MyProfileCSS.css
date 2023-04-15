@@ -1,0 +1,248 @@
+﻿body {
+    position: relative;
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        "a b b"
+        "a c c";
+    grid-template-columns: 10% 90% 0;
+    grid-template-rows: 10% 90% ;
+}
+
+html * {
+    font-family: 'Space Mono', monospace;
+}
+.wrapper {
+    width: inherit;
+    height: 100%;
+    background: #112B3C;
+    grid-area: a;
+}
+.sidebar{
+    width:inherit;
+    height:inherit;
+}
+.sidebar svg{
+    width:100%;
+    height: 4%;
+    margin: 1rem 0 0 0;
+}
+.sidebar p{
+    color:#EFEFEF;
+    font-weight:bold;
+    text-align:center;
+}
+.sidebar ul{
+    display:grid;
+    justify-content:center;
+    padding:6rem 0 0 0;
+    list-style:none;
+    height:15rem
+}
+.sidebar a{
+    display:flex;
+    justify-content:start;
+    justify-items:center;
+    align-content:center;
+    align-items:center;
+}
+
+.sidebar span{
+    display:flex;
+    color: #EFEFEF;
+    font-size: 14px;
+    font-weight:bold;
+    margin: 0 0 0 5px;
+    transition: 400ms ease-in-out;
+}
+
+.sidebar span:hover{
+    color: #F66B0E;
+}
+/*HEADER CSS*/
+.header{
+    display:flex;
+    justify-content:end;
+    height:2rem;
+    width:100%;
+    grid-area:b;
+}
+.header a{
+    margin: 10px 1rem 0 0;
+    text-decoration:none;
+    font-weight:bold;
+    color: #112B3C;
+    transition: 400ms ease-out;
+}
+.header a:hover{
+    color: #F66B0E;
+}
+/* CONTAINER CSS*/
+
+.container{
+    display:grid;
+    grid-area:c;
+    grid-template-areas:
+        "a";
+    grid-template-rows:20% 70% 10%;
+}
+.title{
+    display:grid;
+    justify-content:start;
+    margin: 0 0 0 3rem;
+    width:inherit;
+    grid-area: a;
+    grid-template-rows: 4.8rem;
+}
+.title h2{
+    color: #112B3C;
+    font-weight: bold;
+}
+.title span{
+    position:relative;
+    background: #F66B0E;
+    bottom: 1rem;
+    width: 3rem;
+    height:8px;
+    border-radius: 2rem;
+}
+
+.formbox{
+    display: grid;
+    margin: 0 0 0 3rem;
+    grid-template-rows: 4rem 4rem 4rem 0;
+    
+}
+.textboxes{
+    display:flex;
+}
+.textboxes input{
+    position:relative;
+    background: transparent;
+    border: 2px solid rgb(17, 43, 60,0.4);
+    outline: none;
+    width: 12rem;
+    height: 2.6rem;
+    resize: none;
+    color: #424642;
+    text-indent: 6px;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    border-radius: 5px;
+    transition: all 1s;
+}
+/*input {
+    border: solid rgb(17, 43, 60,0.2);
+    resize: none;
+    border-radius: 0.4rem;
+}*/
+input::placeholder{
+    color:transparent;
+}
+label{
+    position: relative;
+    background-color: #FCFFF5;
+    color: #B2B1B9;
+    width: 2.9rem;
+    height: 1rem;
+    bottom: 1rem;
+    padding: 0.25rem 0.5rem;
+    /*left: 5px;*/
+    right:11.6rem;
+    pointer-events: none;
+    font-size: medium;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 2rem;
+    transition: all 0.35s;
+}
+
+#lblLast{
+    right:13rem;
+    width: 6.2rem;
+}
+#lblMail{
+    right:21.6rem;
+    width:3.4rem;
+}
+#lblID{
+    width: 1.4rem;
+}
+#lblPass{
+    width: 5.2rem;
+}
+#lblLocat{
+    width: 5.4rem;
+}
+#lblNum{
+    right:15.2rem;
+    width: 8.2rem;
+}
+#lblSect{
+    right:18.2rem;
+    width: 11.6rem;
+}
+
+#inptSect{
+    right:3.8rem;
+}
+#inptLast{
+    right:1.5rem;
+}
+#inptMail{
+    width: 16rem;
+    right:6rem;
+}
+#inptNum{
+    right:3.7rem;
+}
+input:focus{
+    border: 2px solid #1e2227;
+}
+
+#inptName:focus ~ #lblName, #inptLast:focus ~ #lblLast, 
+#inptMail:focus ~ #lblMail, #inptID:focus ~ #lblID,
+#inptLocat:focus ~ #lblLocat, #inptNum:focus ~ #lblNum,
+#inptPass:focus ~ #lblPass, #inptSect:focus ~ #lblSect{
+    color: #1e2227;
+}
+/*
+#inptName:valid + #lblName {
+    transform: translateY(-95%);
+}*/
+#inptSect{
+    width: 15rem;
+}
+
+#subtmit {
+    width: 8rem;
+    height: 2rem;
+    background: #F66B0E;
+    border: none;
+    border-radius: 0.6rem;
+    color: #EFEFEF;
+    font-weight: bold;
+    cursor: pointer;
+    text-align:center;
+    transition: 600ms ease-out
+}
+#subtmit:hover{
+    color:#205375;
+}
+.btnsubmit button {
+    width: 10rem;
+    height: 2rem;
+    background: #205375;
+    border: none;
+    border-radius: 0.6rem;
+    color: #EFEFEF;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: 600ms ease-out
+}
+.btnsubmit button:hover {
+    color: #F66B0E;
+}

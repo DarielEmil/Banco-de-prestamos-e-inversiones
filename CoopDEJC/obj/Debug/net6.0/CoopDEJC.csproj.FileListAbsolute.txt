@@ -1,34 +1,3 @@
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\appsettings.json
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\CoopDEJC.staticwebassets.runtime.json
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\CoopDEJC.exe
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\CoopDEJC.deps.json
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\CoopDEJC.runtimeconfig.json
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\CoopDEJC.dll
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\CoopDEJC.pdb
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\CoopDEJC.csproj.AssemblyReference.cache
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\CoopDEJC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\CoopDEJC.AssemblyInfoInputs.cache
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\CoopDEJC.AssemblyInfo.cs
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\CoopDEJC.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\CoopDEJC.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\CoopDEJC.RazorAssemblyInfo.cache
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\CoopDEJC.RazorAssemblyInfo.cs
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\staticwebassets\msbuild.CoopDEJC.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\staticwebassets\msbuild.build.CoopDEJC.props
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CoopDEJC.props
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CoopDEJC.props
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\scopedcss\bundle\CoopDEJC.styles.css
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\scopedcss\projectbundle\CoopDEJC.bundle.scp.css
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\CoopDEJC.dll
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\refint\CoopDEJC.dll
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\CoopDEJC.pdb
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\CoopDEJC.genruntimeconfig.cache
-C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\ref\CoopDEJC.dll
 C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\bin\Debug\net6.0\appsettings.json
 C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\bin\Debug\net6.0\CoopDEJC.staticwebassets.runtime.json
@@ -55,3 +24,7 @@ C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\obj\Debug\net6.0\refint\
 C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\obj\Debug\net6.0\CoopDEJC.pdb
 C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\obj\Debug\net6.0\CoopDEJC.genruntimeconfig.cache
 C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\obj\Debug\net6.0\ref\CoopDEJC.dll
+C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\CoopDEJC.exe
+C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\CoopDEJC.dll
+C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\bin\Debug\net6.0\CoopDEJC.pdb
+C:\Users\User\Desktop\Banco-de-prestamos-e-inversiones\CoopDEJC\obj\Debug\net6.0\CoopDEJC.pdb

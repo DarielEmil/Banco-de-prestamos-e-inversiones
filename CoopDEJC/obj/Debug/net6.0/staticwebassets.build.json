@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jeghCcFV+d3R565w69Vt7a+gdDig886V/VWKfVDWWvo=",
+  "Hash": "3hOjniHg6neI/QiL5hsCTX94Lgn+G5yM8ZZXWLxaG+w=",
   "Source": "CoopDEJC",
   "BasePath": "_content/CoopDEJC",
   "Mode": "Default",
@@ -238,12 +238,12 @@
       "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\userlogo.png",
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\user-line.svg",
       "SourceId": "CoopDEJC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
       "BasePath": "_content/CoopDEJC",
-      "RelativePath": "img/userlogo.png",
+      "RelativePath": "img/user-line.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -252,7 +252,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\userlogo.png"
+      "OriginalItemSpec": "wwwroot\\img\\user-line.svg"
     },
     {
       "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\waves1.png",

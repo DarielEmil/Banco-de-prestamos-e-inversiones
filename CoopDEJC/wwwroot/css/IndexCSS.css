@@ -1,0 +1,142 @@
+﻿body {
+    position: relative;
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        "a b b"
+        "a c c";
+    grid-template-columns: 10% 90% 0;
+    /*grid-template-rows: 10% 60% 30%;*/
+}
+
+html * {
+    font-family: 'Space Mono', monospace;
+}
+
+/*SIDEBAR CSS*/
+
+.wrapper {
+    width: inherit;
+    height: 100%;
+    background: #112B3C;
+    grid-area: a;
+}
+.sidebar{
+    width:inherit;
+    height:inherit;
+}
+.sidebar svg{
+    width:100%;
+    height: 4%;
+    margin: 1rem 0 0 0;
+}
+.sidebar p{
+    color:#EFEFEF;
+    font-weight:bold;
+    text-align:center;
+}
+.sidebar ul{
+    display:grid;
+    justify-content:center;
+    padding:6rem 0 0 0;
+    list-style:none;
+    height:15rem
+}
+.sidebar a{
+    display:flex;
+    justify-content:start;
+    justify-items:center;
+    align-content:center;
+    align-items:center;
+}
+
+.sidebar span{
+    display:flex;
+    color: #EFEFEF;
+    font-size: 14px;
+    font-weight:bold;
+    margin: 0 0 0 5px;
+    transition: 400ms ease-in-out;
+}
+
+.sidebar span:hover{
+    color: #F66B0E;
+}
+/*HEADER CSS*/
+.header{
+    display:flex;
+    justify-content:end;
+    height:2rem;
+    width:100%;
+    grid-area:b;
+}
+.header a{
+    margin: 10px 1rem 0 0;
+    text-decoration:none;
+    font-weight:bold;
+    color: #112B3C;
+    transition: 400ms ease-out;
+}
+.header a:hover{
+    color: #F66B0E;
+}
+/*CONTAINER CSS*/
+.container{
+    display:grid;
+    grid-area:c;
+    grid-template-areas:
+        "a a"
+        "c b"
+        "d e";
+}
+.title{
+    display:grid;
+    justify-content:start;
+    margin: 0 0 0 3rem;
+    width:inherit;
+    grid-area: a;
+}
+.title h2{
+    color: #112B3C;
+    font-weight: bold;
+}
+.title span{
+    position:relative;
+    background: #F66B0E;
+    bottom: 1rem;
+    width: 3rem;
+    height:8px;
+    border-radius: 2rem;
+}
+.calendar{
+    grid-area: b; 
+}
+.suminfo{
+    display:grid;
+    width:inherit;
+    height:inherit;
+    justify-content:center;
+    grid-area:c;
+    grid-template-areas:
+        "a a"
+        "b c";  
+}
+.investment {
+    width: 20rem;
+    height: 2rem;
+    background: #205375;
+    grid-area: a;
+}
+.debts{
+    grid-area: b;
+}
+.inverted{
+    grid-area: c;
+}
+
+.invlist{
+    grid-area:d;
+}
+.deblist{
+    grid-area:e;
+}

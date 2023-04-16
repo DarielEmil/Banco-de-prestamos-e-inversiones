@@ -63,7 +63,7 @@ namespace CoopDEJC.Controllers
                            }).FirstOrDefault();
             if (cliente?.Correo != null && cliente?.Clave != null)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Usuario", "Home", cliente);
             } else
             {
                 //Aqui necesito retornar una alerta,dariel o cesar no quise investigar mucho porque hay que bregar con un poco de frontend
@@ -75,8 +75,9 @@ namespace CoopDEJC.Controllers
 
         public IActionResult SignOut()
         {
-            return RedirectToAction("Index");
+            return RedirectToAction("Login", "Login");
         }
+
         public IActionResult Register()
         {
             return View();

@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "Lhs5XdT8Xrj1od34jgx9XuQaqqTfbj01sfdPcXRcJRQ=",
+=======
+  "Hash": "jeghCcFV+d3R565w69Vt7a+gdDig886V/VWKfVDWWvo=",
+>>>>>>> 87ef6e7d5b08fb81c74f15f5bc4b30bf4ff5f458
   "Source": "CoopDEJC",
   "BasePath": "_content/CoopDEJC",
   "Mode": "Default",
@@ -51,7 +55,28 @@
       "OriginalItemSpec": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CoopDEJC.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\css\\LoginCSS.css",
+=======
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\css\\IndexCSS.css",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "css/IndexCSS.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\IndexCSS.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\css\\LoginCSS.css",
+>>>>>>> 87ef6e7d5b08fb81c74f15f5bc4b30bf4ff5f458
       "SourceId": "CoopDEJC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\",
@@ -68,7 +93,45 @@
       "OriginalItemSpec": "wwwroot\\css\\LoginCSS.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\css\\site.css",
+=======
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\css\\MyProfileCSS.css",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "css/MyProfileCSS.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\MyProfileCSS.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\css\\RegisterCSS.css",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "css/RegisterCSS.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\RegisterCSS.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\css\\site.css",
+>>>>>>> 87ef6e7d5b08fb81c74f15f5bc4b30bf4ff5f458
       "SourceId": "CoopDEJC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\",
@@ -102,7 +165,79 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\logo.png",
+=======
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\apps-line.svg",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "img/apps-line.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\apps-line.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\Home-Index.svg",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "img/Home-Index.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Home-Index.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\Investment.svg",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "img/Investment.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Investment.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\Loans.svg",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "img/Loans.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Loans.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\logo.png",
+>>>>>>> 87ef6e7d5b08fb81c74f15f5bc4b30bf4ff5f458
       "SourceId": "CoopDEJC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\",
@@ -136,7 +271,11 @@
       "OriginalItemSpec": "wwwroot\\img\\userlogo.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\waves1.png",
+=======
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\waves1.png",
+>>>>>>> 87ef6e7d5b08fb81c74f15f5bc4b30bf4ff5f458
       "SourceId": "CoopDEJC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\",
@@ -151,6 +290,26 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\waves1.png"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\waves2.png",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "img/waves2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\waves2.png"
+>>>>>>> 87ef6e7d5b08fb81c74f15f5bc4b30bf4ff5f458
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\waves2.png",

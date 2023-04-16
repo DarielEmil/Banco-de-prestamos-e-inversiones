@@ -5,7 +5,7 @@
     grid-template-rows: 10% 60% 30%;
 }
 html * {
-    font-family: 'Space Mono', monospace;;
+    font-family: 'Space Mono', monospace;
 }
 
 /* HEADER CSS */
@@ -45,7 +45,8 @@ html * {
 
 /*CONTAINER CSS*/
 .formBox{
-    width:18rem;
+    width:100%;
+    display: grid;
 }
 .container {
     position: relative;
@@ -70,19 +71,52 @@ html * {
 }
 
 .input_box {
-    background: #EFEFEF;
-    border: none;
+    background: transparent;
+    border: 2px solid rgb(239, 239, 239);
     outline: none;
-    border-radius: 0.4rem;
-    padding: 0 0 0 0.2rem;
+    width: 100%;
+    height: 2.5rem;
+    resize: none;
+    color: #EFEFEF;
+    text-indent: 6px;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    border-radius: 5px;
+    transition: all 1s;
 }
-.input_box:focus{
-    border:none;
-    outline:none;
+#input_name::placeholder {
+    color: transparent;
+}
+#lblName {
+    position: relative;
+    background-color: #112B3C;
+    color: #B2B1B9;
+    width: 3.1rem;
+    height: 1.4rem;
+    bottom: 2.2rem;
+    padding: 0.25rem 0.5rem;
+    left: 4px;
+    pointer-events: none;
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Exo', sans-serif;
+    letter-spacing: 1px;
+    border-radius: 2rem;
+    transition: all 0.35s;
+}
+#input_box:focus {
+    border: 2px solid #1e2227;
 }
 
-.input_box::placeholder{
-    padding:0 0 0 0.1rem;
+#input_box:focus ~ #lblName {
+    color: #1e2227;
+    transform: translateY(-105%)
+}
+
+#input_box:valid + #lblName {
+    transform: translateY(-105%)
 }
 .boxOption{
     display:flex;

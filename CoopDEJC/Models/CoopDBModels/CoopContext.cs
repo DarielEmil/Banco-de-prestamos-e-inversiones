@@ -5,10 +5,12 @@ namespace CoopDEJC.Models.CoopDBModels
     public class CoopContext : DbContext
     {
         public CoopContext(DbContextOptions<CoopContext> options)
-        : base(options)
+         : base(options)
         {
-
         }
+      
+
+
 
         //Tablas
         public DbSet<Cliente> Clientes { get; set; }
@@ -27,8 +29,7 @@ namespace CoopDEJC.Models.CoopDBModels
                 .OnDelete(DeleteBehavior.Restrict);
         }
 
-        public DbSet<CoopDEJC.Models.Cliente>? Cliente { get; set; }
-
+ 
 
     }
 }

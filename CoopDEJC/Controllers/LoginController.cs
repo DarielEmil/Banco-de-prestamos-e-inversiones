@@ -49,17 +49,28 @@ namespace CoopDEJC.Controllers
             return View("Register");
         }
 
-        public IActionResult Prueba(string email, string password)
+
+        //Autenticador ya conectado a la base de datos
+        public IActionResult Prueba (string email, string password)
         {
-            var cliente = from d in _context.Clientes
-                          where d.Correo == email && d.Clave == password
-                          select new Models.Cliente
-                          {
-                              Cedula = d.Cedula,
-                              Correo = d.Correo,
-                              Clave = d.Clave
-                          };
-            return View(cliente);
+            var cliente = (from d in _context.Clientes
+                           where d.Correo == email && d.Clave == password
+                           select new Models.Cliente
+                           {
+                               Cedula = d.Cedula,
+                               Correo = d.Correo,
+                               Clave = d.Clave
+                           }).FirstOrDefault();
+            if (cliente?.Correo != null && cliente?.Clave != null)
+            {
+                return RedirectToAction("Index", "Home");
+            } else
+            {
+                //Aqui necesito retornar una alerta,dariel o cesar no quise investigar mucho porque hay que bregar con un poco de frontend
+                return Content("<h3>Here's a custom content header</h3>", "text/html");
+            }
+            
+           
         }
 
         public IActionResult Register()

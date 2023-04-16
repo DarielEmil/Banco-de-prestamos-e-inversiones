@@ -48,7 +48,7 @@
                 <h2>My Profile</h2>
                 <span></span>
             </div>
-            <form class="formbox">
+        <form class="formbox" action=@Url.Action("SignOut") method="post">
                 <div class="textboxes">
                     <input id="inptName" name="name" type="text" maxlength="100" placeholder="Name" value=@Model.Nombre required />
                     <label id="lblName" for="name">Name</label>
@@ -57,11 +57,11 @@
                     <label id="lblLast" for="lname">Last Name</label>
 
                     
-                    <input id="inptMail" name="email" type="email" maxlength="100" autocomplete="off" value=@Model.Correo required />
+                    <input id="inptMail" name="email" type="email" maxlength="100" autocomplete="off" value=@Model.Correo readonly />
                     <label id= "lblMail" for="email">Email</label>
                 </div>
                 <div class="textboxes">
-                    <input id="inptID" name="id" type="text" maxlength="13" minlength="13" value=@Model.Cedula required />
+                    <input id="inptID" name="id" type="text" maxlength="13" minlength="13" value=@Model.Cedula readonly />
                     <label id="lblID" for="id">ID</label>
 
                     <input id="inptLocat" name="location" type="text" value=@Model.Direccion required />
@@ -79,9 +79,9 @@
                 </div>
                 <div class="btnsubmit">
                     <input id="subtmit" type="submit" value="Save changes" />
-                    <button id="btnmacc">Manage Account</button>
                 </div>
             </form>
+                    <button id="btnmacc">Manage Account</button>
             <div class="footer">
             </div>
         </div>

@@ -1,0 +1,123 @@
+[33mcommit 53316dd6105e75ef254af6a9cdb8fccdee37f666[m[33m ([m[1;36mHEAD -> [m[1;32mEndrik[m[33m)[m
+Author: RyukTV <97322176+RyukTV@users.noreply.github.com>
+Date:   Sat Apr 15 07:40:59 2023 -0400
+
+    LoginTerminado
+
+[33mcommit 631c86e0613b02af097f5498b351a8fc54d6a1be[m
+Merge: a5e17e7 e9897c7
+Author: RyukTV <97322176+RyukTV@users.noreply.github.com>
+Date:   Sat Apr 15 05:08:29 2023 -0400
+
+    conexionprueba2
+
+[33mcommit a5e17e7bcbc060269f09a34b8c8a4857fac553f9[m
+Author: RyukTV <97322176+RyukTV@users.noreply.github.com>
+Date:   Sat Apr 15 05:07:09 2023 -0400
+
+    conexionpruebas
+
+[33mcommit e9897c7c7ad4057b8d197e3207e2b94f51a7e187[m
+Author: Jesus <jesusd.jr45@gmail.com>
+Date:   Sat Apr 15 05:04:22 2023 -0400
+
+    Prueba de conexion a la BD
+
+[33mcommit 5ae82fd63b6f69c6a8a3b4a88d820fd07c581dd7[m[33m ([m[1;31morigin/Jesus[m[33m)[m
+Author: Jesus <jesusd.jr45@gmail.com>
+Date:   Thu Apr 13 06:54:10 2023 -0400
+
+    Actualizacion de la Base de Datos
+
+[33mcommit fe98c1f8aa4454297c88e70bdf676ffe43ba30d2[m
+Author: Jesus <jesusd.jr45@gmail.com>
+Date:   Thu Apr 13 01:41:07 2023 -0400
+
+    Base de datos Terminada
+
+[33mcommit fa78aba63e1c780b1c3c7c6ca1d739d582289f73[m
+Merge: cb6ecf9 89cc2bc
+Author: Jesus <jesusd.jr45@gmail.com>
+Date:   Wed Apr 12 19:56:33 2023 -0400
+
+    Prueba2
+
+[33mcommit cb6ecf9c6038837bdb2b30a47f5308606cc62d55[m
+Author: Jesus <jesusd.jr45@gmail.com>
+Date:   Wed Apr 12 19:42:54 2023 -0400
+
+    Inicio
+
+[33mcommit 89cc2bc9e33ab95d56083f5a953d92020dbf2e67[m[33m ([m[1;31morigin/Dariel[m[33m)[m
+Author: DarielEmil <80491098+DarielEmil@users.noreply.github.com>
+Date:   Wed Apr 12 15:35:48 2023 -0400
+
+    Add Register CSS need to fix some issues (inputbox)
+
+[33mcommit a48f810e86414002bf282e489f2ea69426f10fc6[m
+Merge: 5dbd4cc bd189bd
+Author: DarielEmil <80491098+DarielEmil@users.noreply.github.com>
+Date:   Fri Apr 7 19:10:28 2023 -0400
+
+    Add Login CSS and fix some issues
+
+[33mcommit 5dbd4cc3a55249b61752516e73bf65360a8ad2d8[m
+Author: DarielEmil <80491098+DarielEmil@users.noreply.github.com>
+Date:   Fri Apr 7 13:27:46 2023 -0400
+
+    New files not changes
+
+[33mcommit 38c7884c9695b2e75643d324f011c9a69450eade[m
+Author: Jesus Rodriguez <jesusd.jr45@gmail.com>
+Date:   Fri Apr 7 03:49:24 2023 -0400
+
+    Modelo sin Terminar
+
+[33mcommit bd189bdaf9cf946cbb874d99565579d790999c53[m
+Author: CaesaRR19 <coramosnolasco@gmail.com>
+Date:   Thu Apr 6 21:10:21 2023 -0400
+
+    Fix Login and Register
+
+[33mcommit 31e10a86dd60f205cade21ead1aade42e67cdf32[m
+Author: CaesaRR19 <coramosnolasco@gmail.com>
+Date:   Thu Apr 6 19:17:43 2023 -0400
+
+    Add Register
+
+[33mcommit 8dd5509cc0ff35cf2a58dde313b66b01be01e6c3[m
+Author: CaesaRR19 <coramosnolasco@gmail.com>
+Date:   Thu Apr 6 15:06:55 2023 -0400
+
+    Add Login
+
+[33mcommit 5395bcecda3c564790e148029249bc427fe1e542[m
+Author: DarielEmil <80491098+DarielEmil@users.noreply.github.com>
+Date:   Wed Apr 5 19:05:25 2023 -0400
+
+    Nuevos Cambios
+
+[33mcommit ddd74a11026a5768fdf308054c4ab01f1cbb228f[m
+Merge: 47cdc77 9488796
+Author: DarielEmil <80491098+DarielEmil@users.noreply.github.com>
+Date:   Wed Apr 5 19:01:10 2023 -0400
+
+    Merge branch 'Endrik' of https://github.com/DarielEmil/Banco-de-prestamos-e-inversiones into Dariel
+
+[33mcommit 9488796850adc4ba836cef44389df9532c53de2f[m[33m ([m[1;31morigin/Endrik[m[33m)[m
+Author: RyukTV <97322176+RyukTV@users.noreply.github.com>
+Date:   Wed Apr 5 18:45:57 2023 -0400
+
+    prueba
+
+[33mcommit 47cdc77a3308aa0640951e85bd89ebcc1db49066[m
+Author: Jesus Rodriguez <jesusd.jr45@gmail.com>
+Date:   Wed Apr 5 18:29:59 2023 -0400
+
+    Version Prueba
+
+[33mcommit 725fa3d93ad58d0027a35845f3cf06024db9b00b[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: DarielEmil <80491098+DarielEmil@users.noreply.github.com>
+Date:   Wed Apr 5 17:42:30 2023 -0400
+
+    v0.0

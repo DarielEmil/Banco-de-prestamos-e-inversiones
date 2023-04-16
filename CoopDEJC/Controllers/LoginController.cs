@@ -23,6 +23,7 @@ namespace CoopDEJC.Controllers
             return View();
         }
 
+        //Autenticador ya conectado a la base de datos
         public IActionResult Prueba (string email, string password)
         {
             var cliente = (from d in _context.Clientes

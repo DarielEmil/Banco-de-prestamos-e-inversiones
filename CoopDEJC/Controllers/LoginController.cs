@@ -44,18 +44,9 @@ namespace CoopDEJC.Controllers
             }
             else
             {
-                var response = new
-                {
-                    success = true,
-                    message = "Registro exitoso"
-                };
-
-                return Json(response);
+                    //Aqui va el aviso de que las contraseñas no coinciden   
             }
-
-
-            //var cliente =
-            return RedirectToAction("Login"); 
+            return View("Register");
         }
 
         public IActionResult Prueba(string email, string password)

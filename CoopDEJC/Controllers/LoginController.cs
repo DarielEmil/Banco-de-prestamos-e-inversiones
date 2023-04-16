@@ -73,6 +73,10 @@ namespace CoopDEJC.Controllers
            
         }
 
+        public IActionResult SignOut()
+        {
+            return RedirectToAction("Index");
+        }
         public IActionResult Register()
         {
             return View();

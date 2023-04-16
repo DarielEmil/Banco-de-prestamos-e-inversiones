@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\CoopDEJC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\css\\IndexCSS.css",
+      "PackagePath": "staticwebassets\\css\\IndexCSS.css"
+    },
+    {
       "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\css\\LoginCSS.css",
       "PackagePath": "staticwebassets\\css\\LoginCSS.css"
+    },
+    {
+      "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\css\\MyProfileCSS.css",
+      "PackagePath": "staticwebassets\\css\\MyProfileCSS.css"
     },
     {
       "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\css\\RegisterCSS.css",
@@ -21,12 +29,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\Home-Index.svg",
+      "PackagePath": "staticwebassets\\img\\Home-Index.svg"
+    },
+    {
+      "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\Investment.svg",
+      "PackagePath": "staticwebassets\\img\\Investment.svg"
+    },
+    {
+      "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\Loans.svg",
+      "PackagePath": "staticwebassets\\img\\Loans.svg"
+    },
+    {
+      "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\apps-line.svg",
+      "PackagePath": "staticwebassets\\img\\apps-line.svg"
+    },
+    {
       "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
-      "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\userlogo.png",
-      "PackagePath": "staticwebassets\\img\\userlogo.png"
+      "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\user-line.svg",
+      "PackagePath": "staticwebassets\\img\\user-line.svg"
     },
     {
       "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\waves1.png",

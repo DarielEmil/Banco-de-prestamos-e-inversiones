@@ -1,6 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using Microsoft.EntityFrameworkCore;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CoopDEJC.Models.CoopDBModels
 {
@@ -48,7 +47,7 @@ namespace CoopDEJC.Models.CoopDBModels
         //Union con la tabla cuentas
         [ForeignKey("CuentaID")]
         public int CuentaID { get; set; }
-        public CuentaBanco Cuenta {get; set;} = new CuentaBanco();
+        public CuentaBanco Cuenta { get; set; } = new CuentaBanco();
 
     }
 

@@ -1,12 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using CoopDEJC.Models;
-using CoopDEJC.Models.CoopDBModels;
-using CoopDEJC.Login;
-using Microsoft.EntityFrameworkCore;
-using System.Linq;
-using System.Diagnostics.Eventing.Reader;
-using Microsoft.EntityFrameworkCore;
-using System.Security.Principal;
+﻿using CoopDEJC.Models.CoopDBModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CoopDEJC.Controllers
 {
@@ -22,6 +15,40 @@ namespace CoopDEJC.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult CreacionCuenta(string email, string fname, string lname, string id, string phone, string location, string password, string cpassword, string securityq)
+        {
+            Cliente cliente = new Cliente();
+            if (password == cpassword)
+            {
+                cliente.Cedula = id;
+                cliente.Nombre = fname;
+                cliente.Apellido = lname;
+                cliente.Telefono = phone;
+                cliente.Direccion = location;
+                cliente.Correo = email;
+                cliente.Clave = password;
+                cliente.PreguntaSeguridad = cpassword;
+                cliente.Token = Guid.NewGuid();
+                try
+                {
+                    _context.Clientes.Add(cliente);
+                    _context.SaveChanges();
+                    return RedirectToAction("Login");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("error al guardar: "+ ex);
+                }
+            }
+            else
+            {
+                    //Aqui va el aviso de que las contraseñas no coinciden   
+            }
+            return View("Register");
+        }
+
 
         //Autenticador ya conectado a la base de datos
         public IActionResult Prueba (string email, string password)
@@ -46,10 +73,16 @@ namespace CoopDEJC.Controllers
            
         }
 
+        public IActionResult SignOut()
+        {
+            return RedirectToAction("Index");
+        }
         public IActionResult Register()
         {
             return View();
         }
+
+
 
 
         //[HttpPost]

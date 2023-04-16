@@ -1,6 +1,4 @@
-﻿using MessagePack;
-
-using KeyAttribute = System.ComponentModel.DataAnnotations.KeyAttribute;
+﻿using KeyAttribute = System.ComponentModel.DataAnnotations.KeyAttribute;
 
 namespace CoopDEJC.Models
 {

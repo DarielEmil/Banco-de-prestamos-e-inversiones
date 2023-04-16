@@ -1,5 +1,4 @@
-﻿using CoopDEJC.Login;
-using CoopDEJC.Models;
+﻿using CoopDEJC.Models;
 using CoopDEJC.Models.CoopDBModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -20,7 +19,7 @@ namespace CoopDEJC.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult MyProfile()
         {
             return View();
         }

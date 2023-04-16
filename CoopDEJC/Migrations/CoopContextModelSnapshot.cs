@@ -60,7 +60,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasKey("Cedula");
 
-                    b.ToTable("Clientes");
+                    b.ToTable("Clientes", (string)null);
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.CuentaBanco", b =>
@@ -84,7 +84,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasIndex("Cedula");
 
-                    b.ToTable("CuentasBanco");
+                    b.ToTable("CuentasBanco", (string)null);
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.CuotaInversion", b =>
@@ -127,7 +127,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasIndex("InversionID");
 
-                    b.ToTable("CuotasInversiones");
+                    b.ToTable("CuotasInversiones", (string)null);
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.CuotaPrestamo", b =>
@@ -161,7 +161,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasIndex("PrestamoId");
 
-                    b.ToTable("CuotasPrestamos");
+                    b.ToTable("CuotasPrestamos", (string)null);
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.Garantia", b =>
@@ -183,7 +183,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasIndex("PrestamoId");
 
-                    b.ToTable("Garantias");
+                    b.ToTable("Garantias", (string)null);
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.Inversion", b =>
@@ -226,7 +226,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasIndex("UsuarioCedula");
 
-                    b.ToTable("Inversiones");
+                    b.ToTable("Inversiones", (string)null);
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.Prestamo", b =>
@@ -267,7 +267,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasIndex("FiadorCedula");
 
-                    b.ToTable("Prestamos");
+                    b.ToTable("Prestamos", (string)null);
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.CuentaBanco", b =>

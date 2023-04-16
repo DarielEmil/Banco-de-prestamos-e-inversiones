@@ -1,5 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CoopDEJC.Models.CoopDBModels
 {
@@ -22,7 +22,7 @@ namespace CoopDEJC.Models.CoopDBModels
         [ForeignKey("FiadorCedula")]
         public Cliente? Fiador { get; set; } = new Cliente();
 
-        public int ValorGarantias{ get; set; }
+        public int ValorGarantias { get; set; }
         public List<Garantia> Garantias { get; set; } = new List<Garantia>();
 
         public int CuotasPagadas { get; set; } = 0;
@@ -54,7 +54,7 @@ namespace CoopDEJC.Models.CoopDBModels
         //Union con la tabla Prestamos
         [ForeignKey("PrestamoId")]
         public int PrestamoId { get; set; }
-        public Prestamo Prestamo { get; set;} = new Prestamo();
+        public Prestamo Prestamo { get; set; } = new Prestamo();
 
     }
 }

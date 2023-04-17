@@ -1,0 +1,69 @@
+﻿@model CoopDEJC.Models.CoopDBModels.Inversion;
+@{
+    Layout = null;
+    var rowcount = 1 + ViewBag.Meses;
+    double monto = ViewBag.Monto;
+    double callinteres = Math.Round(ViewBag.TEM ,2);
+    double montoacum = ViewBag.Monto;
+    double rentacum = 0;
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <title>LoansReport</title>
+</head>
+<body>
+    <div class="header">
+
+    </div>
+    <div class="container">
+        <div class="title">
+            <h1>Cronograma de Inversiones</h1>
+        </div>
+        <div class="idata">
+            <h3>Monto a invertir: $@Model.Monto.ToString("N3")</h3>
+            <h3>Tasa de interés anual: @Model.Interes.ToString("N2")%</h3>
+            <h3>Tasa de interés mensual: @ViewBag.TEMPCT.ToString("N2")%</h3>
+            <h3>Plazo de la inversión: @ViewBag.meses meses</h3>
+        </div>
+        <div class="itable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Periodos</th>
+                        <th>Fechas</th>
+                        <th>Rentabilidad</th>
+                        <th>Monto Acumuladoo</th>
+                        <th>Rentabilidad Acumulada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>@Model.FechaInicio.ToShortDateString()</td>
+                        <td>0</td>
+                        <td>@monto</td>
+                        <td>0</td>
+                    </tr>
+                    @for(int i = 1; i < rowcount; i++)
+                    {      
+                            double valor = Math.Round((monto * callinteres),2);
+                            montoacum += Math.Round(valor,2);
+                            rentacum += Math.Round(valor,2);
+                        <tr>
+                            <td>@i.ToString()</td>
+                            <td>@Model.FechaInicio.AddMonths(i).ToShortDateString()</td>
+                            <td>@valor</td>
+                            <td>@montoacum</td>
+                            <td>@rentacum</td>
+                        </tr>        
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

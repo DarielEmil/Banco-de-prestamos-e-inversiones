@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3hOjniHg6neI/QiL5hsCTX94Lgn+G5yM8ZZXWLxaG+w=",
+  "Hash": "nsMstJDk6iyYfhx1h4TOUVCXxnVk6Iw/0W/qFO4GRhc=",
   "Source": "CoopDEJC",
   "BasePath": "_content/CoopDEJC",
   "Mode": "Default",
@@ -66,6 +66,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\IndexCSS.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\css\\InvestmentCSS.css",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "css/InvestmentCSS.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\InvestmentCSS.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\css\\LoansCSS.css",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "css/LoansCSS.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LoansCSS.css"
     },
     {
       "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\css\\LoginCSS.css",

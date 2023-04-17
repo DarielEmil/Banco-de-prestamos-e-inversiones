@@ -2,22 +2,21 @@
     position: relative;
     margin: 0;
     display: grid;
-    background:#EFEFEF;
+    background: #EFEFEF;
     grid-template-areas:
         "a b b"
         "a c c";
     grid-template-columns: 10% 90% 0;
     grid-template-rows: 5% 95%;
 }
-live-preview-root{
-    display:none;
+
+live-preview-root {
+    display: none;
 }
+
 html * {
     font-family: 'Space Mono', monospace;
 }
-
-/*SIDEBAR CSS*/
-
 .wrapper {
     width: inherit;
     height: 100%;
@@ -83,16 +82,17 @@ html * {
 .header a:hover{
     color: #F66B0E;
 }
+
 /*CONTAINER CSS*/
 .container{
     display:grid;
     grid-area:c;
-    grid-template-rows: 15% 50% 35%;
+    grid-template-rows: 15% 35% 50%;
     grid-template-columns:50% 50%;
     grid-template-areas:
         "a a"
         "c b"
-        "d e";
+        "d d";
 }
 .title{
     display:grid;
@@ -110,29 +110,26 @@ html * {
     position:relative;
     background: #F66B0E;
     bottom: 1rem;
-    width: 3rem;
+    width: 1.5rem;
     height:8px;
     border-radius: 2rem;
 }
-.calendar{
-    grid-area: b; 
-}
-.suminfo{
+
+.balance{
     display:grid;
     width:inherit;
     height:inherit;
     justify-content:start;
     margin: 0 0 0 3rem;
     grid-area:c;
-    grid-template-columns: 12rem 12rem;
-    grid-template-rows: 10rem 10rem;
+    grid-template-columns: 12rem;
+    grid-template-rows: 14rem;
     grid-template-areas:
-        "a a"
-        "b c";  
+        "a";  
 }
-.investment {
+.InvestmentBlce {
     display: inherit;
-    width: 20rem;
+    width: 26rem;
     height: 10rem;
     justify-self: self-start;
     align-self: center;
@@ -145,103 +142,117 @@ html * {
     font-weight:bold;
     grid-area: a;
 }
-.investment center {
-    display: grid;
-    align-items: center;
-    justify-items: self-start;
+.InvestmentBlce center{
+    display:grid;
+    align-items:center;
+    justify-items:self-start;
     grid-template-rows: 3rem 3rem 3rem;
-    margin: 0 0 0 1rem;
+    margin: 0 0 0 2rem;
 }
-
-.investment h4, .investment h3, .investment h5 {
-    margin: 0;
-}
-/*
-.investment h4, .investment h3, .investment h5{
-    margin: 0 0 1rem 1rem;
-}
-.investment h3{
-    position:relative;
-    right:1rem;
-} */
-.debts{
-    display: grid;
-    align-content:center;
-    width:100%;
-    height:100%;
-    grid-area: b;
-}
-.debts hr{
-    width:2rem;
-    height:2px;
-    border:none;
-    background:#F66B0E;
-    border-radius:2rem
-}
-.debts h5,.debts h4{
+.InvestmentBlce h4, .InvestmentBlce h3, .InvestmentBlce h5{
     margin:0;
 }
-.debts center{
-    display:grid;
-    margin: 0;
-    justify-content:center;
-    align-content: center;
-    background:rgb(32, 83, 117, 0.4);
-    height:6rem;
-    border-radius: 1rem;
-    box-shadow:2px 2px 2px rgb(17, 43, 60, 0.6);
-}
 
-.inverted {
+/*INVESTMENT DETAILS CSS*/
+
+.idetails {
     display: grid;
-    align-content: center;
-    width: 100%;
-    height: 100%;
-    margin: 0 0 0 2rem;
-    grid-area: c;
+    justify-content: end;
+    grid-template-rows: 4rem 8rem;
+    grid-template-columns: 26rem;
+    grid-area: b;
+    grid-template-areas:
+        "a"
+        "b";
 }
 
-.inverted hr {
-    width: 2rem;
-    height: 2px;
-    border: none;
-    background: #F66B0E;
-    border-radius: 2rem
+.idetails .title{
+    justify-self:end;
+    margin: 0 5rem 0 0;
+    grid-area:a;
 }
-
-.inverted h5, .inverted h4 {
-    margin: 0;
+.ipaid {
+    display:flex;
+    grid-area:b;
 }
-.inverted center {
+.boxup, .boxdown {
     display: grid;
-    margin: 0;
+    flex-basis: 12rem;
+    /* height: 6rem; */
+    grid-template-rows: 3rem 4rem;
+    grid-template-columns: 4rem 5rem;
+    grid-template-areas:
+        "a b"
+        "a c";
+}
+.boxup span, .boxdown span{
+    display: flex;
     justify-content: center;
-    align-content: center;
-    background: rgb(32, 83, 117, 0.4);
-    height: 6rem;
+    align-items: center;
+    grid-area: a;
+    justify-self: center;
+    align-self: center;
+    height: 4rem;
+    width: 4rem;
+    margin: 0 3rem 0 0;
+    background: rgb(17, 43, 60, 0.9);
     border-radius: 1rem;
-    box-shadow: 2px 2px 2px rgb(17, 43, 60, 0.6);
+ 
 }
-.invlist{
-    display:grid;
-    grid-template-rows:2rem 11rem;
+.boxup h4{
+    grid-area:b;
+}
+.boxdown p{
+    grid-area:c;
+}
+
+/*INVESTMENT LIST CSS*/
+.ilist{
     grid-area:d;
 }
-.invlist h3, .deblist h3{
-    margin: 0 0 0 2rem;
+.ilist .title{
+    grid-template-columns:18rem 8rem;
+    grid-template-areas:
+        "a b"
+        "c b"
 }
-.invUl, .debUl{
-    list-style:none;
-    height:inherit;
-    margin:0;
-    padding: 0 0 0 2rem;
+.ilist .title h2{
+    grid-area:a;
 }
-#invLi, #debLi {
+.ilist .title button{
+    justify-self:center;
+    align-self:center;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    width:3rem;
+    height:3rem;
+    border-radius: 5rem;
+    background:#112B3C;
+    grid-area: b;
+    transition: 600ms ease-in;
+}
+.ilist .title button:hover{
+    box-shadow:1px 1px 10px rgb(246, 107, 14, 0.8);
+}
+.ilist .title span{
+    grid-area:c;
+    width:3rem;
+}
+.ltab-Ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "a c"
+        "b d";
+}
+
+.InvLi {
     display: grid;
     align-content: center;
     background: #EFEFEF;
     border-radius: 10px;
-    width: 30rem;
+    width: 34rem;
     height: 4rem;
     margin: 1rem 0 1rem 0;
     color: #112B3C;
@@ -252,8 +263,16 @@ html * {
         "a b"
         "a c";
 }
-#invLi span, #debLi span{
-        display: grid;
+.InvLi div{
+    display: grid;
+    width:inherit;
+    align-items:center;
+    grid-template-areas:
+        "a b d e"
+        "a c d e"
+}
+.InvLi span{
+    display: grid;
     justify-content: center;
     align-content: center;
     align-self: center;
@@ -264,21 +283,27 @@ html * {
     background: rgb(17, 43, 60, 0.2);
     grid-area: a;
 }
-    
-#invLi h5, #debLi h5{
+
+.InvLi h4{
     grid-area:b;
+    margin:0;
 }
-
-.deblist{
-    display: grid;
-    grid-template-rows: 2rem 11rem;
-    grid-area:e;
-}
-
-#invLi p, #debLi p {
-    position: relative;
-    bottom: 1rem;
-    
-    margin: 0;
+.InvLi p{
     grid-area: c;
+    margin:0;
 }
+#CodeLi{
+    grid-area:d;
+}
+#PriceLi {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-area: e;
+    background: #112B3C;
+    height: 2rem;
+    border-radius: 2rem;
+    width: 8rem;
+    color: #03C988;
+}
+

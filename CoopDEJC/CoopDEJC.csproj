@@ -13,4 +13,8 @@
     <None Remove="wwwroot\NewFolder1\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Home\Investment\" />
+  </ItemGroup>
+
 </Project>

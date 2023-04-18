@@ -307,3 +307,236 @@ html * {
     color: #03C988;
 }
 
+/*ADD INVESTMENT POPUP CSS*/
+
+.popup {
+    transform:scaleX(0);
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    left: 0;
+    background: rgb(17, 43, 60, 0.4);
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+.formBox {
+    display:flex;
+    width: 64rem;
+    justify-content:center;
+    align-items:center;
+    height: 38rem;
+    border-radius: 2rem;
+    background: #EFEFEF;
+}
+
+.container-popup {
+    display: grid;
+    grid-template-rows: 5rem 16rem;
+    grid-template-areas:
+        "a"
+        "b";
+    flex-basis: 50%;
+}
+
+.title-popup {
+    display: grid;
+    justify-content: start;
+    margin: 0 0 0 3rem;
+    width: inherit;
+    grid-template-rows: 5rem 0;
+    grid-area: a;
+}
+.title-popup h2{
+    margin: 2rem 0 0 0;
+}
+.title-popup hr{
+    background: #F66B0E;
+    justify-self: self-start;
+    width: 2rem;
+    margin: 0;
+    height: 8px;
+    border-radius: 2rem;
+}
+#form-div {
+    display: grid;
+    align-content: center;
+    grid-template-rows: 8rem;
+}
+.container-popup form {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 6rem 8rem;
+    align-self: center;
+    grid-area: b;
+}
+.textboxes input {
+    border: 1px solid rgb(17, 43, 60, 0.2);
+    width: 12rem;
+    height: 2.5rem;
+    resize: none;
+    outline: none;
+    margin: 1rem 0 1rem 0;
+    color: rgb(17, 43, 60);
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+.textboxes input:focus{
+    outline:none;
+}
+.textboxes input::placeholder{
+    color:rgb(17, 43, 60, 0.4);
+}
+.btnsubmit{
+    align-self:center;
+}
+.btnsubmit input{
+    background:rgb(246, 107, 14);
+    border:none;
+    outline:none;
+    color:rgb(239, 239, 239);
+    width:9rem;
+    height:3rem;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:4rem;
+    transition: 400ms ease-in;
+}
+.btnsubmit input:hover{
+    color:rgb(17, 43, 60);
+}
+
+#popup-img {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: inherit;
+    flex-basis:50%;
+    grid-template-columns:100%;
+    grid-template-rows: 10% 75%;
+}
+#popup-img img {
+    flex-basis: 50%;
+    height: 16rem;
+}
+#popup-img svg{
+    justify-self:end;
+    margin: 0 2rem 0 0;
+    cursor:pointer;
+}
+
+/*INVESTMENT INFO CSS*/
+.popup-info {
+    position: absolute;
+    transform: scaleX(0);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    left: 0;
+    background: rgb(17, 43, 60, 0.4);
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+.formBox-info {
+    display: flex;
+    width: 64rem;
+    justify-content: center;
+    align-items: center;
+    height: 38rem;
+    border-radius: 2rem;
+    background: #EFEFEF;
+}
+
+.container-info {
+    display: grid;
+    /*justify-content: start;*/
+    align-content: center;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 6rem 24rem;
+    flex-basis: 100%;
+}
+.title-info{
+    display: grid;
+    justify-content:start;
+    justify-items:start;
+    margin: 0 0 0 2rem;
+    grid-template-rows:2rem 0;
+    grid-template-columns: 90%;
+    grid-template-areas: 
+        "a b";
+}
+.title-info h2, .title-info h5{
+    grid-area: a;
+}
+.title-info h2{
+    color: #112B3C;
+}
+.title-info h5{
+    position:relative;
+    top: 2rem;
+    color:#F66B0E;
+}
+.title-info svg{
+    cursor:pointer;
+    grid-area:b;
+}
+.rowamount{
+    display:flex;
+    justify-content:space-evenly;
+    align-content:center;
+    align-items:center;
+}
+
+.amount, .fee, .amountdate, .feedate {
+    width: 14rem;
+    height: 8rem;
+    background:#112B3C;
+    border-radius: 2rem;
+    color:rgb(239, 239, 239);
+    box-shadow: 1px 1px 4px rgb(17, 43, 60, 0.6);
+}
+
+
+.iibtn{
+    display:flex;
+    justify-content:end;
+    margin: 0 2rem 0 0;
+}
+.iview{
+    width: 10rem;
+    height: 3rem;
+    margin: 0 2rem 0 0;
+    border: none;
+    background: #F66B0E;
+    color: #EFEFEF;
+    cursor:pointer;
+    font-weight:bold;
+    border-radius: 2rem;
+    transition: 400ms ease-in;
+}
+.iview:hover {
+    color: #112B3C;
+}
+
+.ifee {
+    width: 10rem;
+    height: 3rem;
+    margin: 0 2rem 0 0;
+    border: none;
+    background: #112B3C;
+    color: #EFEFEF;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2rem;
+    transition: 400ms ease-in;
+}
+.ifee:hover{
+    color:#F66B0E;
+}

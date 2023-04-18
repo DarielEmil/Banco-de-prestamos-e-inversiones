@@ -124,5 +124,38 @@
 @*        <div class="footer">
 
         </div> *@
+        <div class="faccount" id="idfaccount">
+            <center class="formBox">
+            <div class="container-popup">
+                <div class="title-popup">
+                    <h2>Your first account</h2>
+                    <hr />
+                </div>
+                    <form>
+                        <div class="textboxes">
+                            <input type="text" minlength="10" maxlength="10" placeholder = "Account Number" required />
+                            <input type="text" maxlenght = "100" placeholder = "Bank Name" required />
+                        </div>
+                        <div class="textboxes">
+                            <input type="text" maxlength="100" placeholder = "Location" required />
+
+                        <!--Agregar un color gris a la primera opción, para que quede a juego con los demás placeholders-->
+                        <select id="typeacc" required>
+                            @*<option value="" disabled selected>Type</option>*@
+                            <option value="Cuenta Corriente">Cuenta Corriente</option>
+                            <option value="Cuenta con Chequera">Cuenta con Chequera</option>
+                            <option value="Cuenta de Ahorro">Cuenta de Ahorro</option>
+                            <option value="Cuenta de Nómina">Cuenta de Nómina</option>
+                            <option value="Cuenta en Dólares">Cuenta en Dólares</option>
+                        </select>
+                        </div>
+                        <div class="btnsubmit">
+                            <input type="submit" value="Create Account" />
+                        </div>
+                    </form>
+            </div>
+            <span id="popup-img"><img src="/img/FirstAccount.svg"/></span>
+            </center>
+        </div>
     </body>
 </html>

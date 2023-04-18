@@ -282,3 +282,109 @@ html * {
     margin: 0;
     grid-area: c;
 }
+
+/*POPUP FIST ACCOUNT CSS*/
+
+.faccount {
+    transform:scaleX(0);
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    left: 0;
+    background: rgb(17, 43, 60, 0.4);
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+.formBox {
+    display:flex;
+    width: 64rem;
+    justify-content:center;
+    align-items:center;
+    height: 38rem;
+    border-radius: 2rem;
+    background: #EFEFEF;
+}
+
+.container-popup {
+    display: grid;
+    grid-template-rows: 5rem 16rem;
+    grid-template-areas:
+        "a"
+        "b";
+    flex-basis: 50%;
+}
+
+.title-popup {
+    display: grid;
+    justify-content: start;
+    margin: 0 0 0 3rem;
+    width: inherit;
+    grid-template-rows: 5rem 0;
+    grid-area: a;
+}
+.title-popup h2{
+    margin: 2rem 0 0 0;
+}
+.title-popup hr{
+    background: #F66B0E;
+    justify-self: self-start;
+    width: 2rem;
+    margin: 0;
+    height: 8px;
+    border-radius: 2rem;
+}
+.container-popup form {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 6rem 4rem 4rem;
+    align-self: center;
+    grid-area: b;
+}
+.textboxes input {
+    border: 1px solid rgb(17, 43, 60, 0.2);
+    width: 12rem;
+    height: 2.5rem;
+    resize: none;
+    outline: none;
+    color: rgb(17, 43, 60);
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+
+.textboxes input:focus{
+    outline:none;
+}
+.textboxes input::placeholder {
+    color: rgb(17, 43, 60, 0.4);
+}
+#typeacc {
+    border: 1px solid rgb(17, 43, 60, 0.2);
+    resize: none;
+    outline: none;
+    width: 12rem;
+    height: 2.5rem;
+    border-radius:0.5rem;
+}
+#popup-img img{
+    flex-basis:50%;
+    height:16rem;
+}
+.btnsubmit input{
+    background:rgb(246, 107, 14);
+    border:none;
+    outline:none;
+    color:rgb(239, 239, 239);
+    width:9rem;
+    height:3rem;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:4rem;
+    transition: 400ms ease-in;
+}
+.btnsubmit input:hover{
+    color:rgb(17, 43, 60);
+}

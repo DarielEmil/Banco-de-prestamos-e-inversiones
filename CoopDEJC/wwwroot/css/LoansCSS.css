@@ -324,9 +324,120 @@ html * {
 }
 
 
-
 /*POPUP CSS*/
-.popup{
-    display:none;
-    transform:scale(0);
+.popup-info {
+    position: absolute;
+    transform: scaleX(0);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    left: 0;
+    background: rgb(17, 43, 60, 0.4);
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+.formBox-info {
+    display: flex;
+    width: 64rem;
+    justify-content: center;
+    align-items: center;
+    height: 38rem;
+    border-radius: 2rem;
+    background: #EFEFEF;
+}
+
+.container-info {
+    display: grid;
+    /*justify-content: start;*/
+    align-content: center;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 6rem 8rem 15rem;
+    flex-basis: 100%;
+}
+.title-info{
+    display: grid;
+    justify-content:start;
+    justify-items:start;
+    margin: 0 0 0 2rem;
+    grid-template-rows:2rem 0;
+    grid-template-columns: 90%;
+    grid-template-areas: 
+        "a b";
+}
+.title-info h2, .title-info h5{
+    grid-area: a;
+}
+.title-info h2{
+    color: #112B3C;
+}
+.title-info h5{
+    position:relative;
+    top: 2rem;
+    color:#F66B0E;
+}
+.title-info svg{
+    cursor:pointer;
+    grid-area:b;
+}
+.rowamount{
+    display:flex;
+    justify-content:space-evenly;
+    align-content:center;
+    align-items:center;
+}
+.rowpending {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.amount, .fee, .amountdate, .feedate, .pending, .paid{
+    width: 14rem;
+    height: 8rem;
+    background:#112B3C;
+    border-radius: 2rem;
+    color:rgb(239, 239, 239);
+    box-shadow: 1px 1px 4px rgb(17, 43, 60, 0.6);
+}
+
+
+.libtn{
+    display:flex;
+    justify-content:end;
+    margin: 0 2rem 0 0;
+}
+.lview{
+    width: 10rem;
+    height: 3rem;
+    margin: 0 2rem 0 0;
+    border: none;
+    background: #F66B0E;
+    color: #EFEFEF;
+    cursor:pointer;
+    font-weight:bold;
+    border-radius: 2rem;
+    transition: 400ms ease-in;
+}
+.lview:hover {
+    color: #112B3C;
+}
+
+.lfee {
+    width: 10rem;
+    height: 3rem;
+    margin: 0 2rem 0 0;
+    border: none;
+    background: #112B3C;
+    color: #EFEFEF;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2rem;
+    transition: 400ms ease-in;
+}
+.lfee:hover{
+    color:#F66B0E;
 }

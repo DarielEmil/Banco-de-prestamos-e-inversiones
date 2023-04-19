@@ -86,7 +86,7 @@
                 <div class="title">
                     <h2>Loans List</h2>
                     <span></span>
-                    <button class="lbtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="rgba(239,239,239,1)"></path></svg></button>
+                    <button onclick="btnNewLoans()" class="lbtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="rgba(239,239,239,1)"></path></svg></button>
                 </div>
                 <div class="ltab">
                     <ul class="ltab-Ul">
@@ -188,9 +188,59 @@
             </div>
             </center>
         </div>
-        <script>
-            function closepopup(){
-            }
-        </script>
+        <!--Ventana emergente de la solicitud de un prestamo-->
+         <div class="popup" id="idpop-new">
+            <div class="formBox">
+                <div class="container-popup">                    
+                    <div class="title-add">
+                        <h2>New Loan</h2>  
+                        <hr />
+                    </div>
+                </div>
+                <svg onclick="btnNewLoansClose()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(17,43,60,1)"></path></svg>
+                <form>
+                    <div class="textboxes">
+                        <input class="input_box" name="lamount" type="number" min="1" autocomplete="off" placeholder="Amount" required />
+                        <input class="input_box" name="lfee" type="number" min="1" autocomplete="off" placeholder="Fee" readonly required />
+                    </div>
+                    <div class="textboxes">
+                        <input class="input_box" name="ldate" type="date" autocomplete="off" placeholder="Date" required />
+                        <input class="input_box" name="lfeedate" type="date" autocomplete="off" placeholder="Fee Date" required />
+                    </div>
+                    <div class="textboxes">
+                        <label for="garant">Financial Guarantee: </label> 
+                        <button onclick="btnGuarantee()" class ="guarantor">Guarantor</button>
+                        <button onclick="btnWarranty()" class="guarantee">Guarantee</button>
+                    </div>
+                    <!--fiador-->
+                    <div class="textboxes" id="warranty">
+                        <input name="id" type="text" maxlength="13" minlength="13" placeholder="Guarantor ID" required />
+                        <!--Readonly del nombre del fiador-->
+                        <input name="fullname" type="text" maxlength="200" placeholder="Guarantor's Full Name" readonly required />
+                    </div>
+                    <!--garantia-->
+                    <div class="textboxes" id="guarantor">
+                    <select id="objtype" required>
+                        <option value="" disabled selected>Type</option>
+                        <option value="casa">Hipoteca</option>
+                        <option value="electrodomestico">Electrodoméstico</option>
+                        <option value="vehiculo">Vehículo</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                    <input class="input_box" name="amount" type="number" min="1" autocomplete="off" placeholder="Value" required />
+                    </div>
+                    <div class="textboxes">
+                        <input name="location" type="text" placeholder="Location" required />
+                    </div>
+                    <div></div>
+                    <div class="btnsubmit">
+                        <input type="submit" value="New Loan" />
+                    </div>
+                </form>     
+                <span id="popup-img">                    
+                    <img src="/img/Investment-Illus.svg"/>
+                </span>
+            </div>
+        </div>
     </body>
 </html>

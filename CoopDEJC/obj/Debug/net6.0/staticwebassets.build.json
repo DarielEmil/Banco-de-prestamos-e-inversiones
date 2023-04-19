@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y+3Ledp7sgm5v/iGirjGUtY8X7hBE79V0ssTkj1hcLU=",
+  "Hash": "dcYc7y0HRKBynqrF7neYqqnNN/NVbou58CBNhvANWTA=",
   "Source": "CoopDEJC",
   "BasePath": "_content/CoopDEJC",
   "Mode": "Default",
@@ -355,6 +355,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\waves2.png"
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\js\\JSFunction.js",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "js/JSFunction.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\JSFunction.js"
     },
     {
       "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\js\\site.js",

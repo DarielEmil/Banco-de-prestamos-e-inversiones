@@ -9,9 +9,6 @@ namespace CoopDEJC.Models.CoopDBModels
         {
         }
       
-
-
-
         //Tablas
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<CuentaBanco> CuentasBanco { get; set; }

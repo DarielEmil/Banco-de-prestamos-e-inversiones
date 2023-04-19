@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CoopDEJC.Migrations
 {
     [DbContext(typeof(CoopContext))]
-    [Migration("20230415092423_init1")]
-    partial class init1
+    [Migration("20230419120355_IntDB")]
+    partial class IntDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,10 +47,6 @@ namespace CoopDEJC.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PreguntaSeguridad")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -214,8 +210,8 @@ namespace CoopDEJC.Migrations
                     b.Property<DateTime>("FechaInicio")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Interes")
-                        .HasColumnType("int");
+                    b.Property<double>("Interes")
+                        .HasColumnType("float");
 
                     b.Property<int>("Monto")
                         .HasColumnType("int");
@@ -255,8 +251,8 @@ namespace CoopDEJC.Migrations
                     b.Property<string>("FiadorCedula")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("Interes")
-                        .HasColumnType("int");
+                    b.Property<double>("Interes")
+                        .HasColumnType("float");
 
                     b.Property<int>("Monto")
                         .HasColumnType("int");

@@ -29,7 +29,6 @@ namespace CoopDEJC.Controllers
                 cliente.Direccion = location;
                 cliente.Correo = email;
                 cliente.Clave = password;
-                cliente.PreguntaSeguridad = cpassword;
                 cliente.Token = Guid.NewGuid();
                 try
                 {

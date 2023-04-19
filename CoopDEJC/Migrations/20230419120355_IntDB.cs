@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace CoopDEJC.Migrations
 {
     /// <inheritdoc />
-    public partial class init1 : Migration
+    public partial class IntDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,7 +22,6 @@ namespace CoopDEJC.Migrations
                     Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Correo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Clave = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PreguntaSeguridad = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Token = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
@@ -58,7 +58,7 @@ namespace CoopDEJC.Migrations
                     Monto = table.Column<int>(type: "int", nullable: false),
                     FechaInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaFin = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Interes = table.Column<int>(type: "int", nullable: false),
+                    Interes = table.Column<double>(type: "float", nullable: false),
                     ClienteCedula = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     FiadorCedula = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     ValorGarantias = table.Column<int>(type: "int", nullable: false),
@@ -88,7 +88,7 @@ namespace CoopDEJC.Migrations
                     Monto = table.Column<int>(type: "int", nullable: false),
                     FechaInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaFin = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Interes = table.Column<int>(type: "int", nullable: false),
+                    Interes = table.Column<double>(type: "float", nullable: false),
                     CedulaCliente = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UsuarioCedula = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     CuentaID = table.Column<int>(type: "int", nullable: false),

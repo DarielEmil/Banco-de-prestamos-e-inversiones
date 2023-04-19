@@ -1,12 +1,10 @@
-﻿@model CoopDEJC.Models.CoopDBModels.Inversion;
+﻿@model CoopDEJC.Models.CoopDBModels.CuotaInversion;
 @{
     Layout = null;
     var rowcount = 1 + ViewBag.Meses;
-    double monto = ViewBag.Monto;
-    double callinteres = Math.Round(ViewBag.TEM ,2);
-    double montoacum = ViewBag.Monto;
-    double rentacum = 0;
 
+    double monto = Model.Monto;
+    double callinteres = Math.Round(ViewBag.TEM, 2);
 }
 <!DOCTYPE html>
 <html>
@@ -16,22 +14,21 @@
     <meta name="viewport" content="width=device-width" />
     <title>LoansReport</title>
     <style>
-        h1{
-            text-align:center;
+        h1 {
+            text-align: center;
             color: royalblue;
         }
     </style>
 </head>
 <body>
     <div class="header">
-
     </div>
     <div class="container">
         <div class="title">
-            <h1>Cronograma de la Inversión #@Model.InversionID</h1>
+            <h1>Cuotas de la Inversión #@Model.CuotaInversionID</h1>
         </div>
         <br />
-        <div class="idata">
+        <div class="ifdata">
             <table class="table table-striped table-bordered table-hover table-sm" style="width:100%">
                 <thead>
                     <tr>
@@ -44,45 +41,37 @@
                 <tbody>
                     <tr>
                         <td>@String.Format(new System.Globalization.CultureInfo("es-DO"),"{0:C}",Model.Monto)</td>
-                        <td>@Model.Interes.ToString("N2")%</td>
+                        <td>@Model.Inversion.Interes.ToString("N2")%</td>
                         <td>@ViewBag.TEMPCT.ToString("N2")%</td>
                         <td>@ViewBag.meses meses</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <br />  
-        <div class="itable">
+        <br />
+        <div>
             <table class="table table-striped table-bordered" style="width:100%">
                 <thead>
                     <tr>
                         <th>Periodos</th>
-                        <th>Fechas</th>
+                        <th>Fecha de pago estimada</th>
+                        <th>Fecha de pago realizada</th>
                         <th>Rentabilidad</th>
-                        <th>Rentabilidad Acumulada</th>
-                        <th>Monto Acumulado</th>
+                        <th>Código comprobante</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>0</td>
-                        <td>@Model.FechaInicio.ToShortDateString()</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>@monto</td>
-                    </tr>
-                    @for(int i = 1; i < rowcount; i++)
-                    {      
-                            double valor = Math.Round((monto * callinteres),2);
-                            montoacum += Math.Round(valor,2);
-                            rentacum += Math.Round(valor,2);
+
+                    @for (int i = 1; i < rowcount; i++)
+                    {
+                        double valor = Math.Round((monto * callinteres), 2);
                         <tr>
                             <td>@i.ToString()</td>
-                            <td>@Model.FechaInicio.AddMonths(i).ToShortDateString()</td>
-                            <td>@valor</td>
-                            <td>@rentacum</td>
-                            <td>@montoacum</td>
-                        </tr>        
+                            <td>@Model.Inversion.FechaInicio.AddMonths(i).ToShortDateString()</td>
+                            <td>@DateTime.Now.ToShortDateString()</td>
+                            <td>@String.Format(new System.Globalization.CultureInfo("es-DO"),"{0:C}",valor)</td>
+                            <td>@Model.Codigo</td>
+                        </tr>
                     }
                 </tbody>
             </table>

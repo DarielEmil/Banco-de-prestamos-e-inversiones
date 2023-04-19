@@ -3,6 +3,8 @@
     Layout = null;
 
 }
+
+@model CoopDEJC.Models.CoopDBModels.Inversion;
 <html>
     <head>
         <link href="~/css/InvestmentCSS.css" rel="stylesheet" type="text/css"/>
@@ -29,7 +31,7 @@
                         </a>
                       </li>
                       <li>
-                    <a href="@Url.Action("Invesment")">
+                    <a href="@Url.Action("Investment")">
                             <img src="~/img/Investment.svg"/><span>Investment</span>
                         </a>
                       </li>
@@ -159,8 +161,8 @@
                     </div>
                 </div>
                     <div class="iibtn">
-                        <button class="iview">Investment View</button>
-                        <button class="ifee">Investment Fee</button>
+                        <button class="iview" asp-area="" asp-controller="Investment" asp-action="InvestmentReportShow" target="_blank">Investment View</button>
+                        <button class="ifee" asp-area="" asp-controller="Investment" asp-action="InvestmentFee" >Investment Fee</button>
                     </div>
             </div>
             </center>
@@ -179,10 +181,10 @@
                     <hr />
                 </div>
                 <div id="form-div">
-                    <form>
+                        <form action="InvesmentGet">
                         <div class="textboxes">
                             <input class="input_box" name="iamount" type="number" min="1" autocomplete="off" placeholder="Amount" required />
-                            <input class="input_box" name="ifee" type="number" min="1" autocomplete="off" placeholder="Fee" readonly required />
+                            <input class="input_box" name="ifee" type="number" value=15 min="1" autocomplete="off" placeholder="Fee" readonly required />
                             <input class="input_box" name="idate" type="date" autocomplete="off" placeholder="Date" required />
                             <input class="input_box" name="ifeedate" type="date" autocomplete="off" placeholder="Fee Date" required />
                         </div>

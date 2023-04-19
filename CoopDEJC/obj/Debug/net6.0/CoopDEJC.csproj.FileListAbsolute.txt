@@ -348,6 +348,14 @@ C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversion
 C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.pdb
 C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.genruntimeconfig.cache
 C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\obj\Debug\net6.0\ref\CoopDEJC.dll
+C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.csproj.AssemblyReference.cache
+C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.AssemblyInfoInputs.cache
+C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.AssemblyInfo.cs
+C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.csproj.CoreCompileInputs.cache
+C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.RazorAssemblyInfo.cache
+C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.RazorAssemblyInfo.cs
 C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\bin\Debug\net6.0\appsettings.json
 C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\bin\Debug\net6.0\CoopDEJC.staticwebassets.runtime.json
@@ -617,14 +625,6 @@ C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\bin\Debug\net6.0\runtimes\wi
 C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.csproj.AssemblyReference.cache
-C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.AssemblyInfoInputs.cache
-C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.AssemblyInfo.cs
-C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.csproj.CoreCompileInputs.cache
-C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.RazorAssemblyInfo.cache
-C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.RazorAssemblyInfo.cs
 C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\staticwebassets\msbuild.CoopDEJC.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\staticwebassets\msbuild.build.CoopDEJC.props
 C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CoopDEJC.props

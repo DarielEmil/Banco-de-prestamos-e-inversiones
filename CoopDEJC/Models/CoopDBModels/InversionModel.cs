@@ -12,7 +12,7 @@ namespace CoopDEJC.Models.CoopDBModels
         public int Monto { get; set; }
         public DateTime FechaInicio { get; set; } = DateTime.Now;
         public DateTime FechaFin { get; set; } = new DateTime();
-        public int Interes { get; set; }
+        public double Interes { get; set; }
 
         //Union con la tabla clientes para el usuario
         [ForeignKey("CedulaCliente")]

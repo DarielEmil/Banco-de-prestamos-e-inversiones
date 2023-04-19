@@ -1,0 +1,70 @@
+﻿@model CoopDEJC.Models.CoopDBModels.Prestamo;
+@{
+    Layout = null;
+    var rowcount = 1 + ViewBag.Meses;
+
+    double saldo = Model.Monto;
+    double cuota = Math.Round((Model.Monto * ViewBag.TEM) / (1 - Math.Pow(1 + ViewBag.TEM, -ViewBag.Meses)),2);
+}
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <title>LoansReport</title>
+</head>
+<body>
+    <div class="header">
+
+    </div>
+    <div class="container">
+        <div class="title">
+            <h1>Cronograma de Prestamos</h1>
+        </div>
+        <div class="ldata">
+            <h3>Cantidad del prestamo: $@Model.Monto.ToString("N3")</h3>
+            <h3>Tasa de interés anual: @Model.Interes.ToString("N2")%</h3>
+            <h3>Tasa de interés mensual: @ViewBag.TEMPCT.ToString("N2")%</h3>
+            <h3>Plazo del préstamo: @ViewBag.meses meses</h3>
+        </div>
+        <div class="ltable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Periodos</th>
+                        <th>Fechas</th>
+                        <th>Saldo</th>
+                        <th>Amortización</th>
+                        <th>Interés</th>
+                        <th>Cuota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>@Model.FechaInicio.ToShortDateString()</td>
+                        <td>@Model.Monto</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    @for(int i = 1; i < rowcount; i++)
+                    {      
+                            double interes = Math.Round(saldo * (ViewBag.TEM), 2);
+                            double amortizacion = Math.Round(cuota - interes, 2);
+                            saldo = Math.Round(saldo - amortizacion, 2);
+                        <tr>
+                            <td>@i.ToString()</td>
+                            <td>@Model.FechaInicio.AddMonths(i).ToShortDateString()</td>
+                            <td>@saldo</td>
+                            <td>@amortizacion</td>
+                            <td>@interes</td>
+                            <td>@cuota</td>
+                        </tr>        
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

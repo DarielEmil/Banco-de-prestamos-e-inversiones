@@ -44,7 +44,7 @@ namespace CoopDEJC.Controllers
             }
             else
             {
-                    //Aqui va el aviso de que las contraseñas no coinciden   
+            //Aqui va el aviso de que las contraseñas no coinciden   
             }
             return View("Register");
         }
@@ -66,7 +66,7 @@ namespace CoopDEJC.Controllers
                 return RedirectToAction("Usuario", "Home", cliente);
             } else
             {
-                //Aqui necesito retornar una alerta,dariel o cesar no quise investigar mucho porque hay que bregar con un poco de frontend
+            //Aqui necesito retornar una alerta,dariel o cesar no quise investigar mucho porque hay que bregar con un poco de frontend
                 return Content("<h3>Here's a custom content header</h3>", "text/html");
             }
             
@@ -82,9 +82,6 @@ namespace CoopDEJC.Controllers
         {
             return View();
         }
-
-
-
 
         //[HttpPost]
         //public IActionResult Register(User _user)

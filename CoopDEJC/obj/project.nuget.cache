@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "i1lY+W9A+FYHwxyiGUnfeyRGO1gB52TjTpfJJClvx9iXUpQZjKO9vleXZ44PmDUGeT4HTJfZLVCTpr6ixLfzJw==",
+  "dgSpecHash": "nT9/acXVHOiTjWl05W/t42cGjCfYYjjxE1WzY/QsgW6f3Za2xF/9EwxKQj/uGejc1DFIrRaVjVZ5duXz7c5V8g==",
   "success": true,
   "projectFilePath": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\CoopDEJC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\darke\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\darke\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\darke\\.nuget\\packages\\dinktopdf\\1.0.8\\dinktopdf.1.0.8.nupkg.sha512",
     "C:\\Users\\darke\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\darke\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\darke\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
@@ -182,6 +183,7 @@
     "C:\\Users\\darke\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\darke\\.nuget\\packages\\system.threading.tasks.dataflow\\6.0.0\\system.threading.tasks.dataflow.6.0.0.nupkg.sha512",
     "C:\\Users\\darke\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\darke\\.nuget\\packages\\system.threading.thread\\4.0.0\\system.threading.thread.4.0.0.nupkg.sha512",
     "C:\\Users\\darke\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\darke\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\darke\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",

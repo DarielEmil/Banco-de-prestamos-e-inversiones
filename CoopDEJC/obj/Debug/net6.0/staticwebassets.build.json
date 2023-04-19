@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nsMstJDk6iyYfhx1h4TOUVCXxnVk6Iw/0W/qFO4GRhc=",
+  "Hash": "Y+3Ledp7sgm5v/iGirjGUtY8X7hBE79V0ssTkj1hcLU=",
   "Source": "CoopDEJC",
   "BasePath": "_content/CoopDEJC",
   "Mode": "Default",
@@ -204,6 +204,23 @@
       "OriginalItemSpec": "wwwroot\\img\\apps-line.svg"
     },
     {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\FirstAccount.svg",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "img/FirstAccount.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\FirstAccount.svg"
+    },
+    {
       "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\Home-Index.svg",
       "SourceId": "CoopDEJC",
       "SourceType": "Discovered",
@@ -236,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Investment.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\Investment-Illus.svg",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "img/Investment-Illus.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Investment-Illus.svg"
     },
     {
       "Identity": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\wwwroot\\img\\Loans.svg",

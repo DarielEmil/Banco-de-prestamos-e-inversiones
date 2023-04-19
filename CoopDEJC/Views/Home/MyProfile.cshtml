@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+        <script src="/js/JSFunction.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -78,7 +79,7 @@
                 </div>
                 <div class="btnsubmit">
                     <input id="subtmit" type="submit" value="Save changes" />
-                    <button id="btnmacc">Manage Account</button>
+                    <button onclick="btnManageAcc()" id="btnmacc">Manage Account</button>
                 </div>
             </form>
             <div class="footer">
@@ -90,11 +91,11 @@
                 <div class="container-mag">
                     <div class="title-mag">
                         <h2>Accounts <hr /></h2>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(17,43,60,1)"></path></svg>
+                        <svg onclick="btnManageClose()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(17,43,60,1)"></path></svg>
                     </div>
                     <div class="acclist">
                         <!--Esto va con un foreach, supongo xd-->
-                        <button id="btnnacc" onclick=location.href="@Url.Action("NewAccount","Home")">New Account</button>
+                        <button id="btnnacc" onclick="btnNewAcc()" .href="@Url.Action("NewAccount","Home")">New Account</button>
                         <ul>
                             <li>
                                 <span>XXX-XXXX-XXX</span>
@@ -155,7 +156,7 @@
                     </form>
             </div>
             <span id="popup-img">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(17,43,60,1)"></path></svg>
+                <svg onclick="btnNewAccClose()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(17,43,60,1)"></path></svg>
                 <img src="/img/FirstAccount.svg"/>
             </span>
             </center>

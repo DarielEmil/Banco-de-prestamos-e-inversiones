@@ -14,6 +14,7 @@ namespace CoopDEJC.Models.CoopDBModels
         public string Correo { get; set; } = string.Empty;
         public string Clave { get; set; } = string.Empty;
 
+
         public Guid Token { get; set; } = new Guid();
 
         public List<CuentaBanco> Cuentas { get; set; } = new List<CuentaBanco>();
@@ -27,6 +28,7 @@ namespace CoopDEJC.Models.CoopDBModels
         public string NombreBanco { get; set; } = string.Empty;
         public string TipoCuenta { get; set; } = string.Empty;
         public string Cedula { get; set; } = string.Empty;
+        public bool activa { get; set; } = true; 
 
         [ForeignKey("Cedula")]
         public Cliente Usuario { get; set; } = new Cliente();

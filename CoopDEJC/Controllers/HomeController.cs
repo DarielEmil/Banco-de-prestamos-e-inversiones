@@ -68,6 +68,10 @@ namespace CoopDEJC.Controllers
 
             return RedirectToAction("Usuario","Loans",cliente);
         }
+        public IActionResult UsertoInvesment()
+        {
+            return RedirectToAction("Usuario","Invesment");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

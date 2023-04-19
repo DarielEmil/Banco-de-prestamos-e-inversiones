@@ -126,5 +126,56 @@
         </script>
 
         <!--Ventana emergente de la solicitud de un prestamo-->
+         <div class="popup" id="idpop">
+          <div class="container">
+            <div class="btn-close" onclick="closepopup()">&times;</div>
+            <div class="title">
+              <h2>New Loan</h2>
+            </div>
+            <div>
+              <form>
+                <div class="textboxes">
+                  <input class="input_box" name="lamount" type="number" min="1" autocomplete="off" placeholder="Amount" required />
+                  <input class="input_box" name="lfee" type="number" min="1" autocomplete="off" placeholder="Fee" readonly required />
+                </div>
+                <div class="textboxes">
+                  <input class="input_box" name=ldate" type="date" autocomplete="off" placeholder="Date" required />
+                  <input class="input_box" name="lfeedate" type="date" autocomplete="off" placeholder="Fee Date" required />
+                </div>
+                <div class="textboxes">
+                  <label for="garant">Financial Guarantee: </label>
+                  <select id="garant" required>
+                    <option value="1">Guarantor</option>
+                    <option value="2">Guarantee</option>
+                  </select>
+                </div>
+                <!--fiador-->
+                <div class="textboxes">
+                  <input name="id" type="text" maxlength="13" minlength="13" placeholder="Guarantor ID" required />
+                  <!--Readonly del nombre del fiador-->
+                  <input name="fullname" type="text" maxlength="200" placeholder="Guarantor's Full Name" readonly required />
+                </div>
+                <!--garantia-->
+                <div class="textboxes">
+                  <select id="objtype" required>
+                    <option value="" disabled selected>Type</option>
+                    <option value="casa">Hipoteca</option>
+                    <option value="electrodomestico">Electrodoméstico</option>
+                    <option value="vehiculo">Vehículo</option>
+                    <option value="otros">Otros</option>
+                  </select>
+                  <input class="input_box" name="amount" type="number" min="1" autocomplete="off" placeholder="Value" required />
+                </div>
+                <div class="textboxes">
+                  <input name="location" type="text" placeholder="Location" required />
+                </div>
+                <div></div>
+                <div class="btnsubmit">
+                  <input type="submit" value="New Loan" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
     </body>
 </html>

@@ -40,7 +40,7 @@ namespace CoopDEJC.Controllers
             string actualpage = HttpContext.Request.Path;
             string urlpage = HttpContext.Request.GetEncodedUrl();
             urlpage = urlpage.Replace(actualpage, "");
-            urlpage = $"{urlpage}/InvestmentReport";
+            urlpage = $"{urlpage}/Investment/InvestmentReport";
 
             var pdf = new HtmlToPdfDocument()
             {

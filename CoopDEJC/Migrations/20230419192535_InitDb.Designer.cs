@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CoopDEJC.Migrations
 {
     [DbContext(typeof(CoopContext))]
-    [Migration("20230419181310_InitDB")]
-    partial class InitDB
+    [Migration("20230419192535_InitDb")]
+    partial class InitDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -79,6 +79,9 @@ namespace CoopDEJC.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("activa")
+                        .HasColumnType("bit");
+
                     b.HasKey("NumeroCuenta");
 
                     b.HasIndex("Cedula");
@@ -97,11 +100,7 @@ namespace CoopDEJC.Migrations
                     b.Property<Guid>("Codigo")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("CuentaID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CuentaNumeroCuenta")
-                        .IsRequired()
+                    b.Property<string>("CuentaID")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("FechaPlanificado")
@@ -122,7 +121,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasKey("CuotaInversionID");
 
-                    b.HasIndex("CuentaNumeroCuenta");
+                    b.HasIndex("CuentaID");
 
                     b.HasIndex("InversionID");
 
@@ -201,14 +200,9 @@ namespace CoopDEJC.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("InversionID"));
 
                     b.Property<string>("CedulaCliente")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("CuentaID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CuentaNumeroCuenta")
-                        .IsRequired()
+                    b.Property<string>("CuentaID")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("FechaFin")
@@ -223,14 +217,11 @@ namespace CoopDEJC.Migrations
                     b.Property<int>("Monto")
                         .HasColumnType("int");
 
-                    b.Property<string>("UsuarioCedula")
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("InversionID");
 
-                    b.HasIndex("CuentaNumeroCuenta");
+                    b.HasIndex("CedulaCliente");
 
-                    b.HasIndex("UsuarioCedula");
+                    b.HasIndex("CuentaID");
 
                     b.ToTable("Inversiones");
                 });
@@ -295,9 +286,7 @@ namespace CoopDEJC.Migrations
                 {
                     b.HasOne("CoopDEJC.Models.CoopDBModels.CuentaBanco", "Cuenta")
                         .WithMany()
-                        .HasForeignKey("CuentaNumeroCuenta")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CuentaID");
 
                     b.HasOne("CoopDEJC.Models.CoopDBModels.Inversion", "Inversion")
                         .WithMany("Cuotas")
@@ -334,15 +323,13 @@ namespace CoopDEJC.Migrations
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.Inversion", b =>
                 {
-                    b.HasOne("CoopDEJC.Models.CoopDBModels.CuentaBanco", "Cuenta")
-                        .WithMany()
-                        .HasForeignKey("CuentaNumeroCuenta")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("CoopDEJC.Models.CoopDBModels.Cliente", "Usuario")
                         .WithMany()
-                        .HasForeignKey("UsuarioCedula");
+                        .HasForeignKey("CedulaCliente");
+
+                    b.HasOne("CoopDEJC.Models.CoopDBModels.CuentaBanco", "Cuenta")
+                        .WithMany()
+                        .HasForeignKey("CuentaID");
 
                     b.Navigation("Cuenta");
 

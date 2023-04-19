@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CoopDEJC.Migrations
 {
     /// <inheritdoc />
-    public partial class InitDB : Migration
+    public partial class InitDb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -36,7 +36,8 @@ namespace CoopDEJC.Migrations
                     NumeroCuenta = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     NombreBanco = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TipoCuenta = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Cedula = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    Cedula = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    activa = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -90,25 +91,22 @@ namespace CoopDEJC.Migrations
                     FechaInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaFin = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Interes = table.Column<double>(type: "float", nullable: false),
-                    CedulaCliente = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UsuarioCedula = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    CuentaID = table.Column<int>(type: "int", nullable: false),
-                    CuentaNumeroCuenta = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    CedulaCliente = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    CuentaID = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Inversiones", x => x.InversionID);
                     table.ForeignKey(
-                        name: "FK_Inversiones_Clientes_UsuarioCedula",
-                        column: x => x.UsuarioCedula,
+                        name: "FK_Inversiones_Clientes_CedulaCliente",
+                        column: x => x.CedulaCliente,
                         principalTable: "Clientes",
                         principalColumn: "Cedula");
                     table.ForeignKey(
-                        name: "FK_Inversiones_CuentasBanco_CuentaNumeroCuenta",
-                        column: x => x.CuentaNumeroCuenta,
+                        name: "FK_Inversiones_CuentasBanco_CuentaID",
+                        column: x => x.CuentaID,
                         principalTable: "CuentasBanco",
-                        principalColumn: "NumeroCuenta",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "NumeroCuenta");
                 });
 
             migrationBuilder.CreateTable(
@@ -169,18 +167,16 @@ namespace CoopDEJC.Migrations
                     Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Codigo = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     InversionID = table.Column<int>(type: "int", nullable: false),
-                    CuentaID = table.Column<int>(type: "int", nullable: false),
-                    CuentaNumeroCuenta = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    CuentaID = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_CuotasInversiones", x => x.CuotaInversionID);
                     table.ForeignKey(
-                        name: "FK_CuotasInversiones_CuentasBanco_CuentaNumeroCuenta",
-                        column: x => x.CuentaNumeroCuenta,
+                        name: "FK_CuotasInversiones_CuentasBanco_CuentaID",
+                        column: x => x.CuentaID,
                         principalTable: "CuentasBanco",
-                        principalColumn: "NumeroCuenta",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "NumeroCuenta");
                     table.ForeignKey(
                         name: "FK_CuotasInversiones_Inversiones_InversionID",
                         column: x => x.InversionID,
@@ -195,9 +191,9 @@ namespace CoopDEJC.Migrations
                 column: "Cedula");
 
             migrationBuilder.CreateIndex(
-                name: "IX_CuotasInversiones_CuentaNumeroCuenta",
+                name: "IX_CuotasInversiones_CuentaID",
                 table: "CuotasInversiones",
-                column: "CuentaNumeroCuenta");
+                column: "CuentaID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CuotasInversiones_InversionID",
@@ -215,14 +211,14 @@ namespace CoopDEJC.Migrations
                 column: "PrestamoId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Inversiones_CuentaNumeroCuenta",
+                name: "IX_Inversiones_CedulaCliente",
                 table: "Inversiones",
-                column: "CuentaNumeroCuenta");
+                column: "CedulaCliente");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Inversiones_UsuarioCedula",
+                name: "IX_Inversiones_CuentaID",
                 table: "Inversiones",
-                column: "UsuarioCedula");
+                column: "CuentaID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Prestamos_ClienteCedula",

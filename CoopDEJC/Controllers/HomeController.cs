@@ -70,7 +70,7 @@ namespace CoopDEJC.Controllers
         }
         public IActionResult UsertoInvesment()
         {
-            return RedirectToAction("Usuario","Invesment");
+            return RedirectToAction("Usuario","Invesment",cliente);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

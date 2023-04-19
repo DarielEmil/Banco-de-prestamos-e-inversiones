@@ -1,4 +1,5 @@
-﻿using CoopDEJC.Models;
+﻿using CoopDEJC.Controllers.Funciones;
+using CoopDEJC.Models;
 using CoopDEJC.Models.CoopDBModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -21,7 +22,10 @@ namespace CoopDEJC.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+
+            IndexModel imodel = IndexFunciones.LlenadoIndex(cliente, _context);
+            
+            return View(imodel);
         }
         public IActionResult Usuario(Models.Cliente login)
         {
@@ -42,7 +46,8 @@ namespace CoopDEJC.Controllers
 
             if (cliente.Correo != null && cliente?.Clave != null)
             {
-                
+
+
                 return RedirectToAction("Index");
 
             }

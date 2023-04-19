@@ -114,7 +114,7 @@
                     </div>
                     <div class="libtn">
                         <a class="button" asp-area="" asp-controller="Loans" asp-action="LoansReportShow" target = "_blank">Loans View</a>
-                        <a class="button" asp-area="" asp-controller="Loans" asp-action="">Loans Fee</a>
+                    <a class="button" asp-area="" asp-controller="Loans" asp-action="LoansFee">Loans Fee</a>
 
                     </div>
                 </div>
@@ -139,15 +139,13 @@
                   <input class="input_box" name="lfee" type="number" min="1" autocomplete="off" placeholder="Fee" readonly required />
                 </div>
                 <div class="textboxes">
-                  <input class="input_box" name=ldate" type="date" autocomplete="off" placeholder="Date" required />
+                  <input class="input_box" name= "ldate" type="date" autocomplete="off" placeholder="Date" required />
                   <input class="input_box" name="lfeedate" type="date" autocomplete="off" placeholder="Fee Date" required />
                 </div>
                 <div class="textboxes">
-                  <label for="garant">Financial Guarantee: </label>
-                  <select id="garant" required>
-                    <option value="1">Guarantor</option>
-                    <option value="2">Guarantee</option>
-                  </select>
+                  <label for="garant">Financial Guarantee: </label> 
+                  <button class ="guarantor">Guarantor</button>
+                  <button class="guarantee">Guarantee</button>
                 </div>
                 <!--fiador-->
                 <div class="textboxes">
@@ -159,17 +157,22 @@
                 <div class="textboxes">
                   <select id="objtype" required>
                     <option value="" disabled selected>Type</option>
-                    <option value="casa">Hipoteca</option>
-                    <option value="electrodomestico">Electrodoméstico</option>
-                    <option value="vehiculo">Vehículo</option>
-                    <option value="otros">Otros</option>
+                    <option value="Mortgage">Mortgage</option>
+                    <option value="Appliance">Appliance</option>
+                    <option value="Vehicle">Vehicle</option>
+                    <option value="Others">Others</option>
                   </select>
-                  <input class="input_box" name="amount" type="number" min="1" autocomplete="off" placeholder="Value" required />
+                        <input class="input_box" name="value" type="number" min="1" autocomplete="off" placeholder="Value" required />
                 </div>
                 <div class="textboxes">
                   <input name="location" type="text" placeholder="Location" required />
+                        <select id="pmethod" required>
+                            <option value="" disabled selected>Payment Method</option>
+                            <option value="Check">Check</option>
+                            <option value="Bank deposit">Bank deposit</option>
+                            <option value="Direct transfer">Direct transfer</option>
+                        </select>
                 </div>
-                <div></div>
                 <div class="btnsubmit">
                   <input type="submit" value="New Loan" />
                 </div>

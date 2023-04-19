@@ -47,10 +47,6 @@ namespace CoopDEJC.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PreguntaSeguridad")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Telefono")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -60,7 +56,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasKey("Cedula");
 
-                    b.ToTable("Clientes", (string)null);
+                    b.ToTable("Clientes");
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.CuentaBanco", b =>
@@ -84,7 +80,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasIndex("Cedula");
 
-                    b.ToTable("CuentasBanco", (string)null);
+                    b.ToTable("CuentasBanco");
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.CuotaInversion", b =>
@@ -127,7 +123,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasIndex("InversionID");
 
-                    b.ToTable("CuotasInversiones", (string)null);
+                    b.ToTable("CuotasInversiones");
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.CuotaPrestamo", b =>
@@ -161,7 +157,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasIndex("PrestamoId");
 
-                    b.ToTable("CuotasPrestamos", (string)null);
+                    b.ToTable("CuotasPrestamos");
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.Garantia", b =>
@@ -183,7 +179,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasIndex("PrestamoId");
 
-                    b.ToTable("Garantias", (string)null);
+                    b.ToTable("Garantias");
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.Inversion", b =>
@@ -211,8 +207,8 @@ namespace CoopDEJC.Migrations
                     b.Property<DateTime>("FechaInicio")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Interes")
-                        .HasColumnType("int");
+                    b.Property<double>("Interes")
+                        .HasColumnType("float");
 
                     b.Property<int>("Monto")
                         .HasColumnType("int");
@@ -226,7 +222,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasIndex("UsuarioCedula");
 
-                    b.ToTable("Inversiones", (string)null);
+                    b.ToTable("Inversiones");
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.Prestamo", b =>
@@ -252,8 +248,8 @@ namespace CoopDEJC.Migrations
                     b.Property<string>("FiadorCedula")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("Interes")
-                        .HasColumnType("int");
+                    b.Property<double>("Interes")
+                        .HasColumnType("float");
 
                     b.Property<int>("Monto")
                         .HasColumnType("int");
@@ -267,7 +263,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasIndex("FiadorCedula");
 
-                    b.ToTable("Prestamos", (string)null);
+                    b.ToTable("Prestamos");
                 });
 
             modelBuilder.Entity("CoopDEJC.Models.CoopDBModels.CuentaBanco", b =>

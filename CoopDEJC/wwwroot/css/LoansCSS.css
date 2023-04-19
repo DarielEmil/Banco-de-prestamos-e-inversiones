@@ -1,0 +1,443 @@
+﻿body {
+    position: relative;
+    margin: 0;
+    display: grid;
+    background: #EFEFEF;
+    grid-template-areas:
+        "a b b"
+        "a c c";
+    grid-template-columns: 10% 90% 0;
+    grid-template-rows: 5% 95%;
+}
+
+live-preview-root {
+    display: none;
+}
+
+html * {
+    font-family: 'Space Mono', monospace;
+}
+
+/*SIDEBAR CSS*/
+.wrapper {
+    width: inherit;
+    height: 100%;
+    background: #112B3C;
+    grid-area: a;
+}
+.sidebar{
+    width:inherit;
+    height:inherit;
+}
+.sidebar svg{
+    width:100%;
+    height: 4%;
+    margin: 1rem 0 0 0;
+}
+.sidebar p{
+    color:#EFEFEF;
+    font-weight:bold;
+    text-align:center;
+}
+.sidebar ul{
+    display:grid;
+    justify-content:center;
+    padding:6rem 0 0 0;
+    list-style:none;
+    height:15rem
+}
+.sidebar a{
+    display:flex;
+    justify-content:start;
+    justify-items:center;
+    align-content:center;
+    align-items:center;
+}
+
+.sidebar span{
+    display:flex;
+    color: #EFEFEF;
+    font-size: 14px;
+    font-weight:bold;
+    margin: 0 0 0 5px;
+    transition: 400ms ease-in-out;
+}
+
+.sidebar span:hover{
+    color: #F66B0E;
+}
+/*HEADER CSS*/
+.header{
+    display:flex;
+    justify-content:end;
+    height:2rem;
+    width:100%;
+    grid-area:b;
+}
+.header a{
+    margin: 10px 1rem 0 0;
+    text-decoration:none;
+    font-weight:bold;
+    color: #112B3C;
+    transition: 400ms ease-out;
+}
+.header a:hover{
+    color: #F66B0E;
+}
+/*CONTAINER CSS*/
+.container{
+    display:grid;
+    grid-area:c;
+    grid-template-rows: 15% 35% 50%;
+    grid-template-columns:50% 50%;
+    grid-template-areas:
+        "a a"
+        "c b"
+        "d d";
+}
+.title{
+    display:grid;
+    justify-content:start;
+    margin: 0 0 0 3rem;
+    width:inherit;
+    grid-template-rows: 5rem 0;
+    grid-area: a;
+}
+.title h2{
+    color: #112B3C;
+    font-weight: bold;
+}
+.title span{
+    position:relative;
+    background: #F66B0E;
+    bottom: 1rem;
+    width: 1.5rem;
+    height:8px;
+    border-radius: 2rem;
+}
+
+.balance{
+    display:grid;
+    width:inherit;
+    height:inherit;
+    justify-content:start;
+    margin: 0 0 0 3rem;
+    grid-area:c;
+    grid-template-columns: 12rem;
+    grid-template-rows: 14rem;
+    grid-template-areas:
+        "a";  
+}
+.loansBlce {
+    display: inherit;
+    width: 26rem;
+    height: 10rem;
+    justify-self: self-start;
+    align-self: center;
+    justify-content: start;
+    align-content: center;
+    background: linear-gradient(-30deg, rgb(17, 43, 60, 0.8) -20%,rgb(32, 83, 117, 0.4)70%);
+    /*background: rgb(32, 83, 117, 0.5);*/
+    border-radius: 2rem;
+    color: #112B3C;
+    font-weight:bold;
+    grid-area: a;
+}
+.loansBlce center{
+    display:grid;
+    align-items:center;
+    justify-items:self-start;
+    grid-template-rows: 3rem 3rem 3rem;
+    margin: 0 0 0 2rem;
+}
+.loansBlce h4, .loansBlce h3, .loansBlce h5{
+    margin:0;
+}
+
+/*LOANS DETAILS CSS*/
+
+.ldetails {
+    display: grid;
+    justify-content: end;
+    grid-template-rows: 4rem 8rem;
+    grid-template-columns: 26rem;
+    grid-area: b;
+    grid-template-areas:
+        "a"
+        "b";
+}
+
+.ldetails .title{
+    justify-self:end;
+    margin: 0 5rem 0 0;
+    grid-area:a;
+}
+.lpaid {
+    display:flex;
+    grid-area:b;
+}
+.boxup, .boxdown {
+    display: grid;
+    flex-basis: 12rem;
+    /* height: 6rem; */
+    grid-template-rows: 3rem 4rem;
+    grid-template-columns: 4rem 5rem;
+    grid-template-areas:
+        "a b"
+        "a c";
+}
+.boxup span, .boxdown span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: a;
+    justify-self: center;
+    align-self: center;
+    height: 4rem;
+    width: 4rem;
+    margin: 0 3rem 0 0;
+    background: rgb(17, 43, 60, 0.9);
+    border-radius: 1rem;
+ 
+}
+.boxup h4{
+    grid-area:b;
+}
+.boxdown p{
+    grid-area:c;
+}
+
+/*LOANS LIST CSS*/
+.llist{
+    grid-area:d;
+}
+.llist .title{
+    grid-template-columns:18rem 8rem;
+    grid-template-areas:
+        "a b"
+        "c b"
+}
+.llist .title h2{
+    grid-area:a;
+}
+.llist .title button{
+    justify-self:center;
+    align-self:center;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    width:3rem;
+    height:3rem;
+    border-radius: 5rem;
+    background:#112B3C;
+    grid-area: b;
+    transition: 600ms ease-in;
+}
+.llist .title button:hover{
+    box-shadow:1px 1px 10px rgb(246, 107, 14, 0.8);
+}
+.llist .title span{
+    grid-area:c;
+    width:3rem;
+}
+.ltab-Ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "a c"
+        "b d";
+}
+.first, .second, .third, .fourth{
+    display:flex;
+}
+.first{ 
+    grid-area:a;
+}
+.second{
+    grid-area:b;
+}
+.third{
+    grid-area:c;
+}
+.fourth{
+    grid-area:d;
+}
+
+.debLi {
+    display: grid;
+    align-content: center;
+    background: #EFEFEF;
+    border-radius: 10px;
+    width: 34rem;
+    height: 4rem;
+    margin: 1rem 0 1rem 0;
+    color: #112B3C;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px rgb(17, 43, 60, 0.5);
+    grid-template-columns: 5rem 20rem;
+    grid-template-areas: 
+        "a b"
+        "a c";
+}
+.debLi div{
+    display: grid;
+    width:inherit;
+    align-items:center;
+    grid-template-areas:
+        "a b d e"
+        "a c d e"
+}
+.debLi span{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 8px;
+    background: rgb(17, 43, 60, 0.2);
+    grid-area: a;
+}
+
+.debLi h4{
+    grid-area:b;
+    margin:0;
+}
+.debLi p{
+    grid-area: c;
+    margin:0;
+}
+#CodeLi{
+    grid-area:d;
+}
+#PriceLi {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-area: e;
+    background: #112B3C;
+    height: 2rem;
+    border-radius: 2rem;
+    width: 8rem;
+    color: #03C988;
+}
+
+
+/*LOANS INFO POPUP CSS*/
+.popup-info {
+    position: absolute;
+    transform: scaleX(0);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    left: 0;
+    background: rgb(17, 43, 60, 0.4);
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+.formBox-info {
+    display: flex;
+    width: 64rem;
+    justify-content: center;
+    align-items: center;
+    height: 38rem;
+    border-radius: 2rem;
+    background: #EFEFEF;
+}
+
+.container-info {
+    display: grid;
+    /*justify-content: start;*/
+    align-content: center;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 6rem 8rem 15rem;
+    flex-basis: 100%;
+}
+.title-info{
+    display: grid;
+    justify-content:start;
+    justify-items:start;
+    margin: 0 0 0 2rem;
+    grid-template-rows:2rem 0;
+    grid-template-columns: 90%;
+    grid-template-areas: 
+        "a b";
+}
+.title-info h2, .title-info h5{
+    grid-area: a;
+}
+.title-info h2{
+    color: #112B3C;
+}
+.title-info h5{
+    position:relative;
+    top: 2rem;
+    color:#F66B0E;
+}
+.title-info svg{
+    cursor:pointer;
+    grid-area:b;
+}
+.rowamount{
+    display:flex;
+    justify-content:space-evenly;
+    align-content:center;
+    align-items:center;
+}
+.rowpending {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.amount, .fee, .amountdate, .feedate, .pending, .paid{
+    width: 14rem;
+    height: 8rem;
+    background:#112B3C;
+    border-radius: 2rem;
+    color:rgb(239, 239, 239);
+    box-shadow: 1px 1px 4px rgb(17, 43, 60, 0.6);
+}
+
+
+.libtn{
+    display:flex;
+    justify-content:end;
+    margin: 0 2rem 0 0;
+}
+.lview{
+    width: 10rem;
+    height: 3rem;
+    margin: 0 2rem 0 0;
+    border: none;
+    background: #F66B0E;
+    color: #EFEFEF;
+    cursor:pointer;
+    font-weight:bold;
+    border-radius: 2rem;
+    transition: 400ms ease-in;
+}
+.lview:hover {
+    color: #112B3C;
+}
+
+.lfee {
+    width: 10rem;
+    height: 3rem;
+    margin: 0 2rem 0 0;
+    border: none;
+    background: #112B3C;
+    color: #EFEFEF;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2rem;
+    transition: 400ms ease-in;
+}
+.lfee:hover{
+    color:#F66B0E;
+}

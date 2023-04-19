@@ -2,13 +2,16 @@
     position: relative;
     margin: 0;
     display: grid;
+    background:#EFEFEF;
     grid-template-areas:
         "a b b"
         "a c c";
     grid-template-columns: 10% 90% 0;
-    /*grid-template-rows: 10% 60% 30%;*/
+    grid-template-rows: 5% 95%;
 }
-
+live-preview-root{
+    display:none;
+}
 html * {
     font-family: 'Space Mono', monospace;
 }
@@ -84,6 +87,8 @@ html * {
 .container{
     display:grid;
     grid-area:c;
+    grid-template-rows: 15% 50% 35%;
+    grid-template-columns:50% 50%;
     grid-template-areas:
         "a a"
         "c b"
@@ -94,6 +99,7 @@ html * {
     justify-content:start;
     margin: 0 0 0 3rem;
     width:inherit;
+    grid-template-rows: 5rem 0;
     grid-area: a;
 }
 .title h2{
@@ -115,28 +121,270 @@ html * {
     display:grid;
     width:inherit;
     height:inherit;
-    justify-content:center;
+    justify-content:start;
+    margin: 0 0 0 3rem;
     grid-area:c;
+    grid-template-columns: 12rem 12rem;
+    grid-template-rows: 10rem 10rem;
     grid-template-areas:
         "a a"
         "b c";  
 }
 .investment {
+    display: inherit;
     width: 20rem;
-    height: 2rem;
-    background: #205375;
+    height: 10rem;
+    justify-self: self-start;
+    align-self: center;
+    justify-content: start;
+    align-content: center;
+    background: linear-gradient(-30deg, rgb(17, 43, 60, 0.8) -20%,rgb(32, 83, 117, 0.4)70%);
+    /*background: rgb(32, 83, 117, 0.5);*/
+    border-radius: 2rem;
+    color: #112B3C;
+    font-weight:bold;
     grid-area: a;
 }
+.investment center {
+    display: grid;
+    align-items: center;
+    justify-items: self-start;
+    grid-template-rows: 3rem 3rem 3rem;
+    margin: 0 0 0 1rem;
+}
+
+.investment h4, .investment h3, .investment h5 {
+    margin: 0;
+}
+/*
+.investment h4, .investment h3, .investment h5{
+    margin: 0 0 1rem 1rem;
+}
+.investment h3{
+    position:relative;
+    right:1rem;
+} */
 .debts{
+    display: grid;
+    align-content:center;
+    width:100%;
+    height:100%;
     grid-area: b;
 }
-.inverted{
+.debts hr{
+    width:2rem;
+    height:2px;
+    border:none;
+    background:#F66B0E;
+    border-radius:2rem
+}
+.debts h5,.debts h4{
+    margin:0;
+}
+.debts center{
+    display:grid;
+    margin: 0;
+    justify-content:center;
+    align-content: center;
+    background:rgb(32, 83, 117, 0.4);
+    height:6rem;
+    border-radius: 1rem;
+    box-shadow:2px 2px 2px rgb(17, 43, 60, 0.6);
+}
+
+.inverted {
+    display: grid;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 2rem;
     grid-area: c;
 }
 
+.inverted hr {
+    width: 2rem;
+    height: 2px;
+    border: none;
+    background: #F66B0E;
+    border-radius: 2rem
+}
+
+.inverted h5, .inverted h4 {
+    margin: 0;
+}
+.inverted center {
+    display: grid;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+    background: rgb(32, 83, 117, 0.4);
+    height: 6rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px rgb(17, 43, 60, 0.6);
+}
 .invlist{
+    display:grid;
+    grid-template-rows:2rem 11rem;
     grid-area:d;
 }
+.invlist h3, .deblist h3{
+    margin: 0 0 0 2rem;
+}
+.invUl, .debUl{
+    list-style:none;
+    height:inherit;
+    margin:0;
+    padding: 0 0 0 2rem;
+}
+#invLi, #debLi {
+    display: grid;
+    align-content: center;
+    background: #EFEFEF;
+    border-radius: 10px;
+    width: 30rem;
+    height: 4rem;
+    margin: 1rem 0 1rem 0;
+    color: #112B3C;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px rgb(17, 43, 60, 0.5);
+    grid-template-columns: 5rem 20rem;
+    grid-template-areas: 
+        "a b"
+        "a c";
+}
+#invLi span, #debLi span{
+        display: grid;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 8px;
+    background: rgb(17, 43, 60, 0.2);
+    grid-area: a;
+}
+    
+#invLi h5, #debLi h5{
+    grid-area:b;
+}
+
 .deblist{
+    display: grid;
+    grid-template-rows: 2rem 11rem;
     grid-area:e;
+}
+
+#invLi p, #debLi p {
+    position: relative;
+    bottom: 1rem;
+    
+    margin: 0;
+    grid-area: c;
+}
+
+/*POPUP FIST ACCOUNT CSS*/
+
+.faccount {
+    transform:scaleX(0);
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    left: 0;
+    background: rgb(17, 43, 60, 0.4);
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+.formBox {
+    display:flex;
+    width: 64rem;
+    justify-content:center;
+    align-items:center;
+    height: 38rem;
+    border-radius: 2rem;
+    background: #EFEFEF;
+}
+
+.container-popup {
+    display: grid;
+    grid-template-rows: 5rem 16rem;
+    grid-template-areas:
+        "a"
+        "b";
+    flex-basis: 50%;
+}
+
+.title-popup {
+    display: grid;
+    justify-content: start;
+    margin: 0 0 0 3rem;
+    width: inherit;
+    grid-template-rows: 5rem 0;
+    grid-area: a;
+}
+.title-popup h2{
+    margin: 2rem 0 0 0;
+}
+.title-popup hr{
+    background: #F66B0E;
+    justify-self: self-start;
+    width: 2rem;
+    margin: 0;
+    height: 8px;
+    border-radius: 2rem;
+}
+.container-popup form {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 6rem 4rem 4rem;
+    align-self: center;
+    grid-area: b;
+}
+.textboxes input {
+    border: 1px solid rgb(17, 43, 60, 0.2);
+    width: 12rem;
+    height: 2.5rem;
+    resize: none;
+    outline: none;
+    color: rgb(17, 43, 60);
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+
+.textboxes input:focus{
+    outline:none;
+}
+.textboxes input::placeholder {
+    color: rgb(17, 43, 60, 0.4);
+}
+#typeacc {
+    border: 1px solid rgb(17, 43, 60, 0.2);
+    resize: none;
+    outline: none;
+    width: 12rem;
+    height: 2.5rem;
+    border-radius:0.5rem;
+}
+#popup-img img{
+    flex-basis:50%;
+    height:16rem;
+}
+.btnsubmit input{
+    background:rgb(246, 107, 14);
+    border:none;
+    outline:none;
+    color:rgb(239, 239, 239);
+    width:9rem;
+    height:3rem;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:4rem;
+    transition: 400ms ease-in;
+}
+.btnsubmit input:hover{
+    color:rgb(17, 43, 60);
 }

@@ -16,36 +16,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Clientes/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Clientes/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Clientes/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Clientes/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Clientes/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Home/ManageAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYW5hZ2VBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Home/MyProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNeVByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Investment/InvestementReportShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbnZlc3RlbWVudFJlcG9ydFNob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Investment/Investment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbnZlc3RtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Investment/InvestmentReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbnZlc3RtZW50UmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Loans/Loans.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hbnNcTG9hbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Loans/LoansReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hbnNcTG9hbnNSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Loans/LoansReportShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hbnNcTG9hbnNSZXBvcnRTaG93LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ryuk/OneDrive/Desktop/Banco de prestamos/Banco-de-prestamos-e-inversiones/Jesus/CoopDEJC/Views/Login/Login.cshtml]

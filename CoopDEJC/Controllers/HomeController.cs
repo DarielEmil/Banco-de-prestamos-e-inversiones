@@ -19,11 +19,11 @@ namespace CoopDEJC.Controllers
             _logger = logger;
             _context = context;
         }
-
         public IActionResult Index()
         {
             return View();
         }
+
 
         public IActionResult Usuario(Models.Cliente login)
         {
@@ -39,13 +39,14 @@ namespace CoopDEJC.Controllers
                            Telefono = d.Telefono,
                            Correo = d.Correo,
                            Clave = d.Clave,
-                           PreguntaSeguridad = d.PreguntaSeguridad,
                            Token = d.Token
                        }).FirstOrDefault();
 
             if (cliente.Correo != null && cliente?.Clave != null)
             {
+                
                 return RedirectToAction("Index");
+
             }
             else
                 return RedirectToAction("Index");
@@ -57,12 +58,16 @@ namespace CoopDEJC.Controllers
             return View(cliente);
         }
 
+        public IActionResult Usertoloans()
+        {
+
+            return RedirectToAction("Usuario","Loans",cliente);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-       
     }
 }

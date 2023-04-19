@@ -1,4 +1,5 @@
-﻿using CoopDEJC.Models;
+﻿using CoopDEJC.Controllers.Funciones;
+using CoopDEJC.Models;
 using CoopDEJC.Models.CoopDBModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -21,7 +22,10 @@ namespace CoopDEJC.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+
+            IndexModel imodel = IndexFunciones.LlenadoIndex(cliente, _context);
+            
+            return View(imodel);
         }
 
 
@@ -44,7 +48,8 @@ namespace CoopDEJC.Controllers
 
             if (cliente.Correo != null && cliente?.Clave != null)
             {
-                
+
+
                 return RedirectToAction("Index");
 
             }
@@ -62,6 +67,10 @@ namespace CoopDEJC.Controllers
         {
 
             return RedirectToAction("Usuario","Loans",cliente);
+        }
+        public IActionResult UsertoInvesment()
+        {
+            return RedirectToAction("Usuario","Invesment");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

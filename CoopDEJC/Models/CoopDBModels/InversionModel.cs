@@ -16,12 +16,11 @@ namespace CoopDEJC.Models.CoopDBModels
 
         //Union con la tabla clientes para el usuario
         [ForeignKey("CedulaCliente")]
-        public string CedulaCliente { get; set; } = string.Empty;
         public Cliente Usuario { get; set; } = new Cliente();
 
         //Union con la tabla cuentas
         [ForeignKey("CuentaID")]
-        public int CuentaID { get; set; }
+      
         public CuentaBanco Cuenta { get; set; } = new CuentaBanco();
 
         public List<CuotaInversion> Cuotas { get; set; } = new List<CuotaInversion>();

@@ -1,22 +1,62 @@
-﻿using CoopDEJC.Models.CoopDBModels;
+﻿using CoopDEJC.Models;
+using CoopDEJC.Models.CoopDBModels;
 using DinkToPdf;
 using DinkToPdf.Contracts;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
+using Cliente = CoopDEJC.Models.CoopDBModels.Cliente;
+using Inversion = CoopDEJC.Models.CoopDBModels.Inversion;
 
 namespace CoopDEJC.Controllers
 {
     public class InvestmentController : Controller
     {
         private readonly IConverter _converter;
-        public InvestmentController(IConverter converter)
+        private readonly CoopContext _context;
+        private Cliente? cliente;
+        public InvestmentController(IConverter converter,CoopContext context)
         {
             _converter = converter;
+            _context = context;
         }
         public IActionResult Investment()
         {
             return View();
         }
+
+        public IActionResult InvesmentGet(int iamount,int ifee,DateTime idate, DateTime ifeedate)
+        {
+            Inversion investment = new Inversion();
+
+            investment.Monto= iamount;
+            //campo de interes que depende
+            investment.Interes = ifee;
+
+            investment.FechaInicio = idate;
+            investment.FechaInicio = ifeedate;
+
+            investment.Usuario = cliente;
+
+            foreach(var cuenta in cliente.Cuentas)
+            {
+                if(cuenta.activa = true)
+                {
+                    investment.Cuenta = cuenta;
+                }   
+            }
+            try
+            {
+                _context.Inversiones.Add(investment);
+                _context.SaveChanges();
+            }catch(Exception ex)
+            {
+                Console.WriteLine("error al guardar: " + ex);
+            }
+            return RedirectToAction("Investment");
+        }
+
+
+
         public IActionResult InvestmentReport()
         {
             Inversion inversionDb = new Inversion();
@@ -91,6 +131,14 @@ namespace CoopDEJC.Controllers
             string pdfname = "Investment_" + DateTime.Now.ToShortDateString() + ".pdf";
             return File(pdffile, "application/pdf", pdfname);
         }
+
+        public IActionResult Usuario(Cliente user)
+        {
+            cliente = user;
+            return RedirectToAction("Investment");
+        }
+
+
     }
 
 }

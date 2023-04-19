@@ -27,6 +27,8 @@ namespace CoopDEJC.Controllers
             
             return View(imodel);
         }
+
+
         public IActionResult Usuario(Models.Cliente login)
         {
 
@@ -59,6 +61,12 @@ namespace CoopDEJC.Controllers
         {
 
             return View(cliente);
+        }
+
+        public IActionResult Usertoloans()
+        {
+
+            return RedirectToAction("Usuario","Loans",cliente);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

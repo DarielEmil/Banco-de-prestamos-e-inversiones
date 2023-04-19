@@ -46,7 +46,6 @@ namespace CoopDEJC.Models.CoopDBModels
 
         //Union con la tabla cuentas
         [ForeignKey("CuentaID")]
-        public int CuentaID { get; set; }
         public CuentaBanco Cuenta { get; set; } = new CuentaBanco();
 
     }

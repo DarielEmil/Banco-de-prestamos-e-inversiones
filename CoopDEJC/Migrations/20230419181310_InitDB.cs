@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CoopDEJC.Migrations
 {
     /// <inheritdoc />
-    public partial class IntDB : Migration
+    public partial class InitDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -58,6 +58,7 @@ namespace CoopDEJC.Migrations
                     Monto = table.Column<int>(type: "int", nullable: false),
                     FechaInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaFin = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Interes = table.Column<double>(type: "float", nullable: false),
                     ClienteCedula = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     FiadorCedula = table.Column<string>(type: "nvarchar(450)", nullable: true),
@@ -119,7 +120,7 @@ namespace CoopDEJC.Migrations
                     Monto = table.Column<int>(type: "int", nullable: false),
                     FechaPlanificado = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaRealizado = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ModalidadPago = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Codigo = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     PrestamoId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -140,6 +141,8 @@ namespace CoopDEJC.Migrations
                 {
                     GarntiaID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Monto = table.Column<int>(type: "int", nullable: false),
+                    Ubicacion = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PrestamoId = table.Column<int>(type: "int", nullable: false)
                 },

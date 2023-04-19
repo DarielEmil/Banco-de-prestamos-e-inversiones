@@ -441,3 +441,159 @@ html * {
 .lfee:hover{
     color:#F66B0E;
 }
+
+/*ADD LOANS POPUP CSS*/
+
+.popup {
+    transform: scaleX(0);
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background: rgb(17, 43, 60, 0.4);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+.formBox {
+    display: grid;
+    width: 64rem;
+    justify-content: center;
+    align-items: center;
+    height: 38rem;
+    border-radius: 2rem;
+    background: #EFEFEF;
+    grid-template-columns: 35rem;
+    grid-template-rows: 8rem 30rem;
+    grid-template-areas:
+        "a d"
+        "b c";
+}
+
+.container-popup {
+    display: grid;
+    grid-template-rows: 5rem 16rem;
+    height:0;
+    grid-template-areas:
+        "a"
+        "b";
+    grid-area:a;
+}
+
+.title-add {
+    display: grid;
+    justify-content: start;
+    margin: 0;
+    width: inherit;
+    grid-template-rows: 5rem 0;
+    grid-area: a;
+}
+
+.formBox svg{
+    justify-self:end;
+    cursor:pointer;
+    grid-area:d;
+}
+.title-add hr{
+    position:relative;
+    bottom: 1rem;
+    background: #F66B0E;
+    justify-self: self-start;
+    width: 2rem;
+    margin: 0;
+    height: 8px;
+    border-radius: 2rem;
+}
+#form-div {
+    display: grid;
+    align-content: center;
+    grid-template-rows: 8rem;
+}
+.formBox form {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 4rem 4rem;
+    align-self: center;
+    grid-area: b;
+}
+.textboxes input {
+    border: 1px solid rgb(17, 43, 60, 0.2);
+    width: 12rem;
+    height: 2.5rem;
+    resize: none;
+    outline: none;
+    margin: 1rem 0 1rem 0;
+    color: rgb(17, 43, 60);
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+.textboxes input:focus{
+    outline:none;
+}
+.textboxes input::placeholder{
+    color:rgb(17, 43, 60, 0.4);
+}
+.btnsubmit{
+    align-self:center;
+}
+.btnsubmit input{
+    background:rgb(246, 107, 14);
+    border:none;
+    outline:none;
+    color:rgb(239, 239, 239);
+    width:9rem;
+    height:3rem;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:4rem;
+    transition: 400ms ease-in;
+}
+.btnsubmit input:hover{
+    color:rgb(17, 43, 60);
+}
+.guarantor, .guarantee {
+    width: 6rem;
+    height: 2rem;
+    background: #205375;
+    border: none;
+    border-radius: 0.6rem;
+    color: #EFEFEF;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: 600ms ease-out;
+}
+.guarantor:hover, .guarantee:hover{
+    color: #F66B0E;
+}
+#objtype {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px rgb(17, 43, 60, 0.2);
+}
+#popup-img {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100%;    
+    grid-template-columns:100%;
+    grid-template-rows: 75%;
+    grid-area:c;
+}
+#popup-img img {
+    flex-basis: 50%;
+    height: 16rem;
+}
+#popup-img svg{
+    justify-self:end;
+    margin: 0 2rem 0 0;
+    cursor:pointer;
+}
+
+#warranty{
+    display:none;
+}

@@ -16,7 +16,7 @@ using NuGet.Protocol.Plugins;
 namespace CoopDEJC.Controllers
 {
     public class LoansController : Controller
-    { 
+    {
         private readonly IConverter _converter;
 
         private readonly CoopContext _context;
@@ -70,8 +70,16 @@ namespace CoopDEJC.Controllers
         public IActionResult LoansReport()
         {
 
+            Prestamo prestamo = new()
+            {
+                PrestamoId = 1,
+                Monto = 1760000,
+                FechaInicio = new DateTime(2023, 04, 19),
+                FechaFin = new DateTime(2024, 04, 19),
+                Interes = 15
+            };
 
-            var prestamo = (from d in _context.Prestamos
+            /*var prestamo = (from d in _context.Prestamos
                             where d.Usuario.Cedula == cliente.Cedula
                             select new Prestamo{
                             
@@ -82,7 +90,7 @@ namespace CoopDEJC.Controllers
                                 Tipo=d.Tipo,
                                 Interes=d.Interes
                             
-                            }).FirstOrDefault();;
+                            }).FirstOrDefault();;*/
 
             ViewBag.Monto = prestamo.Monto;
             ViewBag.Meses = (prestamo.FechaFin.Month - prestamo.FechaInicio.Month) + 12 * (prestamo.FechaFin.Year - prestamo.FechaInicio.Year);
@@ -103,7 +111,7 @@ namespace CoopDEJC.Controllers
             string actualpage = HttpContext.Request.Path;
             string urlpage = HttpContext.Request.GetEncodedUrl();
             urlpage = urlpage.Replace(actualpage, "");
-            urlpage = $"{urlpage}/Loans/LoansReport{prestamodb}";
+            urlpage = $"{urlpage}/Loans/LoansReport";
 
             var pdf = new HtmlToPdfDocument()
             {
@@ -145,7 +153,7 @@ namespace CoopDEJC.Controllers
                     {
                         Page = urlpage
                     }
-                }
+    }
 
             };
 

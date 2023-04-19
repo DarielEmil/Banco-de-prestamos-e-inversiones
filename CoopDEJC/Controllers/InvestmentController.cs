@@ -42,8 +42,8 @@ namespace CoopDEJC.Controllers
                 if(cuenta.activa = true)
                 {
                     investment.Cuenta = cuenta;
-                }   
-            }
+    }
+}
             try
             {
                 _context.Inversiones.Add(investment);

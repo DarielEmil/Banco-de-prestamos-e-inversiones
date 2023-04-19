@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\css\\IndexCSS.css"
     },
     {
+      "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\css\\InvestmentCSS.css",
+      "PackagePath": "staticwebassets\\css\\InvestmentCSS.css"
+    },
+    {
+      "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\css\\LoansCSS.css",
+      "PackagePath": "staticwebassets\\css\\LoansCSS.css"
+    },
+    {
       "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\css\\LoginCSS.css",
       "PackagePath": "staticwebassets\\css\\LoginCSS.css"
     },
@@ -29,8 +37,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\FirstAccount.svg",
+      "PackagePath": "staticwebassets\\img\\FirstAccount.svg"
+    },
+    {
       "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\Home-Index.svg",
       "PackagePath": "staticwebassets\\img\\Home-Index.svg"
+    },
+    {
+      "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\Investment-Illus.svg",
+      "PackagePath": "staticwebassets\\img\\Investment-Illus.svg"
     },
     {
       "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\Investment.svg",
@@ -59,6 +75,10 @@
     {
       "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\waves2.png",
       "PackagePath": "staticwebassets\\img\\waves2.png"
+    },
+    {
+      "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\js\\JSFunction.js",
+      "PackagePath": "staticwebassets\\js\\JSFunction.js"
     },
     {
       "Id": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\js\\site.js",

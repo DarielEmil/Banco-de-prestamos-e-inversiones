@@ -17,6 +17,8 @@
     <None Include="Views\Home\Index.cshtml" />
     <None Include="Views\Home\MyProfile.cshtml" />
     <None Include="Views\Home\Privacy.cshtml" />
+    <None Include="Views\Investment\Investment.cshtml" />
+    <None Include="Views\Loans\Loans.cshtml" />
     <None Include="wwwroot\img\apps-line.svg" />
     <None Include="wwwroot\img\Home-Index.svg" />
     <None Include="wwwroot\img\Investment.svg" />

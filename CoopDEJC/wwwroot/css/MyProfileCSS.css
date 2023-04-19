@@ -246,3 +246,242 @@ input:focus{
 .btnsubmit button:hover {
     color: #F66B0E;
 }
+
+/*POPUP MANAGE ACCOUNT CSS*/
+.maccount {
+    transform: scaleX(0);
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    left: 0;
+    background: rgb(17, 43, 60, 0.4);
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+
+.formBox-mag {
+    display: flex;
+    width: 64rem;
+    justify-content: center;
+    align-items: center;
+    height: 38rem;
+    border-radius: 2rem;
+    background: #EFEFEF;
+}
+.container-mag {
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+.title-mag {
+    display: flex;
+    justify-content: space-between;
+}
+.title-mag h2{
+    margin: 2rem 0 0 2rem;
+}
+.title-mag hr{
+    background: #F66B0E;
+    justify-self: self-start;
+    width: 2rem;
+    margin: 0 5rem 0 0;
+    height: 8px;
+    border-radius: 2rem;
+}
+.title-mag svg{
+    cursor:pointer;
+    margin: 2rem 2rem 0 0;
+}
+.acclist {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:42rem;
+    grid-template-rows: 4rem 26rem;
+}
+.acclist button{
+    width: 8rem;
+    height: 3rem;
+    justify-self: end;
+    background:rgb(246, 107, 14);
+    border:none;
+    outline:none;
+    cursor:pointer;
+    color:rgb(239, 239, 239);
+    font-weight:bold;
+    border-radius:2rem;
+    transition: 400ms ease-in-out;
+}
+.acclist button:hover{
+    color:rgb(17, 43, 60);
+}
+.acclist ul{
+    display:grid;
+    justify-content:start;
+    align-content:space-evenly;
+    align-items:center;
+    list-style: none;
+    padding: 0;
+    height: 79%;
+    grid-template-columns:100%;
+    box-shadow: 1px 1px 6px rgb(17, 43, 60, 0.4);
+    border-radius:1rem
+}
+.acclist li{
+    display:grid;
+    cursor:pointer;
+    justify-content:start;
+    justify-items:start;
+    margin: 0;
+    padding: 0 0 1rem 0;
+    grid-template-columns: 90% 10%;
+    border-bottom:3px solid rgb(17, 43, 60, 0.2);
+    grid-template-areas: 
+        "a b";
+    transition: 400ms ease-in-out;
+}
+.acclist li:hover{
+    border-bottom:3px solid rgb(17, 43, 60, 0.6);
+}
+.acclist li:nth-child(4){
+    border-radius:1rem;
+    border:none;
+}
+.acclist p, .acclist span{
+    grid-area: a;
+}
+.acclist svg{
+    width:2rem;
+    height:2rem;
+    cursor:pointer;
+    grid-area:b;
+}
+.acclist p{
+    margin: 0 0 1rem 1rem;
+}
+.acclist span{
+    margin: 1rem 0 0 1rem;
+}
+
+/*POPUP NEW ACCOUNT CSS*/
+
+.faccount {
+    transform:scaleX(0);
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    left: 0;
+    /*background: rgb(17, 43, 60, 0.4);*/
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+.formBox-popup {
+    display:flex;
+    width: 64rem;
+    justify-content:center;
+    align-items:center;
+    height: 38rem;
+    border-radius: 2rem;
+    background: #EFEFEF;
+}
+
+.container-popup {
+    display: grid;
+    grid-template-rows: 5rem 16rem;
+    grid-template-areas:
+        "a"
+        "b";
+    flex-basis: 50%;
+}
+
+.title-popup {
+    display: grid;
+    justify-content: start;
+    margin: 0 0 0 3rem;
+    width: inherit;
+    grid-template-rows: 5rem 0;
+    grid-area: a;
+}
+.title-popup h2{
+    margin: 2rem 0 0 0;
+}
+.title-popup hr{
+    background: #F66B0E;
+    justify-self: self-start;
+    width: 2rem;
+    margin: 0;
+    height: 8px;
+    border-radius: 2rem;
+}
+.container-popup form {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 6rem 4rem 4rem;
+    align-self: center;
+    grid-area: b;
+}
+.textboxes-popup input {
+    border: 1px solid rgb(17, 43, 60, 0.2);
+    width:12rem;
+    height:2.5rem;
+    resize: none;
+    outline: none;
+    color:rgb(17, 43, 60);
+    padding:12px;
+    font-weight:600;
+    border-radius:0.5rem;
+}
+.textboxes-popup input:focus{
+    outline:none;
+}
+.textboxes-popup input::placeholder{
+    color:rgb(17, 43, 60, 0.4);
+}
+#typeacc {
+    border: 1px solid rgb(17, 43, 60, 0.2);
+    resize: none;
+    outline: none;
+    width: 12rem;
+    height: 2.5rem;
+    border-radius:0.5rem;
+}
+
+.btnsubmit-popup input{
+    background:rgb(246, 107, 14);
+    border:none;
+    outline:none;
+    color:rgb(239, 239, 239);
+    width:9rem;
+    height:3rem;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:4rem;
+    transition: 400ms ease-in;
+}
+.btnsubmit-popup input:hover{
+    color:rgb(17, 43, 60);
+}
+
+#popup-img {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: inherit;
+    grid-template-rows: 10% 75%;
+}
+#popup-img img {
+    flex-basis: 50%;
+    height: 16rem;
+}
+#popup-img svg{
+    justify-self:end;
+    margin: 0 2rem 0 0;
+    cursor:pointer;
+}

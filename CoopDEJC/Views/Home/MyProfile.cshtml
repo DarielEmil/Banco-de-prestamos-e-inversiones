@@ -85,5 +85,79 @@
             <div class="footer">
             </div>
         </div>
+        <div class="maccount" id="idmaccount">
+            <center class="formBox-mag">
+                <div class="container-mag">
+                    <div class="title-mag">
+                        <h2>Accounts <hr /></h2>
+                        <svg onclick="btnManageClose()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(17,43,60,1)"></path></svg>
+                    </div>
+                    <div class="acclist">
+                        <!--Esto va con un foreach, supongo xd-->
+                        <button id="btnnacc" onclick="btnNewAcc()" .href="@Url.Action("NewAccount","Home")">New Account</button>
+                        <ul>
+                            <li>
+                                <span>XXX-XXXX-XXX</span>
+                                <p>Investments</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 11H11V17H9V11ZM13 11H15V17H13V11ZM9 4V6H15V4H9Z" fill="rgba(17,43,60,1)"></path></svg>
+                            </li>
+                            <li>
+                                <span>XXX-XXXX-XXX</span>
+                                <p>Loans</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 11H11V17H9V11ZM13 11H15V17H13V11ZM9 4V6H15V4H9Z" fill="rgba(17,43,60,1)"></path></svg>
+                            </li>
+                            <li>
+                                <span>XXX-XXXX-XXX</span>
+                                <p>Investments</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 11H11V17H9V11ZM13 11H15V17H13V11ZM9 4V6H15V4H9Z" fill="rgba(17,43,60,1)"></path></svg>
+                            </li>
+                            <li>
+                                <span>XXX-XXXX-XXX</span>
+                                <p>Investments</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 11H11V17H9V11ZM13 11H15V17H13V11ZM9 4V6H15V4H9Z" fill="rgba(17,43,60,1)"></path></svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer">
+                </div>
+            </center>
+        </div>
+        <div class="faccount" id="idfaccount">
+            <center class="formBox-popup">
+                <div class="container-popup">
+                    <div class="title-popup">
+                        <h2>New account</h2>
+                        <hr />
+                    </div>
+                    <form>
+                        <div class="textboxes-popup">
+                            <input type="text" minlength="10" maxlength="10" placeholder="Account Number" required />
+                            <input type="text" maxlenght="100" placeholder="Bank Name" required />
+                        </div>
+                        <div class="textboxes-popup">
+                            <input type="text" maxlength="100" placeholder="Direction" required />
+
+                            <!--Agregar un color gris a la primera opción, para que quede a juego con los demás placeholders-->
+                            <select id="typeacc" required>
+                                @*<option value="" disabled selected>Type</option>*@
+                                <option value="Cuenta Corriente">Cuenta Corriente</option>
+                                <option value="Cuenta con Chequera">Cuenta con Chequera</option>
+                                <option value="Cuenta de Ahorro">Cuenta de Ahorro</option>
+                                <option value="Cuenta de Nómina">Cuenta de Nómina</option>
+                                <option value="Cuenta en Dólares">Cuenta en Dólares</option>
+                            </select>
+                        </div>
+                        <div class="btnsubmit-popup">
+                            <input type="submit" value="Create Account" />
+                        </div>
+                    </form>
+                </div>
+                <span id="popup-img">
+                    <svg onclick="btnNewAccClose()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z" fill="rgba(17,43,60,1)"></path></svg>
+                    <img src="/img/FirstAccount.svg" />
+                </span>
+            </center>
+        </div>
     </body>
 </html>

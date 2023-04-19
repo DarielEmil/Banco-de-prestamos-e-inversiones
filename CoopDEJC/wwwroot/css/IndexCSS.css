@@ -7,7 +7,7 @@
         "a b b"
         "a c c";
     grid-template-columns: 10% 90% 0;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 5% 95%;
 }
 live-preview-root{
     display:none;
@@ -99,6 +99,7 @@ html * {
     justify-content:start;
     margin: 0 0 0 3rem;
     width:inherit;
+    grid-template-rows: 5rem 0;
     grid-area: a;
 }
 .title h2{
@@ -144,13 +145,25 @@ html * {
     font-weight:bold;
     grid-area: a;
 }
+.investment center {
+    display: grid;
+    align-items: center;
+    justify-items: self-start;
+    grid-template-rows: 3rem 3rem 3rem;
+    margin: 0 0 0 1rem;
+}
+
+.investment h4, .investment h3, .investment h5 {
+    margin: 0;
+}
+/*
 .investment h4, .investment h3, .investment h5{
     margin: 0 0 1rem 1rem;
 }
 .investment h3{
     position:relative;
     right:1rem;
-}
+} */
 .debts{
     display: grid;
     align-content:center;
@@ -224,31 +237,154 @@ html * {
     padding: 0 0 0 2rem;
 }
 #invLi, #debLi {
-    display:grid;
-    align-content:center;
-    background: rgb(17, 43, 60, 0.8);
-    border-radius: 6px;
+    display: grid;
+    align-content: center;
+    background: #EFEFEF;
+    border-radius: 10px;
     width: 30rem;
     height: 4rem;
-    margin:  1rem 0 1rem 0;
-    color: #EFEFEF;
+    margin: 1rem 0 1rem 0;
+    color: #112B3C;
     cursor: pointer;
+    box-shadow: 1px 1px 4px rgb(17, 43, 60, 0.5);
+    grid-template-columns: 5rem 20rem;
+    grid-template-areas: 
+        "a b"
+        "a c";
 }
+#invLi span, #debLi span{
+        display: grid;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 8px;
+    background: rgb(17, 43, 60, 0.2);
+    grid-area: a;
+}
+    
 #invLi h5, #debLi h5{
-    display:flex;
+    grid-area:b;
 }
+
 .deblist{
     display: grid;
     grid-template-rows: 2rem 11rem;
     grid-area:e;
 }
 
-#invLi h5,#debLi h5{
+#invLi p, #debLi p {
+    position: relative;
+    bottom: 1rem;
     
+    margin: 0;
+    grid-area: c;
 }
-#invLi p, #debLi p{
-    position:relative;
-    bottom:1rem;
-    left:1rem;
-    margin:0;
+
+/*POPUP FIST ACCOUNT CSS*/
+
+.faccount {
+    transform:scaleX(0);
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    left: 0;
+    background: rgb(17, 43, 60, 0.4);
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+.formBox {
+    display:flex;
+    width: 64rem;
+    justify-content:center;
+    align-items:center;
+    height: 38rem;
+    border-radius: 2rem;
+    background: #EFEFEF;
+}
+
+.container-popup {
+    display: grid;
+    grid-template-rows: 5rem 16rem;
+    grid-template-areas:
+        "a"
+        "b";
+    flex-basis: 50%;
+}
+
+.title-popup {
+    display: grid;
+    justify-content: start;
+    margin: 0 0 0 3rem;
+    width: inherit;
+    grid-template-rows: 5rem 0;
+    grid-area: a;
+}
+.title-popup h2{
+    margin: 2rem 0 0 0;
+}
+.title-popup hr{
+    background: #F66B0E;
+    justify-self: self-start;
+    width: 2rem;
+    margin: 0;
+    height: 8px;
+    border-radius: 2rem;
+}
+.container-popup form {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 6rem 4rem 4rem;
+    align-self: center;
+    grid-area: b;
+}
+.textboxes input {
+    border: 1px solid rgb(17, 43, 60, 0.2);
+    width: 12rem;
+    height: 2.5rem;
+    resize: none;
+    outline: none;
+    color: rgb(17, 43, 60);
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+
+.textboxes input:focus{
+    outline:none;
+}
+.textboxes input::placeholder {
+    color: rgb(17, 43, 60, 0.4);
+}
+#typeacc {
+    border: 1px solid rgb(17, 43, 60, 0.2);
+    resize: none;
+    outline: none;
+    width: 12rem;
+    height: 2.5rem;
+    border-radius:0.5rem;
+}
+#popup-img img{
+    flex-basis:50%;
+    height:16rem;
+}
+.btnsubmit input{
+    background:rgb(246, 107, 14);
+    border:none;
+    outline:none;
+    color:rgb(239, 239, 239);
+    width:9rem;
+    height:3rem;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:4rem;
+    transition: 400ms ease-in;
+}
+.btnsubmit input:hover{
+    color:rgb(17, 43, 60);
 }

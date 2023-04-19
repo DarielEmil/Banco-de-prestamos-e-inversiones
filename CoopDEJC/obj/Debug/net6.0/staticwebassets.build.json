@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/cbHSNTne+q8tahGp7Wnw3jfy2pHzFdgd7njJyEnc4Q=",
+  "Hash": "uRaj/Jyo6lwZ225PuePDmgEDzwWZ64u0OQ8QLJ+/rQQ=",
   "Source": "CoopDEJC",
   "BasePath": "_content/CoopDEJC",
   "Mode": "Default",
@@ -66,6 +66,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\IndexCSS.css"
+    },
+    {
+      "Identity": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\css\\InvestmentCSS.css",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "css/InvestmentCSS.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\InvestmentCSS.css"
+    },
+    {
+      "Identity": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\css\\LoansCSS.css",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "css/LoansCSS.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LoansCSS.css"
     },
     {
       "Identity": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\css\\LoginCSS.css",
@@ -170,6 +204,23 @@
       "OriginalItemSpec": "wwwroot\\img\\apps-line.svg"
     },
     {
+      "Identity": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\FirstAccount.svg",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "img/FirstAccount.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\FirstAccount.svg"
+    },
+    {
       "Identity": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\Home-Index.svg",
       "SourceId": "CoopDEJC",
       "SourceType": "Discovered",
@@ -202,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Investment.svg"
+    },
+    {
+      "Identity": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\Investment-Illus.svg",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "img/Investment-Illus.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Investment-Illus.svg"
     },
     {
       "Identity": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\img\\Loans.svg",
@@ -287,6 +355,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\waves2.png"
+    },
+    {
+      "Identity": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\js\\JSFunction.js",
+      "SourceId": "CoopDEJC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\",
+      "BasePath": "_content/CoopDEJC",
+      "RelativePath": "js/JSFunction.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\JSFunction.js"
     },
     {
       "Identity": "C:\\Users\\darke\\Desktop\\Trabajo Jesus\\Jesus\\CoopDEJC\\wwwroot\\js\\site.js",

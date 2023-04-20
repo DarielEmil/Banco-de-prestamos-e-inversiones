@@ -20,16 +20,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Home/ManageAccount.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYW5hZ2VBY2NvdW50LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Home/MyProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNeVByb2ZpbGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Investment/InvestementReportShow.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbnZlc3RlbWVudFJlcG9ydFNob3cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Investment/Investment.cshtml]
@@ -40,8 +32,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbnZlc3RtZW50RmVlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Investment/InvestmentFeeShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbnZlc3RtZW50RmVlU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Investment/InvestmentReport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbnZlc3RtZW50UmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Investment/InvestmentReportShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbnZlc3RtZW50UmVwb3J0U2hvdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Loans/Loans.cshtml]
@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Loans/LoansFee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hbnNcTG9hbnNGZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Loans/LoansFeeShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hbnNcTG9hbnNGZWVTaG93LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/Desktop/Banco-de-prestamos-e-inversiones/CoopDEJC/Views/Loans/LoansReport.cshtml]

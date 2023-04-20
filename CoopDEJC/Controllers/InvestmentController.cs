@@ -27,6 +27,7 @@ namespace CoopDEJC.Controllers
                 FechaFin = new DateTime(2024, 04, 19),
                 Interes = 18
             };
+
             ViewBag.Monto = inversion.Monto;
             ViewBag.Meses = (inversion.FechaFin.Month - inversion.FechaInicio.Month) + 12 * (inversion.FechaFin.Year - inversion.FechaInicio.Year);
             ViewBag.Interes = inversion.Interes / 100;
@@ -34,7 +35,7 @@ namespace CoopDEJC.Controllers
             ViewBag.TEMPCT = ViewBag.TEM * 100;
 
             return View(inversion);
-        }
+    }
         public IActionResult InvestementReportShow()
         {
             string actualpage = HttpContext.Request.Path;
@@ -61,7 +62,7 @@ namespace CoopDEJC.Controllers
 
             var pdffile = _converter.Convert(pdf);
             return File(pdffile, "application/pdf");
-        }
+}
         public IActionResult InvestmentReportDownload()
         {
             string actualpage = HttpContext.Request.Path;
@@ -119,7 +120,69 @@ namespace CoopDEJC.Controllers
             ViewBag.TEMPCT = ViewBag.TEM * 100;
             return View(cinversion);
         }
-    }
+        public IActionResult InvestmentFeeShow()
+        {
+            string actualpage = HttpContext.Request.Path;
+            string urlpage = HttpContext.Request.GetEncodedUrl();
+            urlpage = urlpage.Replace(actualpage, "");
+            urlpage = $"{urlpage}/Investment/InvestmentFee";
 
+            var pdf = new HtmlToPdfDocument()
+            {
+                GlobalSettings = new GlobalSettings()
+                {
+                    PaperSize = PaperKind.A4,
+                    Orientation = Orientation.Portrait
+                },
+                Objects =
+                {
+                    new ObjectSettings()
+                    {
+                        Page = urlpage
+                    }
+                }
+
+            };
+
+            var pdffile = _converter.Convert(pdf);
+            return File(pdffile, "application/pdf");
+
+        }
+        public IActionResult InvestmentFeeDownload()
+        {
+            string actualpage = HttpContext.Request.Path;
+            string urlpage = HttpContext.Request.GetEncodedUrl();
+            urlpage = urlpage.Replace(actualpage, "");
+            urlpage = $"{urlpage}/Investment/InvestmentFee";
+
+            var pdf = new HtmlToPdfDocument()
+            {
+                GlobalSettings = new GlobalSettings()
+                {
+                    PaperSize = PaperKind.A4,
+                    Orientation = Orientation.Portrait
+                },
+                Objects =
+                {
+                    new ObjectSettings()
+                    {
+                        Page = urlpage
+                    }
+                }
+
+            };
+
+            var pdffile = _converter.Convert(pdf);
+            string pdfname = "InvestmentFee_" + DateTime.Now.ToShortDateString() + ".pdf";
+            return File(pdffile, "application/pdf", pdfname);
+        }
+
+
+
+
+
+    }
 }
+
+
 

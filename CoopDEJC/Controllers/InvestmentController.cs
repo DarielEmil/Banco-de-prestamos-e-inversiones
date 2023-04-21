@@ -30,7 +30,7 @@ namespace CoopDEJC.Controllers
 
             investment.Monto= iamount;
             //campo de interes que depende
-            investment.Interes = ifee;
+            investment.Interes = 15;
 
             investment.FechaInicio = idate;
             investment.FechaInicio = ifeedate;

@@ -14,25 +14,9 @@ namespace CoopDEJC.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public IActionResult Register(User _user)
-        //{
-        //    if (_user.Clave == Viewbag.Cclave)
-        //    {
-        //        //Encriptar _user.clave (si es que se va a hacer)
-        //    }
-        //    else
-        //    {
-        //        ViewBag.msg = "Las contraseñas no coinciden";
-        //        return View();
-        //    }
-        //    return View();
-        //}
-        //[HttpPost]
-        //public IActionResult Login(User _user)
-        //{
-        //    //Encriptar _user.clave
-        //    return View();
-        //}
+        public IActionResult SignOut()
+        {
+            return RedirectToAction("Login", "Login");
+        }
     }
 }

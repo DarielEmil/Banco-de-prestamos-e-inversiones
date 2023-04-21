@@ -17,116 +17,128 @@ live-preview-root {
 html * {
     font-family: 'Space Mono', monospace;
 }
+
 .wrapper {
     width: inherit;
     height: 100%;
     background: #112B3C;
     grid-area: a;
 }
-.sidebar{
-    width:inherit;
-    height:inherit;
-}
-.sidebar svg{
-    width:100%;
-    height: 4%;
-    margin: 1rem 0 0 0;
-}
-.sidebar p{
-    color:#EFEFEF;
-    font-weight:bold;
-    text-align:center;
-}
-.sidebar ul{
-    display:grid;
-    justify-content:center;
-    padding:6rem 0 0 0;
-    list-style:none;
-    height:15rem
-}
-.sidebar a{
-    display:flex;
-    justify-content:start;
-    justify-items:center;
-    align-content:center;
-    align-items:center;
+
+.sidebar {
+    width: inherit;
+    height: inherit;
 }
 
-.sidebar span{
-    display:flex;
-    color: #EFEFEF;
-    font-size: 14px;
-    font-weight:bold;
-    margin: 0 0 0 5px;
-    transition: 400ms ease-in-out;
-}
+    .sidebar svg {
+        width: 100%;
+        height: 4%;
+        margin: 1rem 0 0 0;
+    }
 
-.sidebar span:hover{
-    color: #F66B0E;
-}
+    .sidebar p {
+        color: #EFEFEF;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .sidebar ul {
+        display: grid;
+        justify-content: center;
+        padding: 6rem 0 0 0;
+        list-style: none;
+        height: 15rem
+    }
+
+    .sidebar a {
+        display: flex;
+        justify-content: start;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .sidebar span {
+        display: flex;
+        color: #EFEFEF;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0 0 0 5px;
+        transition: 400ms ease-in-out;
+    }
+
+        .sidebar span:hover {
+            color: #F66B0E;
+        }
 /*HEADER CSS*/
-.header{
-    display:flex;
-    justify-content:end;
-    height:2rem;
-    width:100%;
-    grid-area:b;
+.header {
+    display: flex;
+    justify-content: end;
+    height: 2rem;
+    width: 100%;
+    grid-area: b;
 }
-.header a{
-    margin: 10px 1rem 0 0;
-    text-decoration:none;
-    font-weight:bold;
-    color: #112B3C;
-    transition: 400ms ease-out;
-}
-.header a:hover{
-    color: #F66B0E;
-}
+
+    .header a {
+        margin: 10px 1rem 0 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: #112B3C;
+        transition: 400ms ease-out;
+    }
+
+        .header a:hover {
+            color: #F66B0E;
+        }
 
 /*CONTAINER CSS*/
-.container{
-    display:grid;
-    grid-area:c;
+.container {
+    display: grid;
+    grid-area: c;
     grid-template-rows: 15% 35% 50%;
-    grid-template-columns:50% 50%;
+    grid-template-columns: 50% 50%;
     grid-template-areas:
         "a a"
         "c b"
         "d d";
 }
-.title{
-    display:grid;
-    justify-content:start;
+
+.title {
+    display: grid;
+    justify-content: start;
     margin: 0 0 0 3rem;
-    width:inherit;
+    width: inherit;
     grid-template-rows: 5rem 0;
     grid-area: a;
 }
-.title h2{
-    color: #112B3C;
-    font-weight: bold;
-}
-.title span{
-    position:relative;
-    background: #F66B0E;
-    bottom: 1rem;
-    width: 1.5rem;
-    height:8px;
-    border-radius: 2rem;
-}
 
-.balance{
-    display:grid;
-    width:inherit;
-    height:inherit;
-    justify-content:start;
+    .title h2 {
+        color: #112B3C;
+        font-weight: bold;
+    }
+
+    .title span {
+        position: relative;
+        background: #F66B0E;
+        bottom: 1rem;
+        width: 1.5rem;
+        height: 8px;
+        border-radius: 2rem;
+    }
+
+.balance {
+    display: grid;
+    width: inherit;
+    height: inherit;
+    justify-content: start;
     margin: 0 0 0 3rem;
-    grid-area:c;
+    grid-area: c;
     grid-template-columns: 12rem;
     grid-template-rows: 14rem;
     grid-template-areas:
-        "a";  
+        "a";
 }
+
 .InvestmentBlce {
     display: inherit;
     width: 26rem;
@@ -139,19 +151,21 @@ html * {
     /*background: rgb(32, 83, 117, 0.5);*/
     border-radius: 2rem;
     color: #112B3C;
-    font-weight:bold;
+    font-weight: bold;
     grid-area: a;
 }
-.InvestmentBlce center{
-    display:grid;
-    align-items:center;
-    justify-items:self-start;
-    grid-template-rows: 3rem 3rem 3rem;
-    margin: 0 0 0 2rem;
-}
-.InvestmentBlce h4, .InvestmentBlce h3, .InvestmentBlce h5{
-    margin:0;
-}
+
+    .InvestmentBlce center {
+        display: grid;
+        align-items: center;
+        justify-items: self-start;
+        grid-template-rows: 3rem 3rem 3rem;
+        margin: 0 0 0 2rem;
+    }
+
+    .InvestmentBlce h4, .InvestmentBlce h3, .InvestmentBlce h5 {
+        margin: 0;
+    }
 
 /*INVESTMENT DETAILS CSS*/
 
@@ -166,15 +180,17 @@ html * {
         "b";
 }
 
-.idetails .title{
-    justify-self:end;
-    margin: 0 5rem 0 0;
-    grid-area:a;
-}
+    .idetails .title {
+        justify-self: end;
+        margin: 0 5rem 0 0;
+        grid-area: a;
+    }
+
 .ipaid {
-    display:flex;
-    grid-area:b;
+    display: flex;
+    grid-area: b;
 }
+
 .boxup, .boxdown {
     display: grid;
     flex-basis: 12rem;
@@ -185,61 +201,69 @@ html * {
         "a b"
         "a c";
 }
-.boxup span, .boxdown span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: a;
-    justify-self: center;
-    align-self: center;
-    height: 4rem;
-    width: 4rem;
-    margin: 0 3rem 0 0;
-    background: rgb(17, 43, 60, 0.9);
-    border-radius: 1rem;
- 
-}
-.boxup h4{
-    grid-area:b;
-}
-.boxdown p{
-    grid-area:c;
-}
+
+    .boxup span, .boxdown span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: a;
+        justify-self: center;
+        align-self: center;
+        height: 4rem;
+        width: 4rem;
+        margin: 0 3rem 0 0;
+        background: rgb(17, 43, 60, 0.9);
+        border-radius: 1rem;
+    }
+
+    .boxup h4 {
+        grid-area: b;
+    }
+
+    .boxdown p {
+        grid-area: c;
+    }
 
 /*INVESTMENT LIST CSS*/
-.ilist{
-    grid-area:d;
+.ilist {
+    grid-area: d;
 }
-.ilist .title{
-    grid-template-columns:18rem 8rem;
-    grid-template-areas:
-        "a b"
-        "c b"
-}
-.ilist .title h2{
-    grid-area:a;
-}
-.ilist .title button{
-    justify-self:center;
-    align-self:center;
-    border:none;
-    outline:none;
-    cursor:pointer;
-    width:3rem;
-    height:3rem;
-    border-radius: 5rem;
-    background:#112B3C;
-    grid-area: b;
-    transition: 600ms ease-in;
-}
-.ilist .title button:hover{
-    box-shadow:1px 1px 10px rgb(246, 107, 14, 0.8);
-}
-.ilist .title span{
-    grid-area:c;
-    width:3rem;
-}
-.ltab-Ul{
+
+    .ilist .title {
+        grid-template-columns: 18rem 8rem;
+        grid-template-areas:
+            "a b"
+            "c b"
+    }
+
+        .ilist .title h2 {
+            grid-area: a;
+        }
+
+        .ilist .title button {
+            justify-self: center;
+            align-self: center;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 5rem;
+            background: #112B3C;
+            grid-area: b;
+            transition: 600ms ease-in;
+        }
+
+            .ilist .title button:hover {
+                box-shadow: 1px 1px 10px rgb(246, 107, 14, 0.8);
+            }
+
+        .ilist .title span {
+            grid-area: c;
+            width: 3rem;
+        }
+
+.ltab-Ul {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas:
@@ -259,42 +283,47 @@ html * {
     cursor: pointer;
     box-shadow: 1px 1px 4px rgb(17, 43, 60, 0.5);
     grid-template-columns: 5rem 20rem;
-    grid-template-areas: 
+    grid-template-areas:
         "a b"
         "a c";
 }
-.InvLi div{
-    display: grid;
-    width:inherit;
-    align-items:center;
-    grid-template-areas:
-        "a b d e"
-        "a c d e"
-}
-.InvLi span{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    align-self: center;
-    justify-self: center;
-    width: 2.8rem;
-    height: 2.8rem;
-    border-radius: 8px;
-    background: rgb(17, 43, 60, 0.2);
-    grid-area: a;
+
+    .InvLi div {
+        display: grid;
+        width: inherit;
+        align-items: center;
+        grid-template-areas:
+            "a b d e"
+            "a c d e"
+    }
+
+    .InvLi span {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        justify-self: center;
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 8px;
+        background: rgb(17, 43, 60, 0.2);
+        grid-area: a;
+    }
+
+    .InvLi h4 {
+        grid-area: b;
+        margin: 0;
+    }
+
+    .InvLi p {
+        grid-area: c;
+        margin: 0;
+    }
+
+#CodeLi {
+    grid-area: d;
 }
 
-.InvLi h4{
-    grid-area:b;
-    margin:0;
-}
-.InvLi p{
-    grid-area: c;
-    margin:0;
-}
-#CodeLi{
-    grid-area:d;
-}
 #PriceLi {
     display: grid;
     justify-content: center;
@@ -310,7 +339,7 @@ html * {
 /*ADD INVESTMENT POPUP CSS*/
 
 .popup {
-    transform:scaleX(0);
+    transform: scaleX(0);
     position: absolute;
     display: grid;
     justify-content: center;
@@ -322,11 +351,12 @@ html * {
     top: 0;
     margin: 0;
 }
+
 .formBox {
-    display:flex;
+    display: flex;
     width: 64rem;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     height: 38rem;
     border-radius: 2rem;
     background: #EFEFEF;
@@ -349,22 +379,26 @@ html * {
     grid-template-rows: 5rem 0;
     grid-area: a;
 }
-.title-popup h2{
-    margin: 2rem 0 0 0;
-}
-.title-popup hr{
-    background: #F66B0E;
-    justify-self: self-start;
-    width: 2rem;
-    margin: 0;
-    height: 8px;
-    border-radius: 2rem;
-}
+
+    .title-popup h2 {
+        margin: 2rem 0 0 0;
+    }
+
+    .title-popup hr {
+        background: #F66B0E;
+        justify-self: self-start;
+        width: 2rem;
+        margin: 0;
+        height: 8px;
+        border-radius: 2rem;
+    }
+
 #form-div {
     display: grid;
     align-content: center;
     grid-template-rows: 8rem;
 }
+
 .container-popup form {
     display: grid;
     align-items: center;
@@ -372,6 +406,7 @@ html * {
     align-self: center;
     grid-area: b;
 }
+
 .textboxes input {
     border: 1px solid rgb(17, 43, 60, 0.2);
     width: 12rem;
@@ -384,30 +419,35 @@ html * {
     font-weight: 600;
     border-radius: 0.5rem;
 }
-.textboxes input:focus{
-    outline:none;
+
+    .textboxes input:focus {
+        outline: none;
+    }
+
+    .textboxes input::placeholder {
+        color: rgb(17, 43, 60, 0.4);
+    }
+
+.btnsubmit {
+    align-self: center;
 }
-.textboxes input::placeholder{
-    color:rgb(17, 43, 60, 0.4);
-}
-.btnsubmit{
-    align-self:center;
-}
-.btnsubmit input{
-    background:rgb(246, 107, 14);
-    border:none;
-    outline:none;
-    color:rgb(239, 239, 239);
-    width:9rem;
-    height:3rem;
-    font-weight:bold;
-    cursor:pointer;
-    border-radius:4rem;
-    transition: 400ms ease-in;
-}
-.btnsubmit input:hover{
-    color:rgb(17, 43, 60);
-}
+
+    .btnsubmit input {
+        background: rgb(246, 107, 14);
+        border: none;
+        outline: none;
+        color: rgb(239, 239, 239);
+        width: 9rem;
+        height: 3rem;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 4rem;
+        transition: 400ms ease-in;
+    }
+
+        .btnsubmit input:hover {
+            color: rgb(17, 43, 60);
+        }
 
 #popup-img {
     display: grid;
@@ -415,19 +455,21 @@ html * {
     justify-items: center;
     align-items: center;
     height: inherit;
-    flex-basis:50%;
-    grid-template-columns:100%;
+    flex-basis: 50%;
+    grid-template-columns: 100%;
     grid-template-rows: 10% 75%;
 }
-#popup-img img {
-    flex-basis: 50%;
-    height: 16rem;
-}
-#popup-img svg{
-    justify-self:end;
-    margin: 0 2rem 0 0;
-    cursor:pointer;
-}
+
+    #popup-img img {
+        flex-basis: 50%;
+        height: 16rem;
+    }
+
+    #popup-img svg {
+        justify-self: end;
+        margin: 0 2rem 0 0;
+        cursor: pointer;
+    }
 
 /*INVESTMENT INFO CSS*/
 .popup-info {
@@ -443,6 +485,7 @@ html * {
     top: 0;
     margin: 0;
 }
+
 .formBox-info {
     display: flex;
     width: 64rem;
@@ -462,70 +505,85 @@ html * {
     grid-template-rows: 6rem 24rem;
     flex-basis: 100%;
 }
-.title-info{
+
+.title-info {
     display: grid;
-    justify-content:start;
-    justify-items:start;
+    justify-content: start;
+    justify-items: start;
     margin: 0 0 0 2rem;
-    grid-template-rows:2rem 0;
+    grid-template-rows: 2rem 0;
     grid-template-columns: 90%;
-    grid-template-areas: 
+    grid-template-areas:
         "a b";
 }
-.title-info h2, .title-info h5{
-    grid-area: a;
-}
-.title-info h2{
-    color: #112B3C;
-}
-.title-info h5{
-    position:relative;
-    top: 2rem;
-    color:#F66B0E;
-}
-.title-info svg{
-    cursor:pointer;
-    grid-area:b;
-}
-.rowamount{
-    display:flex;
-    justify-content:space-evenly;
-    align-content:center;
-    align-items:center;
+
+    .title-info h2, .title-info h5 {
+        grid-area: a;
+    }
+
+    .title-info h2 {
+        color: #112B3C;
+    }
+
+    .title-info h5 {
+        position: relative;
+        top: 2rem;
+        color: #F66B0E;
+    }
+
+    .title-info svg {
+        cursor: pointer;
+        grid-area: b;
+    }
+
+.rowamount {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
 }
 
 .amount, .fee, .amountdate, .feedate {
     width: 14rem;
     height: 8rem;
-    background:#112B3C;
+    background: #112B3C;
     border-radius: 2rem;
-    color:rgb(239, 239, 239);
+    color: rgb(239, 239, 239);
     box-shadow: 1px 1px 4px rgb(17, 43, 60, 0.6);
 }
 
 
-.iibtn{
-    display:flex;
-    justify-content:end;
+.iibtn {
+    display: flex;
+    justify-content: end;
     margin: 0 2rem 0 0;
 }
-.iview{
+
+.iview {
+    display: grid;
+    justify-content: center;
+    align-content: center;
     width: 10rem;
     height: 3rem;
     margin: 0 2rem 0 0;
     border: none;
     background: #F66B0E;
     color: #EFEFEF;
-    cursor:pointer;
-    font-weight:bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
     border-radius: 2rem;
     transition: 400ms ease-in;
 }
-.iview:hover {
-    color: #112B3C;
-}
+
+    .iview:hover {
+        color: #112B3C;
+    }
 
 .ifee {
+    display: grid;
+    justify-content: center;
+    align-content: center;
     width: 10rem;
     height: 3rem;
     margin: 0 2rem 0 0;
@@ -534,9 +592,11 @@ html * {
     color: #EFEFEF;
     cursor: pointer;
     font-weight: bold;
+    text-decoration:none;
     border-radius: 2rem;
     transition: 400ms ease-in;
 }
-.ifee:hover{
-    color:#F66B0E;
-}
+
+    .ifee:hover {
+        color: #F66B0E;
+    }

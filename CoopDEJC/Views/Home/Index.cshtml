@@ -18,17 +18,17 @@
                  <p>Nombre del usuario</p>
                  <ul>
                      <li>
-                        <a href="#">
+                        <a href="@Url.Action("Index","Home")">
                             <img src="~/img/Home-Index.svg"/><span>Index</span>
                         </a>
                      </li>
                       <li>
-                        <a href="#">
+                        <a href="@Url.Action("Loans","Loans")">
                             <img src="~/img/Loans.svg"/><span>Loans</span>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                    <a href="" @Url.Action("Investment","Investment")">
                             <img src="~/img/Investment.svg"/><span>Investment</span>
                         </a>
                       </li>
@@ -142,11 +142,11 @@
                         <!--Agregar un color gris a la primera opción, para que quede a juego con los demás placeholders-->
                         <select id="typeacc" required>
                             @*<option value="" disabled selected>Type</option>*@
-                            <option value="Cuenta Corriente">Cuenta Corriente</option>
-                            <option value="Cuenta con Chequera">Cuenta con Chequera</option>
-                            <option value="Cuenta de Ahorro">Cuenta de Ahorro</option>
-                            <option value="Cuenta de Nómina">Cuenta de Nómina</option>
-                            <option value="Cuenta en Dólares">Cuenta en Dólares</option>
+                            <option value="Checking Account">Checking Account</option>
+                            <option value="Checkbook Account">Checkbook Account</option>
+                            <option value="Savings Account">Savings Account</option>
+                            <option value="Payroll Account">Payroll Account</option>
+                            <option value="Dollar Account">Dollar Account</option>
                         </select>
                         </div>
                         <div class="btnsubmit">

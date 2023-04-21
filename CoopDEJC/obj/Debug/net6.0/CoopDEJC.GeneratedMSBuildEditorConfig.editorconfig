@@ -23,16 +23,44 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNeVByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dariel Rodriguez/Workstation/CoopDEJC/CoopDEJC/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Dariel Rodriguez/Workstation/CoopDEJC/CoopDEJC/Views/Investment/Investment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbnZlc3RtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Dariel Rodriguez/Workstation/CoopDEJC/CoopDEJC/Views/Investment/InvestmentFee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbnZlc3RtZW50RmVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dariel Rodriguez/Workstation/CoopDEJC/CoopDEJC/Views/Investment/InvestmentFeeShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbnZlc3RtZW50RmVlU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dariel Rodriguez/Workstation/CoopDEJC/CoopDEJC/Views/Investment/InvestmentReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbnZlc3RtZW50UmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dariel Rodriguez/Workstation/CoopDEJC/CoopDEJC/Views/Investment/InvestmentReportShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFxJbnZlc3RtZW50UmVwb3J0U2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Dariel Rodriguez/Workstation/CoopDEJC/CoopDEJC/Views/Loans/Loans.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hbnNcTG9hbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dariel Rodriguez/Workstation/CoopDEJC/CoopDEJC/Views/Loans/LoansFee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hbnNcTG9hbnNGZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dariel Rodriguez/Workstation/CoopDEJC/CoopDEJC/Views/Loans/LoansFeeShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hbnNcTG9hbnNGZWVTaG93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dariel Rodriguez/Workstation/CoopDEJC/CoopDEJC/Views/Loans/LoansReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hbnNcTG9hbnNSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dariel Rodriguez/Workstation/CoopDEJC/CoopDEJC/Views/Loans/LoansReportShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hbnNcTG9hbnNSZXBvcnRTaG93LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Dariel Rodriguez/Workstation/CoopDEJC/CoopDEJC/Views/Login/Login.cshtml]

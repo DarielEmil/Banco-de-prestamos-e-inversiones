@@ -4,9 +4,6 @@
     Layout = null;
 }
 <html>
-    <head></head>
-
-<html>
     <head>
     <link href="~/css/LoansCSS.css" rel="stylesheet" type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -181,13 +178,18 @@
                     </div>
                     -->
                     <div class="libtn">
-                        <button class="lview">Loans View</button>
-                        <button class="lfee">Loans Fee</button>
+                        <a class="lview" asp-area="" asp-controller="Loans" asp-action="LoansReportShow" target="_blank">Loans View</a>
+                        <a class="lfee" href="@Url.Action("LoansFeeShow", "Loans")" target="_blank">Loans Fee</a>
                     </div>
                 </div>
             </div>
             </center>
         </div>
+        <script>
+            function closepopup(){
+            }
+        </script>
+
         <!--Ventana emergente de la solicitud de un prestamo-->
          <div class="popup" id="idpop-new">
             <div class="formBox">
@@ -231,6 +233,12 @@
                     </div>
                     <div class="textboxes">
                         <input name="location" type="text" placeholder="Location" required />
+                        <select id="pmethod" required>
+                            <option value="" disabled selected>Payment Method</option>
+                            <option value="Check">Check</option>
+                            <option value="Bank deposit">Bank deposit</option>
+                            <option value="Direct transfer">Direct transfer</option>
+                        </select>
                     </div>
                     <div></div>
                     <div class="btnsubmit">

@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\CoopDEJC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\css\\IndexCSS.css",
+      "PackagePath": "staticwebassets\\css\\IndexCSS.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\css\\InvestmentCSS.css",
+      "PackagePath": "staticwebassets\\css\\InvestmentCSS.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\css\\LoansCSS.css",
+      "PackagePath": "staticwebassets\\css\\LoansCSS.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\css\\LoginCSS.css",
+      "PackagePath": "staticwebassets\\css\\LoginCSS.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\css\\MyProfileCSS.css",
+      "PackagePath": "staticwebassets\\css\\MyProfileCSS.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\css\\RegisterCSS.css",
+      "PackagePath": "staticwebassets\\css\\RegisterCSS.css"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -13,12 +37,48 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\FirstAccount.svg",
+      "PackagePath": "staticwebassets\\img\\FirstAccount.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\Home-Index.svg",
+      "PackagePath": "staticwebassets\\img\\Home-Index.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\Investment-Illus.svg",
+      "PackagePath": "staticwebassets\\img\\Investment-Illus.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\Investment.svg",
+      "PackagePath": "staticwebassets\\img\\Investment.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\Loans.svg",
+      "PackagePath": "staticwebassets\\img\\Loans.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\apps-line.svg",
+      "PackagePath": "staticwebassets\\img\\apps-line.svg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\userlogo.png",
-      "PackagePath": "staticwebassets\\img\\userlogo.png"
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\user-line.svg",
+      "PackagePath": "staticwebassets\\img\\user-line.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\waves1.png",
+      "PackagePath": "staticwebassets\\img\\waves1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\img\\waves2.png",
+      "PackagePath": "staticwebassets\\img\\waves2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\js\\JSFunction.js",
+      "PackagePath": "staticwebassets\\js\\JSFunction.js"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\Banco-de-prestamos-e-inversiones\\CoopDEJC\\wwwroot\\js\\site.js",

@@ -411,6 +411,9 @@ html * {
     margin: 0 2rem 0 0;
 }
 .lview{
+    display:grid;
+    justify-content:center;
+    align-content:center;
     width: 10rem;
     height: 3rem;
     margin: 0 2rem 0 0;
@@ -419,6 +422,7 @@ html * {
     color: #EFEFEF;
     cursor:pointer;
     font-weight:bold;
+    text-decoration:none;
     border-radius: 2rem;
     transition: 400ms ease-in;
 }
@@ -427,6 +431,9 @@ html * {
 }
 
 .lfee {
+    display:grid;
+    justify-content:center;
+    align-content:center;
     width: 10rem;
     height: 3rem;
     margin: 0 2rem 0 0;
@@ -434,6 +441,7 @@ html * {
     background: #112B3C;
     color: #EFEFEF;
     cursor: pointer;
+    text-decoration:none;
     font-weight: bold;
     border-radius: 2rem;
     transition: 400ms ease-in;

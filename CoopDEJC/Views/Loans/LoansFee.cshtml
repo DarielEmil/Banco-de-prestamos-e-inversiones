@@ -1,0 +1,83 @@
+﻿@model CoopDEJC.Models.CoopDBModels.CuotaPrestamo;
+@{
+    Layout = null;
+    var rowcount = 1 + ViewBag.Meses;
+
+    double saldo = Model.Monto;
+    double cuota = Math.Round((Model.Monto * ViewBag.TEM) / (1 - Math.Pow(1 + ViewBag.TEM, -ViewBag.Meses)), 2);
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>LoansReport</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <div class="container">
+        <div class="title">
+            <h1>Cuotas del prestamo #@Model.CuotaPrestamoID</h1>
+        </div>
+        <div class="lfdata">
+            <table class="table table-striped table-bordered table-hover table-sm" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Cantidad del Prestamo</th>
+                        <th>Tasa de Interés Anual</th>
+                        <th>Tasa de Interés Mensual</th>
+                        <th>Plazo del Prestamo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@String.Format(new System.Globalization.CultureInfo("es-DO"),"{0:C}",Model.Monto)</td>
+                        <td>@Model.Prestamo.Interes.ToString("N2")%</td>
+                        <td>@ViewBag.TEMPCT.ToString("N2")%</td>
+                        <td>@ViewBag.meses meses</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table class="table table-striped table-bordered " style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Periodos</th>
+                        <th>Fecha de pago estimada</th>
+                        <th>Fecha de pago realizada</th>
+                        <th>Modalidad de pago</th>
+                        <th>Monto de la cuota</th>
+                        <th>Código comprobante</th>
+                    </tr>
+                </thead>
+                <tbody>
+      
+                    @for (int i = 1; i < rowcount; i++)
+                    {
+                        double interes = Math.Round(saldo * (ViewBag.TEM), 2);
+                        double amortizacion = Math.Round(cuota - interes, 2);
+                        saldo = Math.Round(saldo - amortizacion, 2);
+                        <tr>
+                            <td>@i.ToString()</td>
+                            <td>@Model.Prestamo.FechaInicio.AddMonths(i).ToShortDateString()</td>
+                            <td>@DateTime.Now.ToShortDateString()</td>
+                            <td>@Model.Tipo</td>
+                            <td>@String.Format(new System.Globalization.CultureInfo("es-DO"),"{0:C}",cuota)</td>
+                            <td>@Model.Codigo</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

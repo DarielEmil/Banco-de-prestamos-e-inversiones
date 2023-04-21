@@ -11,7 +11,7 @@
 # :space_invader:Uso
 
 ```
-git clone https://github.com/DarielEmil/To-Do.git
+git clone https://github.com/DarielEmil/Banco-de-prestamos-e-inversiones.git
 ```
 
 Luego abrir `Visual Studio` y abrir el proyecto ejecutando el sistema con el icono :arrow_forward:

@@ -62,11 +62,11 @@ namespace CoopDEJC.Controllers
             Inversion inversionDb = new Inversion();
             Inversion inversion = new()
             {
-                InversionID = inversionDb.InversionID,
-                Monto = inversionDb.Monto,
-                FechaInicio = inversionDb.FechaInicio,
-                FechaFin = inversionDb.FechaFin,
-                Interes = inversionDb.Interes
+                InversionID = 1,
+                Monto = 20000,
+                FechaInicio = new DateTime(2023, 04, 19),
+                FechaFin = new DateTime(2024, 04, 19),
+                Interes = 18
             };
             ViewBag.Monto = inversion.Monto;
             ViewBag.Meses = (inversion.FechaFin.Month - inversion.FechaInicio.Month) + 12 * (inversion.FechaFin.Year - inversion.FechaInicio.Year);

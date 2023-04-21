@@ -12,6 +12,7 @@ namespace CoopDEJC.Models.CoopDBModels
         public int Monto { get; set; }
         public DateTime FechaInicio { get; set; } = DateTime.Now;
         public DateTime FechaFin { get; set; } = new DateTime();
+        public string Tipo { get; set; } = string.Empty;
         public double Interes { get; set; }
 
         //Union con la tabla clientes para el usuario
@@ -34,6 +35,8 @@ namespace CoopDEJC.Models.CoopDBModels
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int GarntiaID { get; set; }
+        public int Monto { get; set; }  
+        public string Ubicacion { get; set; }= string.Empty;
         public string Tipo { get; set; } = string.Empty;
 
         //Union con la tabla Garantias
@@ -48,7 +51,7 @@ namespace CoopDEJC.Models.CoopDBModels
         public int Monto { get; set; }
         public DateTime FechaPlanificado { get; set; } = new DateTime();
         public DateTime FechaRealizado { get; set; } = DateTime.Now;
-        public string Tipo { get; set; } = string.Empty;
+        public string ModalidadPago { get; set; } = string.Empty;
         public Guid Codigo { get; set; } = new Guid();
 
         //Union con la tabla Prestamos

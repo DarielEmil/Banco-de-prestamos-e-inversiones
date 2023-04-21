@@ -97,11 +97,7 @@ namespace CoopDEJC.Migrations
                     b.Property<Guid>("Codigo")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("CuentaID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CuentaNumeroCuenta")
-                        .IsRequired()
+                    b.Property<string>("CuentaID")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("FechaPlanificado")
@@ -122,7 +118,7 @@ namespace CoopDEJC.Migrations
 
                     b.HasKey("CuotaInversionID");
 
-                    b.HasIndex("CuentaNumeroCuenta");
+                    b.HasIndex("CuentaID");
 
                     b.HasIndex("InversionID");
 
@@ -146,15 +142,15 @@ namespace CoopDEJC.Migrations
                     b.Property<DateTime>("FechaRealizado")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("ModalidadPago")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Monto")
                         .HasColumnType("int");
 
                     b.Property<int>("PrestamoId")
                         .HasColumnType("int");
-
-                    b.Property<string>("Tipo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CuotaPrestamoID");
 
@@ -171,10 +167,17 @@ namespace CoopDEJC.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GarntiaID"));
 
+                    b.Property<int>("Monto")
+                        .HasColumnType("int");
+
                     b.Property<int>("PrestamoId")
                         .HasColumnType("int");
 
                     b.Property<string>("Tipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Ubicacion")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -249,6 +252,10 @@ namespace CoopDEJC.Migrations
                     b.Property<int>("Monto")
                         .HasColumnType("int");
 
+                    b.Property<string>("Tipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("ValorGarantias")
                         .HasColumnType("int");
 
@@ -276,9 +283,7 @@ namespace CoopDEJC.Migrations
                 {
                     b.HasOne("CoopDEJC.Models.CoopDBModels.CuentaBanco", "Cuenta")
                         .WithMany()
-                        .HasForeignKey("CuentaNumeroCuenta")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CuentaID");
 
                     b.HasOne("CoopDEJC.Models.CoopDBModels.Inversion", "Inversion")
                         .WithMany("Cuotas")

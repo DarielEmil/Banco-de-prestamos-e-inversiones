@@ -66,7 +66,7 @@ namespace CoopDEJC.Controllers
             } else
             {
             //Aqui necesito retornar una alerta,dariel o cesar no quise investigar mucho porque hay que bregar con un poco de frontend
-                return Content("<h3>Here's a custom content header</h3>", "text/html");
+                return Content("<h3>Contraseña Incorrecta</h3>", "text/html");
             }
             
            

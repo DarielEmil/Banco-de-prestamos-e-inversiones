@@ -4,6 +4,7 @@ namespace CoopDEJC.Models
 {
     public class IndexModel
     {
+        public string Name { get; set; }
         public Double Investment { get; set; }
         public int Debts { get; set; }
         public int Inverted { get ; set; }

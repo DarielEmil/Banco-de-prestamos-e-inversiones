@@ -55,6 +55,7 @@ C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\obj\Debug\net6.0\refint\
 C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\obj\Debug\net6.0\CoopDEJC.pdb
 C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\obj\Debug\net6.0\CoopDEJC.genruntimeconfig.cache
 C:\Users\Dariel Rodriguez\Workstation\CoopDEJC\CoopDEJC\obj\Debug\net6.0\ref\CoopDEJC.dll
+C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\bin\Debug\net6.0\CoopDEJC.dll
 C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.csproj.AssemblyReference.cache
 C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\darke\Desktop\Trabajo Jesus\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.AssemblyInfoInputs.cache
@@ -357,8 +358,6 @@ C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversion
 C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\bin\Debug\net6.0\LibreriaPDF\libwkhtmltox.so
 C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\bin\Debug\net6.0\CoopDEJC.deps.json
 C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\bin\Debug\net6.0\CoopDEJC.runtimeconfig.json
-C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\bin\Debug\net6.0\CoopDEJC.dll
-C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\bin\Debug\net6.0\CoopDEJC.pdb
 C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\bin\Debug\net6.0\Azure.Identity.dll
 C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\bin\Debug\net6.0\DinkToPdf.dll
@@ -640,4 +639,5 @@ C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversion
 C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\obj\Debug\net6.0\refint\CoopDEJC.dll
 C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.pdb
 C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\obj\Debug\net6.0\CoopDEJC.genruntimeconfig.cache
+C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\bin\Debug\net6.0\CoopDEJC.pdb
 C:\Users\Ryuk\OneDrive\Desktop\Banco de prestamos\Banco-de-prestamos-e-inversiones\Jesus\CoopDEJC\obj\Debug\net6.0\ref\CoopDEJC.dll

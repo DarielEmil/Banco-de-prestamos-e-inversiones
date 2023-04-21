@@ -24,6 +24,8 @@ namespace CoopDEJC.Controllers
         {
 
             IndexModel imodel = IndexFunciones.LlenadoIndex(cliente, _context);
+
+            imodel.Name = cliente.Nombre + cliente.Apellido;
             
             return View(imodel);
         }
@@ -56,6 +58,9 @@ namespace CoopDEJC.Controllers
             else
                 return RedirectToAction("Index");
         }
+
+        
+
 
         public IActionResult MyProfile()
         {

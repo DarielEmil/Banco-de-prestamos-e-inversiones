@@ -509,15 +509,20 @@ html * {
     justify-content:end;
     margin: 0 2rem 0 0;
 }
-.iview{
+.iview {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
     width: 10rem;
     height: 3rem;
     margin: 0 2rem 0 0;
     border: none;
     background: #F66B0E;
     color: #EFEFEF;
-    cursor:pointer;
-    font-weight:bold;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration:none;
     border-radius: 2rem;
     transition: 400ms ease-in;
 }
@@ -526,6 +531,9 @@ html * {
 }
 
 .ifee {
+    display:grid;
+    justify-content:center;
+    align-content:center;
     width: 10rem;
     height: 3rem;
     margin: 0 2rem 0 0;
@@ -534,6 +542,7 @@ html * {
     color: #EFEFEF;
     cursor: pointer;
     font-weight: bold;
+    text-decoration:none;
     border-radius: 2rem;
     transition: 400ms ease-in;
 }

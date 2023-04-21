@@ -16,6 +16,6 @@ git clone https://github.com/DarielEmil/Banco-de-prestamos-e-inversiones.git
 
 Luego abrir `Visual Studio` y abrir el proyecto ejecutando el sistema con el icono :arrow_forward:
 
-# :warning:Alerta
+# :exclamation:Alerta
 
 El sistema aún está en fase de desarrollo por lo que puede ser inestable.

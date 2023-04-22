@@ -65,7 +65,7 @@ namespace CoopDEJC.Controllers
             Inversion inversion = new()
             {
                 InversionID = 1,
-                Monto = 20000,
+                Monto = 100000,
                 FechaInicio = new DateTime(2023, 04, 19),
                 FechaFin = new DateTime(2024, 04, 19),
                 Interes = 18
@@ -139,7 +139,7 @@ namespace CoopDEJC.Controllers
             CuotaInversion cinversion = new CuotaInversion()
             {
                 CuotaInversionID = 1,
-                Monto = 1760000,
+                Monto = 100000,
                 FechaPlanificado = new DateTime(2023, 04, 19),
                 FechaRealizado = DateTime.Now,
                 Tipo = "Cheque",

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\CoopDEJC.csproj": {}
+    "C:\\Users\\Ryuk\\OneDrive\\Desktop\\Banco de prestamos\\Banco-de-prestamos-e-inversiones\\Jesus\\CoopDEJC\\CoopDEJC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\CoopDEJC.csproj": {
+    "C:\\Users\\Ryuk\\OneDrive\\Desktop\\Banco de prestamos\\Banco-de-prestamos-e-inversiones\\Jesus\\CoopDEJC\\CoopDEJC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\CoopDEJC.csproj",
+        "projectUniqueName": "C:\\Users\\Ryuk\\OneDrive\\Desktop\\Banco de prestamos\\Banco-de-prestamos-e-inversiones\\Jesus\\CoopDEJC\\CoopDEJC.csproj",
         "projectName": "CoopDEJC",
-        "projectPath": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\CoopDEJC.csproj",
-        "packagesPath": "C:\\Users\\Dariel Rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dariel Rodriguez\\Workstation\\CoopDEJC\\CoopDEJC\\obj\\",
+        "projectPath": "C:\\Users\\Ryuk\\OneDrive\\Desktop\\Banco de prestamos\\Banco-de-prestamos-e-inversiones\\Jesus\\CoopDEJC\\CoopDEJC.csproj",
+        "packagesPath": "C:\\Users\\Ryuk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ryuk\\OneDrive\\Desktop\\Banco de prestamos\\Banco-de-prestamos-e-inversiones\\Jesus\\CoopDEJC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dariel Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ryuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,13 +39,40 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "DinkToPdf": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -57,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

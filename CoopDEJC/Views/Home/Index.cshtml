@@ -1,8 +1,180 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Index";
+    Layout = null;
 }
+@model CoopDEJC.Models.IndexModel
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<html>
+<head>
+    <link href="~/css/IndexCSS.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <!--Este parrafo debe tener como texto el nombre del Usuario -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M12.0049 2C17.5277 2 22.0049 6.47715 22.0049 12C22.0049 17.5228 17.5277 22 12.0049 22C9.57847 22 7.3539 21.1358 5.62216 19.6985L5.37815 19.4892L6.27949 17.5875C7.73229 19.0759 9.76067 20 12.0049 20C16.4232 20 20.0049 16.4183 20.0049 12C20.0049 7.58172 16.4232 4 12.0049 4C7.66997 4 4.14034 7.44784 4.00869 11.7508L4.00488 12H6.50488L3.79854 17.7161C2.66796 16.096 2.00488 14.1254 2.00488 12C2.00488 6.47715 6.48204 2 12.0049 2ZM13.0049 6V8H15.5049V10H10.0049C9.72874 10 9.50488 10.2239 9.50488 10.5C9.50488 10.7455 9.68176 10.9496 9.91501 10.9919L10.0049 11H14.0049C15.3856 11 16.5049 12.1193 16.5049 13.5C16.5049 14.8807 15.3856 16 14.0049 16H13.0049V18H11.0049V16H8.50488V14H14.0049C14.281 14 14.5049 13.7761 14.5049 13.5C14.5049 13.2545 14.328 13.0504 14.0948 13.0081L14.0049 13H10.0049C8.62417 13 7.50488 11.8807 7.50488 10.5C7.50488 9.11929 8.62417 8 10.0049 8H11.0049V6H13.0049Z" fill="rgba(225,225,234,1)"></path></svg>
+                <p>@Model.Name</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="~/img/Home-Index.svg" /><span>Index</span>
+                        </a>
+                    </li>
+                    <li>
+                    <a href="@Url.Action("Usertoloans")">
+                            <img src="~/img/Loans.svg" /><span>Loans</span>
+                        </a>
+                    </li>
+                    <li>
+                    <a href="@Url.Action("UsertoInvesment")">
+                            <img src="~/img/Investment.svg" /><span>Investment</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("MyProfile")">
+                            <img src="/img/apps-line.svg" /><span>My Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header">
+            <a href=@Url.Action("SignOut","Login")>Sign Out</a>
+        </div>
+
+        <div class="container">
+            <div class="title">
+                <h2>Dashboard</h2>
+                <span></span>
+            </div>
+
+            <div class="suminfo">
+                <div class="investment">
+                    <center>
+                        <h4>Your Investment</h4>
+                        <h3>$@Model.Investment</h3>
+                        @*<br />*@
+                        <h5>**** **** **** 1234</h5>
+                    </center>
+                </div>
+
+                <div class="debts">
+                    <center>
+                        <h4>Debts</h4>
+                        <hr />
+                        <h5>$@Model.Debts</h5>
+                    </center>
+                </div>
+
+                <div class="inverted">
+                    <center>
+                        <h4>Inverted</h4>
+                        <hr />
+                        <h5>$@Model.Inverted</h5>
+                    </center>
+                </div>
+            </div>
+
+            <div class="calendar">
+                @*Aquí va el calendario*@
+
+            </div>
+            <div class="invlist">
+                <h3>Investment List</h3>
+                <ul class="invUl">
+
+                @if (Model.Inversiones.Count() > 0)
+                {
+                    int i = 1;
+                    @foreach( var inversion in Model.Inversiones) {
+                        if (i<3)
+                        {
+                            <li id="invLi">
+                                <h5><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M4.41085 14.5259L7.81249 11.1243L10.6409 13.9527L13.7978 10.7958L12.0049 9.00293H17.0049V14.0029L15.212 12.21L10.6409 16.7811L7.81249 13.9527L5.33834 16.4268C6.77158 18.5823 9.22233 20.0029 12.0049 20.0029C16.4232 20.0029 20.0049 16.4212 20.0049 12.0029C20.0049 7.58465 16.4232 4.00293 12.0049 4.00293C7.5866 4.00293 4.00488 7.58465 4.00488 12.0029C4.00488 12.8845 4.14747 13.7327 4.41085 14.5259ZM2.87288 16.0841L2.86275 16.074L2.86662 16.0701C2.31276 14.8276 2.00488 13.4512 2.00488 12.0029C2.00488 6.48008 6.48204 2.00293 12.0049 2.00293C17.5277 2.00293 22.0049 6.48008 22.0049 12.0029C22.0049 17.5258 17.5277 22.0029 12.0049 22.0029C7.93574 22.0029 4.43426 19.5725 2.87288 16.0841Z" fill="rgba(239,239,239,1)"></path></svg>Investment ID: #@(inversion.InversionID)</h5>
+                                <p>$@inversion.Monto</p>
+                            </li>
+                        }
+                        i++;
+                    }
+                }
+                else
+                {
+                    <li id="invLi">
+                        <h5><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M4.41085 14.5259L7.81249 11.1243L10.6409 13.9527L13.7978 10.7958L12.0049 9.00293H17.0049V14.0029L15.212 12.21L10.6409 16.7811L7.81249 13.9527L5.33834 16.4268C6.77158 18.5823 9.22233 20.0029 12.0049 20.0029C16.4232 20.0029 20.0049 16.4212 20.0049 12.0029C20.0049 7.58465 16.4232 4.00293 12.0049 4.00293C7.5866 4.00293 4.00488 7.58465 4.00488 12.0029C4.00488 12.8845 4.14747 13.7327 4.41085 14.5259ZM2.87288 16.0841L2.86275 16.074L2.86662 16.0701C2.31276 14.8276 2.00488 13.4512 2.00488 12.0029C2.00488 6.48008 6.48204 2.00293 12.0049 2.00293C17.5277 2.00293 22.0049 6.48008 22.0049 12.0029C22.0049 17.5258 17.5277 22.0029 12.0049 22.0029C7.93574 22.0029 4.43426 19.5725 2.87288 16.0841Z" fill="rgba(239,239,239,1)"></path></svg> Empty Investment</h5>
+                        <p>$000.00</p>
+                    </li>
+                }
+            </ul>
+            </div>
+            <div class="deblist">
+                <h3>Debt List</h3>
+                <ul class="debUl">
+
+                @if (Model.Prestamos.Count() > 0)
+                {
+                    int i = 1;
+
+                        @foreach (var prestamo in Model.Prestamos)
+                        {
+                            if (i < 3)
+                            {
+                                <li id="debLi">
+                                    <h5><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M5.67591 4.25667C9.60392 1.03828 15.4094 1.26236 19.076 4.92893C22.9812 8.83418 22.9812 15.1658 19.076 19.0711C15.1707 22.9763 8.83906 22.9763 4.93382 19.0711C2.40932 16.5466 1.51676 13.0081 2.25611 9.76666L2.33275 9.45394L4.26718 9.96315C3.56967 12.623 4.26329 15.5721 6.34803 17.6569C9.47222 20.781 14.5375 20.781 17.6617 17.6569C20.7859 14.5327 20.7859 9.46734 17.6617 6.34315C14.8441 3.5255 10.4475 3.24903 7.32006 5.51375L7.09886 5.67983L8.1158 6.6967L3.5196 7.75736L4.58026 3.16117L5.67591 4.25667ZM13.0049 6V8H15.5049V10H10.0049C9.72874 10 9.50488 10.2239 9.50488 10.5C9.50488 10.7455 9.68176 10.9496 9.91501 10.9919L10.0049 11H14.0049C15.3856 11 16.5049 12.1193 16.5049 13.5C16.5049 14.8807 15.3856 16 14.0049 16H13.0049V18H11.0049V16H8.50488V14H14.0049C14.281 14 14.5049 13.7761 14.5049 13.5C14.5049 13.2545 14.328 13.0504 14.0948 13.0081L14.0049 13H10.0049C8.62417 13 7.50488 11.8807 7.50488 10.5C7.50488 9.11929 8.62417 8 10.0049 8H11.0049V6H13.0049Z" fill="rgba(239,239,239,1)"></path></svg>Debt ID: @prestamo.PrestamoId</h5>
+                                    <p>$@prestamo.Monto</p>
+                                </li>
+                            }
+                            i++;
+                        }
+                }
+                else{
+                    <li id="debLi">
+                        <h5><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M5.67591 4.25667C9.60392 1.03828 15.4094 1.26236 19.076 4.92893C22.9812 8.83418 22.9812 15.1658 19.076 19.0711C15.1707 22.9763 8.83906 22.9763 4.93382 19.0711C2.40932 16.5466 1.51676 13.0081 2.25611 9.76666L2.33275 9.45394L4.26718 9.96315C3.56967 12.623 4.26329 15.5721 6.34803 17.6569C9.47222 20.781 14.5375 20.781 17.6617 17.6569C20.7859 14.5327 20.7859 9.46734 17.6617 6.34315C14.8441 3.5255 10.4475 3.24903 7.32006 5.51375L7.09886 5.67983L8.1158 6.6967L3.5196 7.75736L4.58026 3.16117L5.67591 4.25667ZM13.0049 6V8H15.5049V10H10.0049C9.72874 10 9.50488 10.2239 9.50488 10.5C9.50488 10.7455 9.68176 10.9496 9.91501 10.9919L10.0049 11H14.0049C15.3856 11 16.5049 12.1193 16.5049 13.5C16.5049 14.8807 15.3856 16 14.0049 16H13.0049V18H11.0049V16H8.50488V14H14.0049C14.281 14 14.5049 13.7761 14.5049 13.5C14.5049 13.2545 14.328 13.0504 14.0948 13.0081L14.0049 13H10.0049C8.62417 13 7.50488 11.8807 7.50488 10.5C7.50488 9.11929 8.62417 8 10.0049 8H11.0049V6H13.0049Z" fill="rgba(239,239,239,1)"></path></svg>Empty Debt</h5>
+                        <p>$000.00</p>
+                    </li>
+                }
+                </ul>
+            </div>
+        </div>
+        @*        <div class="footer">
+
+        </div> *@
+
+        <div class="faccount" id="idfaccount">
+            <center class="formBox">
+                <div class="container-popup">
+                    <div class="title-popup">
+                        <h2>Your first account</h2>
+                        <hr />
+                    </div>
+                    <form>
+                        <div class="textboxes">
+                            <input type="text" minlength="10" maxlength="10" placeholder="Account Number" required />
+                            <input type="text" maxlenght="100" placeholder="Bank Name" required />
+                        </div>
+                        <div class="textboxes">
+                            <input type="text" maxlength="100" placeholder="Location" required />
+
+                            <!--Agregar un color gris a la primera opción, para que quede a juego con los demás placeholders-->
+                            <select id="typeacc" required>
+                                @*<option value="" disabled selected>Type</option>*@
+                                <option value="Cuenta Corriente">Cuenta Corriente</option>
+                                <option value="Cuenta con Chequera">Cuenta con Chequera</option>
+                                <option value="Cuenta de Ahorro">Cuenta de Ahorro</option>
+                                <option value="Cuenta de Nómina">Cuenta de Nómina</option>
+                                <option value="Cuenta en Dólares">Cuenta en Dólares</option>
+                            </select>
+                        </div>
+                        <div class="btnsubmit">
+                            <input type="submit" value="Create Account" />
+                        </div>
+                    </form>
+                </div>
+                <span id="popup-img"><img src="/img/FirstAccount.svg" /></span>
+            </center>
+        </div>
+    </body>
+</html>
